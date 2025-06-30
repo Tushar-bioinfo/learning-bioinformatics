@@ -1,9 +1,10 @@
 ---
-title: "Hands-On with Linear Regression: Boston Housing Edition"
-layout: post
+title: "Predicting Boston Housing Prices"
 date: 2024-07-01
+categories: [Machine Learning]
+tags: [regression, boston, sklearn]
+math: true
 ---
-
 > **Note:** This project was part of my learning journey, not a tutorial.
 
 The Boston Housing dataset is one of the classic beginner projects in machine learning. I worked on this as part of my learning journey and wanted to share a few key steps that I personally found interesting or worth paying attention to.
