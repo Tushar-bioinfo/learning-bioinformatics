@@ -130,7 +130,6 @@ print(data)
 ```python
 data.tail()
 ```
-</div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -239,7 +238,6 @@ data.tail()
     </tr>
   </tbody>
 </table>
-</div>
 
 
 
@@ -273,7 +271,6 @@ data.count()    ### num of rows for each col
 ```python
 # any(pd.isnull(data))
 pd.isnull(data).any()
-
 ```
 
 
@@ -348,18 +345,8 @@ plt.xlabel("Prices in 1000s", fontsize = 12)
 plt.ylabel("Num of houses",fontsize = 12)
 ```
 
-
-
-
-    Text(0, 0.5, 'Num of houses')
-
-
-
-
+![png](learning-bioinformatics/main_files/main_13_1.png)
     
-![png](/Bioinformatics-for-beginners/Bioinformatics-for-beginners/main_files/main_13_1.png)
-    
-
 
 
 ```python
@@ -367,24 +354,12 @@ sb.displot(data.PRICE,bins=30,kde=True)
 # sb.displot(data.PRICE)
 ```
 
-
-
-
-    <seaborn.axisgrid.FacetGrid at 0x17dbd38d0>
-
-
-
-
-    
 ![png](/Bioinformatics-for-beginners/main_files/main_14_1.png)
     
-
-
 
 ```python
 data.describe()
 ```
-</div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -544,10 +519,6 @@ data.describe()
     </tr>
   </tbody>
 </table>
-</div>
-
-
-
 
 ```python
 plt.Figure(figsize=(12,8))
@@ -555,14 +526,6 @@ plt.hist(data["RM"],bins=10, color = "orange", edgecolor="black", alpha=0.7 )
 plt.xlabel("Rooms", fontsize = 12)
 plt.ylabel("Num of houses",fontsize = 12)
 ```
-
-
-
-
-    Text(0, 0.5, 'Num of houses')
-
-
-
 
     
 ![png](/Bioinformatics-for-beginners/main_files/main_16_1.png)
@@ -576,14 +539,6 @@ plt.hist(data["LSTAT"],bins=15, color = "red", edgecolor="black", alpha=0.8 , rw
 plt.xlabel("Polution", fontsize = 12)
 plt.ylabel("Num of houses",fontsize = 12)
 ```
-
-
-
-
-    Text(0, 0.5, 'Num of houses')
-
-
-
 
     
 ![png](/Bioinformatics-for-beginners/main_files/main_17_1.png)
@@ -621,14 +576,6 @@ plt.xlabel("Access to Highways", fontsize = 12)
 plt.ylabel("Num of houses",fontsize = 12)
 ```
 
-
-
-
-    Text(0, 0.5, 'Num of houses')
-
-
-
-
     
 ![png](/Bioinformatics-for-beginners/main_files/main_19_1.png)
     
@@ -647,14 +594,6 @@ plt.ylabel("Num of houses",fontsize = 12)
 ```
 
     Index([24.0, 5.0, 4.0, 3.0, 6.0, 2.0, 8.0, 1.0, 7.0], dtype='float64', name='RAD')
-
-
-
-
-
-    Text(0, 0.5, 'Num of houses')
-
-
 
 
     
@@ -714,34 +653,8 @@ data.min()    ## min value in every col
 This step also gives us a quick numeric intuition of which features are likely to be useful in the model and which may not contribute much.
 
 ```python
-for cols in data.columns:
-    if cols != "PRICE":
-        corr = data["PRICE"].corr(data[cols])
-        print(f"Corr with {cols}:   {corr}")
-
-```
-
-    Corr with CRIM:   -0.38830460858681143
-    Corr with ZN:   0.3604453424505435
-    Corr with INDUS:   -0.48372516002837357
-    Corr with CHAS:   0.1752601771902987
-    Corr with NOX:   -0.4273207723732826
-    Corr with RM:   0.6953599470715393
-    Corr with AGE:   -0.37695456500459623
-    Corr with DIS:   0.24992873408590394
-    Corr with RAD:   -0.3816262306397775
-    Corr with TAX:   -0.46853593356776685
-    Corr with PTRATIO:   -0.5077866855375616
-    Corr with B:   0.3334608196570666
-    Corr with LSTAT:   -0.7376627261740151
-
-
-
-```python
 data.corr()
 ```
-</div>
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1003,7 +916,6 @@ data.corr()
     </tr>
   </tbody>
 </table>
-</div>
 
 ## Create a Triangular Mask for Correlation Heatmap
 
@@ -1054,10 +966,6 @@ sb.heatmap(data.corr(), mask=mask, cmap= "RdYlBu" , annot=True)
 sb.set_style("dark")
 plt.xticks(fontsize=10)
 plt.yticks(fontsize=10)
-
-
-
-
 ```
 
 
@@ -1120,15 +1028,8 @@ plt.figure(figsize=(14,8))
 sb.jointplot(x = data.NOX,y =data.DIS, color = "indigo", kind=  "hist")
 sb.set_style("darkgrid")
 sb.set()
-
 ```
 
-
-    <Figure size 1120x640 with 0 Axes>
-
-
-
-    
 ![png](/Bioinformatics-for-beginners/main_files/main_29_1.png)
     
 
@@ -1140,20 +1041,10 @@ plt.ylabel("TAX",fontsize=12)
 plt.xlabel("RAD", fontsize=12)
 plt.grid(True)
 plt.style.use("ggplot")
-
 corr = data.TAX.corr(data.RAD).round(3)
 plt.title(f"RAD vs TAX   (Corr {corr})")
 ```
 
-
-
-
-    Text(0.5, 1.0, 'RAD vs TAX   (Corr 0.91)')
-
-
-
-
-    
 ![png](/Bioinformatics-for-beginners/main_files/main_30_1.png)
     
 
@@ -1164,12 +1055,6 @@ plt.figure(figsize=(14,8))
 sb.jointplot(x = data.RAD,y =data.TAX, color = "indigo", kind=  "reg")
 sb.set_style("darkgrid")
 ```
-
-
-    <Figure size 1120x640 with 0 Axes>
-
-
-
     
 ![png](/Bioinformatics-for-beginners/main_files/main_31_1.png)
     
@@ -1233,9 +1118,7 @@ This separation is important for:
 
 ```python
 prices = data.PRICE
-
 features = data.drop("PRICE", axis = 1)     #### to remove a col off 
-
 ```
 
 
@@ -1276,7 +1159,6 @@ We use `train_test_split()` from `sklearn.model_selection`, with:
 
 ```python
 x_train,x_test,y_train,y_test = tts(features,prices,test_size=0.2,random_state=10)
-
 ```
 ## Fit a Linear Regression Model
 
@@ -1294,12 +1176,10 @@ These learned parameters define the multivariable regression equation used to pr
 regr = LR()
 regr_test = LR()
 regr.fit(x_train,y_train)
-
 ```
 
 ```python
 print(regr.intercept_)
-
 trained_coef = pd.DataFrame(data = regr.coef_, index= x_train.columns , columns=["Coefficient"])
 ```
 
@@ -1311,7 +1191,6 @@ trained_coef = pd.DataFrame(data = regr.coef_, index= x_train.columns , columns=
 trained_coef
 
 ```
-</div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1374,7 +1253,7 @@ trained_coef
     </tr>
   </tbody>
 </table>
-</div>
+
 
 
 
@@ -1401,8 +1280,6 @@ R² gives a quick and interpretable snapshot of how well our model is capturing 
 ```python
 r2_test = regr.score(x_test,y_test)
 r2_train = regr.score(x_train,y_train)
-
-
 print(f"R2 for test data: {regr.score(x_test,y_test)}")
 print(f"R2 for trained data: {regr.score(x_train,y_train)}")
 ```
@@ -1444,9 +1321,7 @@ prices.skew()
 
 ```python
 prices_log = np.log(data.PRICE)
-
 prices_log.skew()
-
 ```
 
 
@@ -1493,19 +1368,14 @@ This model is now predicting **log(price)**, not raw price. We'll exponentiate t
 
 ```python
 prices_log = np.log(data.PRICE)
-
 x_train,x_test,y_train,y_test= tts(features , prices_log, random_state=10, test_size= 0.2)
-
 log_reg = LR()
-
 log_reg.fit(x_train,y_train)
-
 ```
 
 ```python
 pd.DataFrame(columns=["Coeff"], data=log_reg.coef_, index=features.columns)
 ```
-</div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1568,7 +1438,6 @@ pd.DataFrame(columns=["Coeff"], data=log_reg.coef_, index=features.columns)
     </tr>
   </tbody>
 </table>
-</div>
 
 
 
@@ -1605,7 +1474,6 @@ results = model.fit()
 ```python
 pd.DataFrame({"Coef":results.params, "Pvalues":round(results.pvalues,3)})
 ```
-</div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1687,7 +1555,6 @@ pd.DataFrame({"Coef":results.params, "Pvalues":round(results.pvalues,3)})
     </tr>
   </tbody>
 </table>
-</div>
 
 
 
@@ -1734,7 +1601,6 @@ vif_list  = []
 for i in range(1,len(x_incl_const.columns)):
     VIF =  vif(exog= x_incl_const.values,exog_idx= i )
     vif_list.append(VIF)
-
 vif_list    
 ```
 
@@ -1787,7 +1653,6 @@ len(x_incl_const.columns)
 
 ```python
 vif_list  = [ vif(exog= x_incl_const.values,exog_idx= i) for i in range(1,len(x_incl_const.columns) ) ]
-
 vif_list
 ```
 
@@ -1814,7 +1679,6 @@ vif_list
 ```python
 pd.DataFrame({"coef_name": features.columns,"VIF":vif_list} )
 ```
-</div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1891,14 +1755,6 @@ pd.DataFrame({"coef_name": features.columns,"VIF":vif_list} )
     </tr>
   </tbody>
 </table>
-</div>
-
-
-
-
-```python
-
-```
 
 ## Model Simplification Using Bayesian Information Criterion (BIC)
 
@@ -1922,9 +1778,6 @@ We may try simplified versions of the model by:
 ```python
 results.summary()
 ```
-
-
-
 
 <table class="simpletable">
 <caption>OLS Regression Results</caption>
@@ -2042,15 +1895,10 @@ This step helps us lock in a **minimal yet effective feature set** before final 
 
 ```python
 ##Model 1
-
 x_incl_const = sm.add_constant(x_train)
-
 model_1 = sm.OLS(y_train,x_incl_const)
-
 result_1 = model_1.fit()
-
 model_1 = pd.DataFrame({"Coef":result_1.params, "Pvalues":round(result_1.pvalues,3)})
-
 print(f"BIC: {round(result_1.bic,3)}") 
 print(f"Rsquared : {round(result_1.rsquared,3)}") 
 ```
@@ -2061,16 +1909,11 @@ print(f"Rsquared : {round(result_1.rsquared,3)}")
 
 ```python
 #Model 2 without INDUS
-
 x_incl_const = sm.add_constant(x_train)
 x_incl_const =x_incl_const.drop(["INDUS"],axis=1)
-
 model_2 = sm.OLS(y_train,x_incl_const)
-
 result_2 = model_2.fit()
-
 model_2 = pd.DataFrame({"Coef":result_2.params, "Pvalues":round(result_2.pvalues,3)})
-
 print(f"BIC: {round(result_2.bic,3)}") 
 print(f"Rsquared : {round(result_2.rsquared,3)}") 
 ```
@@ -2082,17 +1925,11 @@ print(f"Rsquared : {round(result_2.rsquared,3)}")
 
 ```python
 #Model 3 without INDUS & AGE
-
 x_incl_const = sm.add_constant(x_train)
 x_incl_const =x_incl_const.drop(["INDUS","AGE"],axis=1)
-
 model_3 = sm.OLS(y_train,x_incl_const)
-
 result_3 = model_3.fit()
-
 model_3 = pd.DataFrame({"Coef":result_3.params, "Pvalues":round(result_3.pvalues,3)})
-
-
 print(f"BIC: {round(result_3.bic,3)}") 
 print(f"Rsquared : {round(result_3.rsquared,3)}") 
 ```
@@ -2104,10 +1941,8 @@ print(f"Rsquared : {round(result_3.rsquared,3)}")
 
 ```python
 models_list = [model_1,model_2,model_3]
-
 pd.concat(models_list, axis = 1)
 ```
-</div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2249,35 +2084,23 @@ pd.concat(models_list, axis = 1)
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 ## Residuals and plots
 
-
-
 ```python
 ### Latest model
-
 prices_log = np.log(data.PRICE)
+
 # features = features.drop(["AGE","INDUS"], axis = 1)
-
 x_train,x_test,y_train,y_test= tts(features , prices_log, random_state=10, test_size= 0.2)
-
 log_reg = LR()
-
 log_reg.fit(x_train,y_train)
-
 x_incl_const = sm.add_constant(x_train)
+
 # x_incl_const =x_incl_const.drop(["INDUS","AGE"],axis=1)
-
 model_x = sm.OLS(y_train,x_incl_const)
-
 result_x = model_x.fit()
-
 model_x = pd.DataFrame({"Coef":result_x.params, "Pvalues":round(result_x.pvalues,3)})
-
 
 print(f"BIC: {round(result_x.bic,3)}") 
 print(f"Rsquared : {round(result_x.rsquared,3)}") 
@@ -2294,7 +2117,6 @@ residuals = y_train - predicted_y
 
 ```python
 # residuals = y_train - result_x.fittedvalues   ##fitted values r predicted y
-
 residuals = result_x.resid
 residuals.describe()
 ```
@@ -2365,12 +2187,6 @@ plt.xlim(1.5,4.1)
 
 
 
-
-    (1.5, 4.1)
-
-
-
-
     
 ![png](/Bioinformatics-for-beginners/main_files/main_84_1.png)
     
@@ -2388,12 +2204,6 @@ plt.title(f"Residual Test (Corr:{corr})",fontsize=18)
 plt.grid(True)
 plt.xlim(2,52)
 ```
-
-
-
-
-    (2.0, 52.0)
-
 
 
 
@@ -2459,15 +2269,6 @@ plt.title(f"Values in log (Mean: {residual_mean}, Skew: {residual_skew})")
 plt.xlabel("Residual")
 ```
 
-
-
-
-    Text(0.5, 6.444444444444427, 'Residual')
-
-
-
-
-    <Figure size 1120x640 with 0 Axes>
 
 
 
