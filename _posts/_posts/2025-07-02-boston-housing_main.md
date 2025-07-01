@@ -281,7 +281,7 @@ For models, we use something similar called **RMSE (Root Mean Squared Error)** â
 
 ---
 
-### ðŸ“Ž Full Code and Next Steps
+### Full Code and Next Steps
 
 If you'd like to explore the full code behind this project, you can find it in my [GitHub repository](#) *(insert your repo link here)*.  
 Feel free to clone it, modify it, or use it as a starting point for your own experiments with regression modeling.
