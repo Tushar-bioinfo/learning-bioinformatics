@@ -128,18 +128,6 @@ The goal of `get_log_estimate()` is to **simulate a realistic Boston house** by:
 
 But — since our model predicts **log-transformed prices**, we use this function only to get log-estimates. The actual dollar conversion and inflation scaling will be handled by another function later.
 
-### Scaling Model Predictions to Today's Market
-
-When we train our model, it learns from the original Boston Housing dataset — a dataset collected in the 1970s where prices are measured in **thousands of dollars**. So even a "high price" in that data might be just \$50,000.
-
-But today, Boston home prices are **much higher**.
-
-So if we just return the model’s predictions directly, we’d be showing values that are **way too low** for today’s market.
-
-That’s where this **scaling factor** comes in:
-
----
-
 ```python
 ### Select current Median price of houses in Boston in  -> villow_median_price
 villow_median_price = 583.3
@@ -191,6 +179,18 @@ def get_log_estimate(rooms_num , next_2_river = False,high_confidence = True):
 
     return log_estimate, upper_bound, lower_bound , interval
 ```
+### Scaling Model Predictions to Today's Market
+
+When we train our model, it learns from the original Boston Housing dataset — a dataset collected in the 1970s where prices are measured in **thousands of dollars**. So even a "high price" in that data might be just \$50,000.
+
+But today, Boston home prices are **much higher**.
+
+So if we just return the model’s predictions directly, we’d be showing values that are **way too low** for today’s market.
+
+That’s where this **scaling factor** comes in:
+
+---
+
 
 ### Deep Dive: The `get_log_estimate()` Function
 
