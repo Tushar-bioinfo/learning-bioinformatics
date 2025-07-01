@@ -1,6 +1,6 @@
 ---
 title: "Predicting Boston Housing Prices"
-date: 2024-07-01
+date: 2025-06-30 00:00:00 +0000
 categories: [Machine Learning]
 tags: [regression, boston, sklearn]
 math: true
