@@ -3,7 +3,7 @@ title: "Boston House Price Prediction – Linear Regression in Action"
 date: 2025-07-02 22:00:00 +0000
 categories: [ML Projects]
 tags: [machine learning, regression, sklearn, boston housing, python]
-math: false
+math: true
 image:
   path: /assets/img/boston-house.jpg   # optional, can remove if not using
   alt: "Boston housing prediction banner"
