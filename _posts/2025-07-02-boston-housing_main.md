@@ -46,7 +46,7 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor as vi
 ```
 ### Preparing the Data
 
-> 💡 *Check out the [previous blog post](#) to learn how to load the dataset, including the data URL and preprocessing steps up to this point.*
+> *Check out the [previous blog post](#) to learn how to load the dataset, including the data URL and preprocessing steps up to this point.*
 
 In this step, we’re finishing the data setup so that it's ready for modeling.
 
