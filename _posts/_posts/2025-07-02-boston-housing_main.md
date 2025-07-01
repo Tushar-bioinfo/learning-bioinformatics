@@ -13,7 +13,7 @@ image:
 
 In this blog, I’d like to talk about the **aim** and the step-by-step logic behind building a simple model to predict house prices using multiple features.  
 
-**Aim**: We will use the Boston Housing dataset to **train a linear regression model** that can predict house prices based on factors like the number of rooms, distance to employment centers, property tax, and more.
+We will use the Boston Housing dataset to **train a linear regression model** that can predict house prices based on factors like the number of rooms, distance to employment centers, property tax, and more.
 
 This is a **continuation of our last blog**, where we explored and preprocessed the dataset.  
 Now we’ll move into:
