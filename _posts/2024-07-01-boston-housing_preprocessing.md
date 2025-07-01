@@ -104,9 +104,7 @@ features = [
 
 ```python
 data= pd.DataFrame(data= data , columns= features)
-
 data["PRICE"] = target
-
 print(data)
 ```
 
