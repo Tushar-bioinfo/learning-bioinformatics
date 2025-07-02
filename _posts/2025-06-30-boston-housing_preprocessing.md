@@ -343,7 +343,7 @@ plt.xlabel("Prices in 1000s", fontsize = 12)
 plt.ylabel("Num of houses",fontsize = 12)
 ```
 
-![png](/learning-bioinformatics/main_files/main_13_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_13_1.png)
     
 
 
@@ -352,7 +352,7 @@ sb.displot(data.PRICE,bins=30,kde=True)
 # sb.displot(data.PRICE)
 ```
 
-![png](/learning-bioinformatics/main_files/main_14_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_14_1.png)
     
 
 ```python
@@ -526,7 +526,7 @@ plt.ylabel("Num of houses",fontsize = 12)
 ```
 
     
-![png](/learning-bioinformatics/main_files/main_16_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_16_1.png)
     
 
 
@@ -539,7 +539,7 @@ plt.ylabel("Num of houses",fontsize = 12)
 ```
 
     
-![png](/learning-bioinformatics/main_files/main_17_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_17_1.png)
     
 
 
@@ -575,7 +575,7 @@ plt.ylabel("Num of houses",fontsize = 12)
 ```
 
     
-![png](/learning-bioinformatics/main_files/main_19_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_19_1.png)
     
 
 
@@ -595,7 +595,7 @@ plt.ylabel("Num of houses",fontsize = 12)
 
 
     
-![png](/learning-bioinformatics/main_files/main_20_2.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_20_2.png)
     
 
 
@@ -990,7 +990,7 @@ plt.yticks(fontsize=10)
 
 
     
-![png](/learning-bioinformatics/main_files/main_27_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_27_1.png)
     
 
 
@@ -1016,7 +1016,7 @@ plt.title(f"Distance vs NOX    (Corr {corr})")
 
 
     
-![png](/learning-bioinformatics/main_files/main_28_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_28_1.png)
     
 
 
@@ -1028,7 +1028,7 @@ sb.set_style("darkgrid")
 sb.set()
 ```
 
-![png](/learning-bioinformatics/main_files/main_29_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_29_1.png)
     
 
 
@@ -1043,7 +1043,7 @@ corr = data.TAX.corr(data.RAD).round(3)
 plt.title(f"RAD vs TAX   (Corr {corr})")
 ```
 
-![png](/learning-bioinformatics/main_files/main_30_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_30_1.png)
     
 
 
@@ -1054,7 +1054,7 @@ sb.jointplot(x = data.RAD,y =data.TAX, color = "indigo", kind=  "reg")
 sb.set_style("darkgrid")
 ```
     
-![png](/learning-bioinformatics/main_files/main_31_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_31_1.png)
     
 
 
@@ -1066,7 +1066,7 @@ plt.grid(True)
 
 
     
-![png](/learning-bioinformatics/main_files/main_32_0.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_32_0.png)
     
 
 
@@ -1080,7 +1080,7 @@ sb.set_style("darkgrid")
 
 
     
-![png](/learning-bioinformatics/main_files/main_33_0.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_33_0.png)
     
 
 
@@ -1098,7 +1098,7 @@ sb.pairplot(data, kind = "reg", plot_kws= {'line_kws':{'color':'cyan'}, 'scatter
 
 
     
-![png](/learning-bioinformatics/main_files/main_36_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_36_1.png)
     
 ## Separate Features and Target Variable
 
@@ -1344,7 +1344,7 @@ plt.title("Prices with log")
 
 
     
-![png](/learning-bioinformatics/main_files/main_51_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_51_1.png)
     
 
 
@@ -2186,7 +2186,7 @@ plt.xlim(1.5,4.1)
 
 
     
-![png](/learning-bioinformatics/main_files/main_84_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_84_1.png)
     
 
 
@@ -2206,7 +2206,7 @@ plt.xlim(2,52)
 
 
     
-![png](/learning-bioinformatics/main_files/main_85_1.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_85_1.png)
     
 
 
@@ -2224,7 +2224,7 @@ plt.grid(True)
 
 
     
-![png](/learning-bioinformatics/main_files/main_86_0.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_86_0.png)
     
 
 
@@ -2241,7 +2241,7 @@ plt.grid(True)
 
 
     
-![png](/learning-bioinformatics/main_files/main_87_0.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_87_0.png)
     
 
 
@@ -2271,7 +2271,7 @@ plt.xlabel("Residual")
 
 
     
-![png](/learning-bioinformatics/main_files/main_89_2.png)
+![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_89_2.png)
     
 
 
