@@ -4,6 +4,9 @@ date: 2025-06-30 00:00:00 +0000
 categories: [Machine Learning]
 tags: [regression, boston, sklearn]
 math: true
+image:
+  path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/theater-district.jpg
+  alt: "Boston housing prediction banner"
 ---
 > **Note:** This project was part of my learning journey, not a tutorial.
 
