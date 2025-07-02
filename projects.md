@@ -8,7 +8,7 @@ Welcome to my projects page! Below are selected works in machine learning, immun
 
 ---
 
-### 🧬 Computational Analysis of Intrinsic Disorder in CDR3 Immune Receptor Regions
+### Computational Analysis of Intrinsic Disorder in CDR3 Immune Receptor Regions
 
 - **Type**: Immunoinformatics / Structural Bioinformatics  
 - **Tech**: Python, R, metapredict, SAMtools, VDJdb  
@@ -27,11 +27,11 @@ Welcome to my projects page! Below are selected works in machine learning, immun
   - Disorder increases when V/J segments are included, but not to fully disordered levels
 
 - **Links**:  
-  - [🔗 GitHub](https://github.com/Tushar-bioinfo/Computational-Analysis-of-Intrinsic-Disorder-in-CDR3-Immune-Receptor-Regions)
+  - [GitHub](https://github.com/Tushar-bioinfo/Computational-Analysis-of-Intrinsic-Disorder-in-CDR3-Immune-Receptor-Regions)
 
 ---
 
-### 🧫 Single-Nucleus RNA-Seq Analysis of Hepatoblastoma Tumors
+### Single-Nucleus RNA-Seq Analysis of Hepatoblastoma Tumors
 
 - **Type**: Single-Cell Transcriptomics / Cancer Biology  
 - **Tech**: R, Seurat, Harmony, ggplot2, dplyr  
@@ -52,11 +52,11 @@ Welcome to my projects page! Below are selected works in machine learning, immun
   - Quantify T cell infiltration and immune landscapes
 
 - **Links**:  
-  - [🔗 GitHub](https://github.com/Tushar-bioinfo/Single-Cell-RNA-Seq-Analysis-of-Hepatoblastoma-Tumors)
+  - [GitHub](https://github.com/Tushar-bioinfo/Single-Cell-RNA-Seq-Analysis-of-Hepatoblastoma-Tumors)
 
 ---
 
-### 🏠 Boston House Price Prediction
+### Boston House Price Prediction
 
 - **Type**: Machine Learning / Regression  
 - **Tech**: Scikit-learn, pandas, matplotlib  
@@ -72,8 +72,8 @@ Welcome to my projects page! Below are selected works in machine learning, immun
   - Evaluation via R², MAE, RMSE, and residual plots
 
 - **Links**:  
-  - [📝 Preprocessing Blog Post](/learning-bioinformatics/2024/07/01/boston-housing_preprocessing.html)  
-  - [📊 Model Blog Post](/learning-bioinformatics/2025/07/01/boston-house-model.html)  
+  - [Preprocessing Blog Post](/learning-bioinformatics/2024/07/01/boston-housing_preprocessing.html)  
+  - [Model Blog Post](/learning-bioinformatics/2025/07/01/boston-house-model.html)  
 
 ---
 
