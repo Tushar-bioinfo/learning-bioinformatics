@@ -1192,7 +1192,7 @@ trained_coef
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th>Feature</th>
       <th>Coefficient</th>
     </tr>
   </thead>
@@ -1680,7 +1680,7 @@ pd.DataFrame({"coef_name": features.columns,"VIF":vif_list} )
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th>index</th>
       <th>coef_name</th>
       <th>VIF</th>
     </tr>
@@ -1944,7 +1944,7 @@ pd.concat(models_list, axis = 1)
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th>Feature</th>
       <th>Coef</th>
       <th>Pvalues</th>
       <th>Coef</th>
