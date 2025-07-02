@@ -85,6 +85,14 @@ compress_html:
 
 sidebar:
   nav_list:
+    - title: Home
+      url: /
+    - title: Categories
+      url: /categories/
+    - title: Tags
+      url: /tags/
+    - title: Archives
+      url: /archives/
     - title: Projects
       url: /projects/
     - title: Links
