@@ -12,6 +12,8 @@ tagline: Training models on life itself.
 description: >-
   Bioinformaniac is my ongoing journey to becoming a better bioinformatician — one step, one script at a time. As I explore the foundations of machine learning and move toward AI and neural networks, this blog captures the lessons, breakthroughs, and challenges along the way. From sequencing data to model training, it’s all part of the learning curve.
 
+avatar: assets/img/avtar.jpeg
+
 url: "https://tushar-bioinfo.github.io"
 baseurl: "/learning-bioinformatics"
 
