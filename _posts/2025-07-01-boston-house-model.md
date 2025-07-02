@@ -289,8 +289,6 @@ Feel free to clone it, modify it, or use it as a starting point for your own exp
 
 ---
 
-### End
-
 Thanks for reading! If you enjoyed this walkthrough or found it helpful, I’d love to connect:
 
 - [Connect with me on LinkedIn](#) 
