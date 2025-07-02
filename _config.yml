@@ -80,6 +80,17 @@ compress_html:
   ignore:
     envs: [development]
 
+
+sidebar:
+  nav_list:
+    - title: Projects
+      url: /projects/
+    - title: Links
+      url: /links/
+    - title: About
+      url: /about/
+
+
 exclude:
   - "*.gem"
   - "*.gemspec"
