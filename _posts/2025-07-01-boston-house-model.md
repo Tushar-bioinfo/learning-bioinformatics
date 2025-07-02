@@ -5,9 +5,10 @@ categories: [ML Projects]
 tags: [machine learning, regression, sklearn, boston housing, python]
 math: true
 image:
-  path: /assets/img/boston-house.jpg   # optional, can remove if not using
+  path: /assets/img/boston-house.jpg
   alt: "Boston housing prediction banner"
 ---
+
 
 # Boston House Price Prediction – Linear Regression in Action
 
