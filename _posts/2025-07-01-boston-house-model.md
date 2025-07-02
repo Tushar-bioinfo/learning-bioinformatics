@@ -5,7 +5,7 @@ categories: [ML Projects]
 tags: [machine learning, regression, sklearn, boston housing, python]
 math: true
 image:
-  path: /assets/img/boston-house.jpg
+  path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/caption.jpg
   alt: "Boston housing prediction banner"
 ---
 
