@@ -6,8 +6,8 @@ theme: jekyll-theme-chirpy
 lang: en
 timezone: America/New_York
 
-title: Learning Bioinformatics
-tagline: A blog to explore and simplify bioinformatics and ML, step-by-step.
+title: Bioinformaniac
+tagline: Training models on life itself.
 
 description: >-
   A project-style bioinformatics blog by Tushar — simplifying real workflows, data processing, and ML one notebook at a time.
