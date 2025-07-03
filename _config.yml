@@ -101,6 +101,8 @@ sidebar:
       url: /about/
 
 
+comments: true
+
 exclude:
   - "*.gem"
   - "*.gemspec"
