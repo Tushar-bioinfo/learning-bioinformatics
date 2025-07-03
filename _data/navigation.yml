@@ -1,9 +1,13 @@
-- title: Projects
-  url: /projects/
+main:
+  - title: Home
+    url: /
 
+  - title: About
+    url: /about/
 
-- title: Links
-  url: /links/
+  - title: Projects
+    url: /projects/
 
-- title: About
-  url: /about/
+  - title: Links
+    url: /links/
+
