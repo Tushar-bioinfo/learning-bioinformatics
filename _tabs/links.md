@@ -1,6 +1,7 @@
 ---
 layout: page
 title: My Links
+icon: fas fa-link
 permalink: /links/
 ---
 
