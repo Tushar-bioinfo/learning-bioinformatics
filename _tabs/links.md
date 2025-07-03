@@ -11,5 +11,4 @@ permalink: /links/
 - 📁 GitHub: [@Tushar-bioinfo](https://github.com/Tushar-bioinfo)
 - 🔗 LinkedIn: [tussi147](https://linkedin.com/in/tussi147)
 - 📫 Email: <tushar14032001@gmail.com>
-
-
+
