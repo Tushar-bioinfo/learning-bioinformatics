@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-Welcome to my projects page! Below are selected works in machine learning, immunogenomics, and transcriptomics. Each project includes code, datasets, and write-ups when available.
+Welcome to my projects page! Below are selected works in immunogenomics, machine learning and transcriptomics. Each project includes code, datasets, and write-ups when available.
 
 ---
 
@@ -31,7 +31,7 @@ Welcome to my projects page! Below are selected works in machine learning, immun
 
 ---
 
-### Single-Nucleus RNA-Seq Analysis of Hepatoblastoma Tumors
+### Single-cell RNA-Seq Analysis of Hepatoblastoma Tumors
 
 - **Type**: Single-Cell Transcriptomics / Cancer Biology  
 - **Tech**: R, Seurat, Harmony, ggplot2, dplyr  
