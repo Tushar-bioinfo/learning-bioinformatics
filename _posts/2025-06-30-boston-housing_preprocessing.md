@@ -8,6 +8,8 @@ image:
   path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/theater-district.jpg
   alt: "Boston housing prediction banner"
 ---
+<!--more-->
+
 > **Note:** This project was part of my learning journey, not a tutorial.
 
 The Boston Housing dataset is one of the classic beginner projects in machine learning. I worked on this as part of my learning journey and wanted to share a few key steps that I personally found interesting or worth paying attention to.
