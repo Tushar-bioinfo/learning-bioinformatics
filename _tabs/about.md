@@ -10,27 +10,27 @@ permalink: /about/
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .about-pic {
-  width: 200px;  /* increased by 25% */
-  height: 200px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.25);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.25);
   border: 4px solid #00f2ff;
 }
 
 .about-name {
-  font-size: 1.9rem;
-  font-weight: bold;
+  font-size: 2.1rem;
+  font-weight: 600;
   color: #ffffff;
-  margin-top: 1.2rem;
+  margin-top: 1.4rem;
 }
 
 .about-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #56cc9d;
   margin-bottom: 2rem;
 }
@@ -42,17 +42,12 @@ permalink: /about/
   <div class="about-title">Master's in Bioinformatics and Computational Biology</div>
 </div>
 
-Hi, I’m **Tushar Singh**, currently pursuing my Master’s in **Bioinformatics and Computational Biology** at the University of South Florida.
+Hi, I’m Tushar Singh, a master’s student in bioinformatics and computational biology at the University of South Florida.
 
-I’ve been volunteering under **Dr. George Blanck** in the Department of Molecular Medicine at the Morsani College of Medicine. During this time, I’ve been deeply involved in **immunogenomics research**, where I learned to retrieve BAM files from the **Genomic Data Commons (GDC)** and **dbGaP**, and built a complete processing pipeline from scratch to convert `.sra` files into aligned `.bam` files. This pipeline enabled me to extract **VDJ recombination reads** using custom code developed by the Blanck Lab.
+I’ve been volunteering under Dr. George Blanck in the Department of Molecular Medicine at the Morsani College of Medicine. During this time, I’ve worked on immunogenomics projects, where I started by learning to access BAM files from the Genomic Data Commons (GDC) and dbGaP, and built a full pipeline from scratch to convert `.sra` files into aligned `.bam` files. This allowed me to extract VDJ recombination reads using custom code developed by the Blanck Lab.
 
-Alongside this, I’ve been developing my **own research paper** that explores the relationship between immune receptor **motif patterns and patient survival across different cancer types**.
+Alongside this, I’ve been working on a personal research project exploring the relationship between immune receptor motif patterns and survival outcomes across multiple cancer types. I’ve also contributed to several ongoing projects in the lab and am listed as a co-author on multiple manuscripts currently under review.
 
-I’ve also contributed to multiple other research projects within the lab, leading to **co-authorship on several manuscripts** currently under review.
+I really enjoy learning and improving myself, and my competitive nature motivates me to dive deep into new topics. That’s what led me into machine learning—and now I’m exploring it alongside my core work in bioinformatics. I plan to share that journey through this blog, not only on ML but also on other biological workflows like single-nucleus RNA-seq, ChIP-seq, and various data visualization tutorials.
 
-I’m deeply passionate about learning and continuously improving myself. I consider my curiosity and competitive nature as key drivers that motivate me to explore new and challenging areas — which is what led me to machine learning. I plan to document and share my journey not just through ML-related projects, but also by writing tutorials and walkthroughs for biological data analysis workflows such as **single-nucleus RNA-seq**, **ChIP-seq**, and **data visualization techniques**.
-
-My broader interests lie in **human health informatics**, **AI/ML in biology**, and **cancer research**, where I aim to combine analytical precision with meaningful biological impact.
-
----
-
+My interests lie broadly in human health informatics, cancer research, and the intersection of AI and biology.
