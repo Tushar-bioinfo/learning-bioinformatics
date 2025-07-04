@@ -6,57 +6,65 @@ permalink: /links/
 ---
 
 <style>
-.link-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
-  margin-top: 1.5rem;
+.tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.link-card {
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.05);
+.tree-branch {
+  background-color: #1f1f1f;
+  border-left: 4px solid #56cc9d;
+  padding: 1rem 1.5rem;
+  margin: 0.75rem 0;
+  width: 80%;
+  border-radius: 8px;
+  position: relative;
+  transition: 0.3s ease;
 }
 
-.link-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.25);
+.tree-branch::before {
+  content: "🌿";
+  position: absolute;
+  left: -1.8rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.link-card a {
+.tree-branch:hover {
+  background-color: #263238;
+  border-left-color: #00f2ff;
+  transform: scale(1.02);
+}
+
+.tree-branch a {
   text-decoration: none;
   color: #00f2ff;
   font-weight: 600;
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.link-icon {
-  font-size: 2rem;
-  color: #56cc9d;
+  font-size: 1.1rem;
 }
 </style>
 
-<div class="link-grid">
-  <div class="link-card">
-    <div class="link-icon"><i class="fas fa-blog"></i></div>
-    <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/" target="_blank">Blog: Learning Bioinformatics</a>
+<div class="tree-container">
+  <div class="tree-branch">
+    <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/" target="_blank">
+      Blog: Learning Bioinformatics
+    </a>
   </div>
-  <div class="link-card">
-    <div class="link-icon"><i class="fab fa-github"></i></div>
-    <a href="https://github.com/Tushar-bioinfo" target="_blank">GitHub: @Tushar-bioinfo</a>
+  <div class="tree-branch">
+    <a href="https://github.com/Tushar-bioinfo" target="_blank">
+      GitHub: @Tushar-bioinfo
+    </a>
   </div>
-  <div class="link-card">
-    <div class="link-icon"><i class="fab fa-linkedin"></i></div>
-    <a href="https://linkedin.com/in/tussi147" target="_blank">LinkedIn: tussi147</a>
+  <div class="tree-branch">
+    <a href="https://linkedin.com/in/tussi147" target="_blank">
+      LinkedIn: tussi147
+    </a>
   </div>
-  <div class="link-card">
-    <div class="link-icon"><i class="fas fa-envelope"></i></div>
-    <a href="mailto:tushar14032001@gmail.com">Email: tushar14032001@gmail.com</a>
+  <div class="tree-branch">
+    <a href="mailto:tushar14032001@gmail.com">
+      Email: tushar14032001@gmail.com
+    </a>
   </div>
 </div>
