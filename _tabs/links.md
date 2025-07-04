@@ -8,32 +8,33 @@ permalink: /links/
 <style>
 .icon-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(2, 160px);
+  grid-template-rows: repeat(2, 160px);
   gap: 2rem;
-  justify-items: center;
+  justify-content: center;
   margin-top: 3rem;
-  padding: 0 2rem;
 }
 
 .icon-box {
-  width: 80px;
-  height: 80px;
+  width: 160px;
+  height: 160px;
   background-color: #1f1f1f;
-  border-radius: 15px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  box-shadow: 0 0 5px rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
 }
 
 .icon-box:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  background-color: #263238;
 }
 
 .icon-box i {
-  font-size: 28px;
+  font-size: 48px;
   color: #00f2ff;
 }
 </style>
