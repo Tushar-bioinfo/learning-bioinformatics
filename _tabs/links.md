@@ -6,38 +6,43 @@ permalink: /links/
 ---
 
 <style>
+/* Icon grid layout */
 .icon-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 2rem;
-  justify-items: center;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 3rem;
+  justify-content: center;
   margin-top: 3rem;
-  padding: 0 2rem;
 }
 
+/* Individual icon box */
 .icon-box {
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 200px;
   background-color: #1f1f1f;
-  border-radius: 15px;
+  border-radius: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  box-shadow: 0 0 5px rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
 }
 
 .icon-box:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+  background-color: #263238;
 }
 
+/* Icon inside box */
 .icon-box i {
-  font-size: 28px;
+  font-size: 58px;
   color: #00f2ff;
 }
 </style>
 
+<!-- Icon Grid -->
 <div class="icon-grid">
   <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/" class="icon-box" target="_blank">
     <i class="fas fa-blog"></i>
