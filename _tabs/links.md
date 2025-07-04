@@ -6,65 +6,59 @@ permalink: /links/
 ---
 
 <style>
-.tree-container {
+.tree-svg-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   margin-top: 2rem;
 }
 
-.tree-branch {
-  background-color: #1f1f1f;
-  border-left: 4px solid #56cc9d;
-  padding: 1rem 1.5rem;
-  margin: 0.75rem 0;
-  width: 80%;
-  border-radius: 8px;
-  position: relative;
-  transition: 0.3s ease;
+.tree-link {
+  fill: #00f2ff;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
-.tree-branch::before {
-  content: "🌿";
-  position: absolute;
-  left: -1.8rem;
-  top: 50%;
-  transform: translateY(-50%);
+.tree-link:hover {
+  fill: #56cc9d;
 }
 
-.tree-branch:hover {
-  background-color: #263238;
-  border-left-color: #00f2ff;
-  transform: scale(1.02);
-}
-
-.tree-branch a {
-  text-decoration: none;
-  color: #00f2ff;
-  font-weight: 600;
-  font-size: 1.1rem;
+.tree-line {
+  stroke: #1e88e5;
+  stroke-width: 2;
 }
 </style>
 
-<div class="tree-container">
-  <div class="tree-branch">
+<div class="tree-svg-container">
+  <svg width="600" height="500" viewBox="0 0 600 500">
+    <!-- Trunk -->
+    <line x1="300" y1="20" x2="300" y2="130" class="tree-line" />
+
+    <!-- Branches -->
+    <line x1="300" y1="130" x2="150" y2="230" class="tree-line" />
+    <line x1="300" y1="130" x2="450" y2="230" class="tree-line" />
+    <line x1="150" y1="230" x2="100" y2="330" class="tree-line" />
+    <line x1="450" y1="230" x2="500" y2="330" class="tree-line" />
+
+    <!-- Links as nodes -->
     <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/" target="_blank">
-      Blog: Learning Bioinformatics
+      <text x="140" y="235" class="tree-link">Blog</text>
     </a>
-  </div>
-  <div class="tree-branch">
+
     <a href="https://github.com/Tushar-bioinfo" target="_blank">
-      GitHub: @Tushar-bioinfo
+      <text x="90" y="335" class="tree-link">GitHub</text>
     </a>
-  </div>
-  <div class="tree-branch">
+
     <a href="https://linkedin.com/in/tussi147" target="_blank">
-      LinkedIn: tussi147
+      <text x="460" y="235" class="tree-link">LinkedIn</text>
     </a>
-  </div>
-  <div class="tree-branch">
+
     <a href="mailto:tushar14032001@gmail.com">
-      Email: tushar14032001@gmail.com
+      <text x="510" y="335" class="tree-link">Email</text>
     </a>
-  </div>
+
+    <!-- Root label -->
+    <text x="285" y="15" fill="#00e5ff" font-size="16" font-weight="bold">Bioinformaniac 🌱</text>
+  </svg>
 </div>
