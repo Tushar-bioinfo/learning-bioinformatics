@@ -5,74 +5,50 @@ icon: fas fa-link
 permalink: /links/
 ---
 
-<!-- Tree-style link page with Font Awesome icons and hover effects -->
 <style>
-.tree-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  justify-items: center;
   margin-top: 3rem;
+  padding: 0 2rem;
 }
 
-.tree-branch {
+.icon-box {
+  width: 80px;
+  height: 80px;
   background-color: #1f1f1f;
-  border-left: 5px solid #56cc9d;
-  padding: 1rem 2rem;
-  margin: 1rem 0;
-  width: 85%;
-  border-radius: 10px;
-  position: relative;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.05);
-}
-
-.tree-branch:hover {
-  background-color: #263238;
-  border-left-color: #00f2ff;
-  transform: scale(1.015);
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
-}
-
-.tree-branch a {
+  border-radius: 15px;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: #00f2ff;
-  font-weight: 600;
-  font-size: 1.1rem;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.1);
 }
 
-.tree-branch i {
-  font-size: 1.4rem;
-  margin-right: 1rem;
-  color: #56cc9d;
-  transition: color 0.3s ease;
+.icon-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
 
-.tree-branch:hover i {
+.icon-box i {
+  font-size: 28px;
   color: #00f2ff;
 }
 </style>
 
-<div class="tree-container">
-  <div class="tree-branch">
-    <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/" target="_blank">
-      <i class="fas fa-blog"></i> Blog: Learning Bioinformatics
-    </a>
-  </div>
-  <div class="tree-branch">
-    <a href="https://github.com/Tushar-bioinfo" target="_blank">
-      <i class="fab fa-github"></i> GitHub: @Tushar-bioinfo
-    </a>
-  </div>
-  <div class="tree-branch">
-    <a href="https://linkedin.com/in/tussi147" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn: tussi147
-    </a>
-  </div>
-  <div class="tree-branch">
-    <a href="mailto:tushar14032001@gmail.com">
-      <i class="fas fa-envelope"></i> Email: tushar14032001@gmail.com
-    </a>
-  </div>
+<div class="icon-grid">
+  <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/" class="icon-box" target="_blank">
+    <i class="fas fa-blog"></i>
+  </a>
+  <a href="https://github.com/Tushar-bioinfo" class="icon-box" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://linkedin.com/in/tussi147" class="icon-box" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="mailto:tushar14032001@gmail.com" class="icon-box">
+    <i class="fas fa-envelope"></i>
+  </a>
 </div>
