@@ -5,25 +5,46 @@ icon: fas fa-info-circle
 permalink: /about/
 ---
 
-Hi, I’m **Tushar** — a Master’s student in **Bioinformatics and Computational Biology** at the University of South Florida. I completed my undergraduate studies in **B.Sc. (Hons) Biotechnology**, where I developed a strong foundation in molecular biology, genomics, and data analysis.
+<style>
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
 
-I’ve always had a passion for biology — and more recently, I’ve developed a deep interest in **artificial intelligence and machine learning (AI/ML)**. This blog is my way of combining both worlds.
+.about-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.25);
+  border: 4px solid #00f2ff;
+}
 
-### Why This Blog?
+.about-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 1.2rem;
+}
 
-I created **Bioinformaniac** to:
+.about-title {
+  font-size: 1rem;
+  color: #56cc9d;
+  margin-bottom: 2rem;
+}
+</style>
 
-- Share real-world projects I’m working on in bioinformatics, cancer research, and ML
-- Break down technical concepts as I learn them
-- Build a transparent record of how I’m improving — both as a researcher and as a learner
+<div class="about-wrapper">
+  <img class="about-pic" src="/assets/img/tushar-profile.png" alt="Tushar Profile Picture">
+  <div class="about-name">Tushar</div>
+  <div class="about-title">Master's Student • Bioinformatics + ML Enthusiast</div>
+</div>
 
-Everything here is written from the perspective of a student who’s still learning — but learning hard. If you’re also figuring things out one dataset at a time, I hope this blog helps you too.
+Hi, I’m **Tushar** — a Master’s student in **Bioinformatics and Computational Biology** at the University of South Florida.  
+I completed my undergraduate studies in **B.Sc. (Hons) Biotechnology**, where I developed a strong foundation in molecular biology, genomics, and data analysis.
 
----
+Over time, my passion for biology merged with a growing curiosity in **AI/ML**, particularly their intersection in computational oncology and single-cell data analysis. I’ve worked on research projects involving **immune receptor motif enrichment**, **single-nucleus RNA-seq**, and **survival prediction models using machine learning**.
 
-### Let’s connect
-
-- [GitHub](https://github.com/Tushar-bioinfo)
-- [LinkedIn](https://www.linkedin.com/in/tussi147/)
-- [Email](tushar14032001@gmail.com)
-- [Back to Blog Home](https://tushar-bioinfo.github.io/learning-bioinformatics/)
+Outside of research, I’m passionate about communicating what I learn — simplifying complex ideas in computational biology and sharing my process openly. This site is a reflection of that journey.
