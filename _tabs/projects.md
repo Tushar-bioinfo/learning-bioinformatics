@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 icon: fas fa-flask
-permalink:/projects/
+permalink: /projects/
 ---
 
 <style>
