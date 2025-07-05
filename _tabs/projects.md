@@ -1,80 +1,100 @@
 ---
 layout: page
 title: Projects
-icon: fas fa-project-diagram
+icon: fas fa-flask
 permalink: /projects/
 ---
 
-Welcome to my projects page! Below are selected works in immunogenomics, machine learning and transcriptomics. Each project includes code, datasets, and write-ups when available.
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
----
+.project-card {
+  background-color: #1f1f1f;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,255,255,0.08);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
 
-### Computational Analysis of Intrinsic Disorder in CDR3 Immune Receptor Regions
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
 
-- **Type**: Immunoinformatics / Structural Bioinformatics  
-- **Tech**: Python, R, metapredict, SAMtools, VDJdb  
-- **Data**: BAM files from TCGA & CPTAC (via GDC)  
-- **Summary**:  
-  Explored the structural flexibility of CDR3 regions in immune receptor sequences through per-residue disorder prediction. Combined BAM-based VDJ sequence mining with `metapredict` to score intrinsic disorder across CDR3 and V/J contexts.
+.project-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
 
-- **Workflow**:
-  - Extracted CDR3-containing reads from immune receptor loci (e.g., IGH, TRB)
-  - Validated V(D)J sequences using VDJdb
-  - Processed and exported sequence data with R
-  - Applied `metapredict` to generate disorder profiles
+.project-content {
+  padding: 1rem 1.2rem;
+  flex-grow: 1;
+}
 
-- **Key Findings**:
-  - CDR3s exhibit **moderate disorder**, consistent with structural flexibility
-  - Disorder increases when V/J segments are included, but not to fully disordered levels
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00f2ff;
+  margin-bottom: 0.3rem;
+}
 
-- **Links**:  
-  - [GitHub](https://github.com/Tushar-bioinfo/Computational-Analysis-of-Intrinsic-Disorder-in-CDR3-Immune-Receptor-Regions)
+.project-desc {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
 
----
+.project-links {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  font-size: 1.1rem;
+}
 
-### Single-cell RNA-Seq Analysis of Hepatoblastoma Tumors
+.project-links a {
+  color: #56cc9d;
+  transition: 0.2s ease;
+}
 
-- **Type**: Single-Cell Transcriptomics / Cancer Biology  
-- **Tech**: R, Seurat, Harmony, ggplot2, dplyr  
-- **Data**: snRNA-seq from patient tumors, liver, and PDX models  
-- **Summary**:  
-  Extended and replicated analysis from a Nature Cancer hepatoblastoma study (PMID: [34497364](https://pubmed.ncbi.nlm.nih.gov/34497364)). Focused on tumor heterogeneity, fetal-like gene expression, and immune infiltration across tissue types.
+.project-links a:hover {
+  color: #00f2ff;
+}
+</style>
 
-- **Workflow**:
-  - Preprocessed snRNA-seq data with **Seurat**
-  - Batch-corrected and clustered cells using **Harmony**
-  - Annotated clusters using marker genes and GeneCards
-  - Conducted differential gene expression between tumor and PDX cells
-  - Visualized genes like **AFP**, **CFH**; profiled immune cell composition
+<div class="project-grid">
 
-- **Goals**:
-  - Identify **fetal-like hepatoblastoma subtypes**
-  - Compare transcriptional programs of **tumor vs. PDX**
-  - Quantify T cell infiltration and immune landscapes
+  <!-- Project 1 -->
+  <div class="project-card">
+    <img class="project-image" src="/assets/img/project-thumbs/boston.jpg" alt="Boston Housing">
+    <div class="project-content">
+      <div class="project-title">Boston House Price Prediction</div>
+      <div class="project-desc">Applied linear regression and explored RMSE, BIC, and feature selection on the classic Boston housing dataset.</div>
+      <div class="project-links">
+        <a href="https://github.com/Tushar-bioinfo/boston-house-price" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="/blog/2025/07/01/boston-house-regression_preprocessing.html" title="Blog Post">Read Blog</a>
+      </div>
+    </div>
+  </div>
 
-- **Links**:  
-  - [GitHub](https://github.com/Tushar-bioinfo/Single-Cell-RNA-Seq-Analysis-of-Hepatoblastoma-Tumors)
+  <!-- Project 2 -->
+  <div class="project-card">
+    <img class="project-image" src="/assets/img/project-thumbs/survival-motifs.jpg" alt="Motif Survival">
+    <div class="project-content">
+      <div class="project-title">Motif-based Survival Analysis</div>
+      <div class="project-desc">A pipeline to extract TRB motifs and link them with survival data in multiple cancer types using logistic regression.</div>
+      <div class="project-links">
+        <a href="https://github.com/Tushar-bioinfo/trb-motif-survival" target="_blank"><i class="fab fa-github"></i></a>
+        <span style="color:#888;">Blog: Coming Soon</span>
+      </div>
+    </div>
+  </div>
 
----
-
-### Boston House Price Prediction
-
-- **Type**: Machine Learning / Regression  
-- **Tech**: Scikit-learn, pandas, matplotlib  
-- **Data**: Boston Housing Dataset (UCI)  
-- **Summary**:  
-  Built and evaluated linear regression models to predict Boston housing prices based on neighborhood-level features. Explored preprocessing, multicollinearity (VIF), model evaluation, and interpretation.
-
-- **Workflow**:
-  - Data cleaning and standardization
-  - Exploratory analysis and feature correlation
-  - Feature selection using VIF and Lasso
-  - Linear regression modeling and interpretation of coefficients
-  - Evaluation via R², MAE, RMSE, and residual plots
-
-- **Links**:  
-  - [Preprocessing Blog Post](/learning-bioinformatics/2024/07/01/boston-housing_preprocessing.html)  
-  - [Model Blog Post](/learning-bioinformatics/2025/07/01/boston-house-model.html)  
-
----
-
+</div>
