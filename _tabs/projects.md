@@ -2,99 +2,130 @@
 layout: page
 title: Projects
 icon: fas fa-flask
-permalink: /projects/
+permalink: /learning-bioinformatics/projects/
 ---
 
 <style>
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
   margin-top: 2rem;
 }
 
-.project-card {
-  background-color: #1f1f1f;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,255,255,0.08);
-  transition: 0.3s ease;
+.project-entry {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  border-radius: 18px;
+  padding: 1.8rem 2rem;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
 }
 
-.project-card:hover {
-  transform: scale(1.03);
+.project-entry:hover {
+  transform: scale(1.01);
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
-.project-image {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-
-.project-content {
-  padding: 1rem 1.2rem;
-  flex-grow: 1;
+.project-info {
+  flex: 1;
+  padding-right: 1.5rem;
 }
 
 .project-title {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 700;
   color: #00f2ff;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 
 .project-desc {
-  font-size: 0.95rem;
   color: #ccc;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.project-tags span {
+  background: #263238;
+  color: #00f2ff;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 10px;
 }
 
 .project-links {
   display: flex;
-  gap: 1.2rem;
+  gap: 1.4rem;
   align-items: center;
-  font-size: 1.1rem;
+  margin-top: 0.4rem;
 }
 
 .project-links a {
+  font-size: 1.8rem;
   color: #56cc9d;
   transition: 0.2s ease;
 }
 
 .project-links a:hover {
   color: #00f2ff;
+  transform: scale(1.2);
+}
+
+.project-thumb {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #2c2c2c;
 }
 </style>
 
 <div class="project-grid">
 
   <!-- Project 1 -->
-  <div class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
-    <div class="project-content">
+  <a class="project-entry" href="/learning-bioinformatics/projects/boston-house/">
+    <div class="project-info">
       <div class="project-title">Boston House Price Prediction</div>
-      <div class="project-desc">Applied linear regression and explored RMSE, BIC, and feature selection on the classic Boston housing dataset.</div>
+      <div class="project-desc">
+        A regression-based ML project exploring BIC, RMSE, and housing feature impacts.
+      </div>
+      <div class="project-tags">
+        <span>regression</span><span>sklearn</span><span>housing</span>
+      </div>
       <div class="project-links">
-        <a href="https://github.com/Tushar-bioinfo/boston-house-price" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="/blog/2025/07/01/boston-house-regression_preprocessing.html" title="Blog Post">Read Blog</a>
+        <a href="https://github.com/your-username/boston-house" title="GitHub Repo" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="/learning-bioinformatics/projects/boston-house/" title="Blog / Description Page"><i class="fas fa-blog"></i></a>
       </div>
     </div>
-  </div>
+    <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+  </a>
 
   <!-- Project 2 -->
-  <div class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="Motif Survival">
-    <div class="project-content">
-      <div class="project-title">Motif-based Survival Analysis</div>
-      <div class="project-desc">A pipeline to extract TRB motifs and link them with survival data in multiple cancer types using logistic regression.</div>
+  <a class="project-entry" href="/learning-bioinformatics/projects/trb-survival/">
+    <div class="project-info">
+      <div class="project-title">TRB Motif-Based Survival Analysis</div>
+      <div class="project-desc">
+        Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.
+      </div>
+      <div class="project-tags">
+        <span>immunogenomics</span><span>cancer</span><span>python</span>
+      </div>
       <div class="project-links">
-        <a href="https://github.com/Tushar-bioinfo/trb-motif-survival" target="_blank"><i class="fab fa-github"></i></a>
-        <span style="color:#888;">Blog: Coming Soon</span>
+        <a href="https://github.com/your-username/trb-survival" title="GitHub Repo" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="/learning-bioinformatics/projects/trb-survival/" title="Blog / Description Page"><i class="fas fa-blog"></i></a>
       </div>
     </div>
-  </div>
+    <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
+  </a>
 
 </div>
