@@ -6,23 +6,16 @@ permalink: /projects/
 ---
 
 <style>
-.project-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  margin-top: 2rem;
-}
-
 .project-entry {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background: #1f1f1f;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
   border-radius: 18px;
-  padding: 1.8rem 2rem;
   box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .project-entry:hover {
@@ -44,15 +37,15 @@ permalink: /projects/
 
 .project-desc {
   color: #ccc;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.8rem;
   font-size: 1rem;
 }
 
 .project-tags {
+  margin: 0.6rem 0 1rem 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-bottom: 0.9rem;
 }
 
 .project-tags span {
@@ -63,16 +56,10 @@ permalink: /projects/
   border-radius: 10px;
 }
 
-.project-links {
-  display: flex;
-  gap: 1.4rem;
-  align-items: center;
-  margin-top: 0.4rem;
-}
-
 .project-links a {
-  font-size: 1.8rem;
   color: #56cc9d;
+  font-size: 1.6rem;
+  margin-right: 1.2rem;
   transition: 0.2s ease;
 }
 
@@ -86,46 +73,37 @@ permalink: /projects/
   height: auto;
   border-radius: 12px;
   object-fit: cover;
-  border: 2px solid #2c2c2c;
 }
 </style>
 
-<div class="project-grid">
-
-  <!-- Project 1 -->
-  <a class="project-entry" href="/projects/boston-house/">
-    <div class="project-info">
-      <div class="project-title">Boston House Price Prediction</div>
-      <div class="project-desc">
-        A regression-based ML project exploring BIC, RMSE, and housing feature impacts.
-      </div>
-      <div class="project-tags">
-        <span>regression</span><span>sklearn</span><span>housing</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/your-username/boston-house" title="GitHub Repo" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="/learning-bioinformatics/projects/boston-house/" title="Blog / Description Page"><i class="fas fa-blog"></i></a>
-      </div>
+<!-- Project 1 -->
+<div class="project-entry">
+  <div class="project-info">
+    <div class="project-title">Boston House Price Prediction</div>
+    <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
+    <div class="project-tags">
+      <span>regression</span><span>sklearn</span><span>housing</span>
     </div>
-    <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
-  </a>
-
-  <!-- Project 2 -->
-  <a class="project-entry" href="/projects/trb-survival/">
-    <div class="project-info">
-      <div class="project-title">TRB Motif-Based Survival Analysis</div>
-      <div class="project-desc">
-        Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.
-      </div>
-      <div class="project-tags">
-        <span>immunogenomics</span><span>cancer</span><span>python</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/your-username/trb-survival" title="GitHub Repo" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="/projects/trb-survival/" title="Blog / Description Page"><i class="fas fa-blog"></i></a>
-      </div>
+    <div class="project-links">
+      <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
+      <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
     </div>
-    <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
-  </a>
+  </div>
+  <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+</div>
 
+<!-- Project 2 -->
+<div class="project-entry">
+  <div class="project-info">
+    <div class="project-title">TRB Motif-Based Survival Analysis</div>
+    <div class="project-desc">Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.</div>
+    <div class="project-tags">
+      <span>immunogenomics</span><span>cancer</span><span>python</span>
+    </div>
+    <div class="project-links">
+      <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
+      <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
+    </div>
+  </div>
+  <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
 </div>
