@@ -16,6 +16,7 @@ permalink: /projects/
   border-radius: 18px;
   box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .project-entry:hover {
@@ -76,17 +77,19 @@ permalink: /projects/
 }
 
 .read-more {
-  font-size: 0.9rem;
-  background: #00f2ff22;
+  position: absolute;
+  top: 1.6rem;
+  right: 300px;
+  font-size: 1rem;
   color: #00f2ff;
-  padding: 0.35rem 0.9rem;
-  border-radius: 8px;
   text-decoration: none;
+  font-weight: 500;
   transition: all 0.2s ease;
 }
 
 .read-more:hover {
-  background: #00f2ff44;
+  text-decoration: underline;
+  transform: scale(1.05);
 }
 
 .project-thumb {
@@ -100,6 +103,7 @@ permalink: /projects/
 
 <!-- Project 1 -->
 <div class="project-entry">
+  <a class="read-more" href="/learning-bioinformatics/projects/boston-house/">Read More →</a>
   <div class="project-info">
     <div class="project-title">Boston House Price Prediction</div>
     <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
@@ -109,14 +113,14 @@ permalink: /projects/
     <div class="project-links">
       <a href="https://github.com/your-username/boston-house" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
       <a href="/learning-bioinformatics/projects/boston-house/" title="Go to blog description"><i class="fas fa-blog"></i></a>
-      <a class="read-more" href="/learning-bioinformatics/projects/boston-house/">Read More →</a>
     </div>
   </div>
-  <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
 </div>
 
 <!-- Project 2 -->
 <div class="project-entry">
+  <a class="read-more" href="/learning-bioinformatics/projects/trb-survival/">Read More →</a>
   <div class="project-info">
     <div class="project-title">TRB Motif-Based Survival Analysis</div>
     <div class="project-desc">Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.</div>
@@ -125,9 +129,8 @@ permalink: /projects/
     </div>
     <div class="project-links">
       <a href="https://github.com/your-username/trb-survival" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="/projects/trb-survival/" title="Go to blog description"><i class="fas fa-blog"></i></a>
-      <a class="read-more" href="/learning-bioinformatics/projects/trb-survival/">Read More →</a>
+      <a href="/learning-bioinformatics/projects/trb-survival/" title="Go to blog description"><i class="fas fa-blog"></i></a>
     </div>
   </div>
-  <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
+  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
 </div>
