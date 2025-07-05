@@ -73,7 +73,7 @@ permalink: /projects/
 
   <!-- Project 1 -->
   <div class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/boston.jpg" alt="Boston Housing">
+    <img class="project-image" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
     <div class="project-content">
       <div class="project-title">Boston House Price Prediction</div>
       <div class="project-desc">Applied linear regression and explored RMSE, BIC, and feature selection on the classic Boston housing dataset.</div>
@@ -86,7 +86,7 @@ permalink: /projects/
 
   <!-- Project 2 -->
   <div class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/survival-motifs.jpg" alt="Motif Survival">
+    <img class="project-image" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="Motif Survival">
     <div class="project-content">
       <div class="project-title">Motif-based Survival Analysis</div>
       <div class="project-desc">A pipeline to extract TRB motifs and link them with survival data in multiple cancer types using logistic regression.</div>
