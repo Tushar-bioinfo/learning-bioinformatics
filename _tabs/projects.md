@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 icon: fas fa-flask
-permalink: /learning-bioinformatics/projects/
+permalink:/projects/
 ---
 
 <style>
