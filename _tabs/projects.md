@@ -115,12 +115,12 @@ permalink: /projects/
       <a href="/learning-bioinformatics/projects/boston-house/" title="Go to blog description"><i class="fas fa-blog"></i></a>
     </div>
   </div>
-  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+  <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
 </div>
 
 <!-- Project 2 -->
 <div class="project-entry">
-  <a class="read-more" href="/projects/trb-survival/">more... </a>
+  <a class="read-more" href="/learning-bioinformatics/projects/trb-survival/">more... </a>
   <div class="project-info">
     <div class="project-title">TRB Motif-Based Survival Analysis</div>
     <div class="project-desc">Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.</div>
