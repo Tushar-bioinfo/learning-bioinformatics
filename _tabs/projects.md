@@ -16,6 +16,7 @@ permalink: /projects/
   border-radius: 18px;
   box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
   transition: transform 0.3s ease;
+  text-decoration: none;
 }
 
 .project-entry:hover {
@@ -73,11 +74,12 @@ permalink: /projects/
   height: auto;
   border-radius: 12px;
   object-fit: cover;
+  border: 2px solid #2c2c2c;
 }
 </style>
 
 <!-- Project 1 -->
-<div class="project-entry">
+<a class="project-entry" href="/learning-bioinformatics/projects/boston-house/">
   <div class="project-info">
     <div class="project-title">Boston House Price Prediction</div>
     <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
@@ -85,15 +87,15 @@ permalink: /projects/
       <span>regression</span><span>sklearn</span><span>housing</span>
     </div>
     <div class="project-links">
-      <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
-      <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
+      <a href="https://github.com/your-username/boston-house" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="/learning-bioinformatics/projects/boston-house/" title="Blog or Description Page"><i class="fas fa-blog"></i></a>
     </div>
   </div>
-  <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
-</div>
+  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+</a>
 
 <!-- Project 2 -->
-<div class="project-entry">
+<a class="project-entry" href="/learning-bioinformatics/projects/trb-survival/">
   <div class="project-info">
     <div class="project-title">TRB Motif-Based Survival Analysis</div>
     <div class="project-desc">Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.</div>
@@ -101,9 +103,9 @@ permalink: /projects/
       <span>immunogenomics</span><span>cancer</span><span>python</span>
     </div>
     <div class="project-links">
-      <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
-      <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
+      <a href="https://github.com/your-username/trb-survival" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="/learning-bioinformatics/projects/trb-survival/" title="Blog or Description Page"><i class="fas fa-blog"></i></a>
     </div>
   </div>
-  <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
-</div>
+  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
+</a>
