@@ -1,7 +1,11 @@
 ---
 layout: page
 title: Boston House Price Prediction
-permalink: /projects/boston-house/
+layout: page
+title: Boston House Price Prediction
+permalink: /learning-bioinformatics/projects/boston-house/
+---
+
 tags: [regression, sklearn, ML]
 ---
 
