@@ -8,8 +8,8 @@ permalink: /projects/
 <style>
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.2rem;
   margin-top: 2rem;
 }
 
@@ -34,11 +34,12 @@ permalink: /projects/
   width: 100%;
   height: 200px;
   object-fit: cover;
+  display: block;
   border-bottom: 1px solid #333;
 }
 
 .project-content {
-  padding: 1rem 1.2rem;
+  padding: 1.2rem 1.5rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -46,24 +47,24 @@ permalink: /projects/
 }
 
 .project-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #00f2ff;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 
 .project-desc {
-  font-size: 0.95rem;
+  font-size: 0.97rem;
   color: #ccc;
   margin-bottom: 0.8rem;
 }
 
 .project-links {
   display: flex;
-  gap: 1.2rem;
+  gap: 1.5rem;
   align-items: center;
-  font-size: 1.3rem;
-  margin-top: 0.6rem;
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
 }
 
 .project-links a {
@@ -86,7 +87,7 @@ permalink: /projects/
 .project-tags span {
   background: #263238;
   color: #00f2ff;
-  padding: 0.2rem 0.6rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 10px;
   font-size: 0.8rem;
 }
@@ -94,7 +95,7 @@ permalink: /projects/
 
 <div class="project-grid">
 
-  <!-- Project 1: Boston -->
+  <!-- Project 1 -->
   <a href="/learning-bioinformatics/projects/boston-house/" class="project-card">
     <img class="project-image" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
     <div class="project-content">
@@ -112,13 +113,13 @@ permalink: /projects/
     </div>
   </a>
 
-  <!-- Project 2: TRB Motif -->
+  <!-- Project 2 -->
   <a href="/learning-bioinformatics/projects/trb-survival/" class="project-card">
     <img class="project-image" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif">
     <div class="project-content">
       <div>
         <div class="project-title">TRB Motif-Based Survival Analysis</div>
-        <div class="project-desc">Built a pipeline to mine immune receptor motifs from BAM files and link them to survival outcomes in cancer.</div>
+        <div class="project-desc">Pipeline to extract immune receptor motifs from BAM files and link to cancer survival.</div>
         <div class="project-tags">
           <span>immunogenomics</span><span>cancer</span><span>python</span>
         </div>
