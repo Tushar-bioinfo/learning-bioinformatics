@@ -96,7 +96,7 @@ permalink: /learning-bioinformatics/projects/
 
   <!-- Project 1: Boston -->
   <a href="/learning-bioinformatics/projects/boston-house/" class="project-card">
-    <img class="project-image" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+    <img class="project-image" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
     <div class="project-content">
       <div>
         <div class="project-title">Boston House Price Prediction</div>
@@ -114,7 +114,7 @@ permalink: /learning-bioinformatics/projects/
 
   <!-- Project 2: TRB Motif -->
   <a href="/learning-bioinformatics/projects/trb-survival/" class="project-card">
-    <img class="project-image" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif">
+    <img class="project-image" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif">
     <div class="project-content">
       <div>
         <div class="project-title">TRB Motif-Based Survival Analysis</div>
