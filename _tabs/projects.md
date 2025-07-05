@@ -103,7 +103,7 @@ permalink: /projects/
 
 <!-- Project 1 -->
 <div class="project-entry">
-  <a class="read-more" href="/learning-bioinformatics/projects/boston-house/">Read More →</a>
+  <a class="read-more" href="/learning-bioinformatics/projects/boston-house/">More →</a>
   <div class="project-info">
     <div class="project-title">Boston House Price Prediction</div>
     <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
@@ -120,7 +120,7 @@ permalink: /projects/
 
 <!-- Project 2 -->
 <div class="project-entry">
-  <a class="read-more" href="/learning-bioinformatics/projects/trb-survival/">Read More →</a>
+  <a class="read-more" href="/projects/trb-survival/">More →</a>
   <div class="project-info">
     <div class="project-title">TRB Motif-Based Survival Analysis</div>
     <div class="project-desc">Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.</div>
@@ -132,5 +132,5 @@ permalink: /projects/
       <a href="/learning-bioinformatics/projects/trb-survival/" title="Go to blog description"><i class="fas fa-blog"></i></a>
     </div>
   </div>
-  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
+  <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
 </div>
