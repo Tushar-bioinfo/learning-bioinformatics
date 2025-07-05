@@ -112,7 +112,7 @@ permalink: /projects/
       <a class="read-more" href="/learning-bioinformatics/projects/boston-house/">Read More →</a>
     </div>
   </div>
-  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+  <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
 </div>
 
 <!-- Project 2 -->
@@ -125,9 +125,9 @@ permalink: /projects/
     </div>
     <div class="project-links">
       <a href="https://github.com/your-username/trb-survival" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="/learning-bioinformatics/projects/trb-survival/" title="Go to blog description"><i class="fas fa-blog"></i></a>
+      <a href="/projects/trb-survival/" title="Go to blog description"><i class="fas fa-blog"></i></a>
       <a class="read-more" href="/learning-bioinformatics/projects/trb-survival/">Read More →</a>
     </div>
   </div>
-  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
+  <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
 </div>
