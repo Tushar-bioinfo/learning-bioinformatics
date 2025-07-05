@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 icon: fas fa-flask
-permalink: /learning-bioinformatics/projects/
+permalink: /projects/
 ---
 
 <style>
@@ -93,7 +93,7 @@ permalink: /learning-bioinformatics/projects/
 <div class="project-grid">
 
   <!-- Project 1 -->
-  <a class="project-entry" href="/learning-bioinformatics/projects/boston-house/">
+  <a class="project-entry" href="/projects/boston-house/">
     <div class="project-info">
       <div class="project-title">Boston House Price Prediction</div>
       <div class="project-desc">
@@ -107,7 +107,7 @@ permalink: /learning-bioinformatics/projects/
         <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
       </div>
     </div>
-    <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+    <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
   </a>
 
   <!-- Project 2 -->
@@ -125,7 +125,7 @@ permalink: /learning-bioinformatics/projects/
         <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
       </div>
     </div>
-    <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
+    <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
   </a>
 
 </div>
