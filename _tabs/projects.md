@@ -91,7 +91,7 @@ permalink: /projects/
       <a href="/learning-bioinformatics/projects/boston-house/" title="Blog or Description Page"><i class="fas fa-blog"></i></a>
     </div>
   </div>
-  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+  <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
 </a>
 
 <!-- Project 2 -->
@@ -107,5 +107,5 @@ permalink: /projects/
       <a href="/learning-bioinformatics/projects/trb-survival/" title="Blog or Description Page"><i class="fas fa-blog"></i></a>
     </div>
   </div>
-  <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
+  <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
 </a>
