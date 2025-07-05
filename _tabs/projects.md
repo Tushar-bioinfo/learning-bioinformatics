@@ -9,7 +9,7 @@ permalink: /projects/
 .project-grid {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -17,8 +17,8 @@ permalink: /projects/
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1f1f1f;
-  border-radius: 18px;
+  background-color: #1f1f1f;
+  border-radius: 16px;
   padding: 1.8rem 2rem;
   box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -27,17 +27,17 @@ permalink: /projects/
 
 .project-entry:hover {
   transform: scale(1.01);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
 }
 
 .project-info {
   flex: 1;
-  padding-right: 1.5rem;
+  padding-right: 1.8rem;
 }
 
 .project-title {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: bold;
   color: #00f2ff;
   margin-bottom: 0.4rem;
 }
@@ -50,24 +50,23 @@ permalink: /projects/
 
 .project-tags {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.6rem;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .project-tags span {
-  background: #263238;
+  background-color: #263238;
   color: #00f2ff;
   padding: 0.3rem 0.75rem;
-  font-size: 0.8rem;
   border-radius: 10px;
+  font-size: 0.8rem;
 }
 
 .project-links {
   display: flex;
-  gap: 1.4rem;
+  gap: 1.6rem;
   align-items: center;
-  margin-top: 0.4rem;
 }
 
 .project-links a {
@@ -93,14 +92,14 @@ permalink: /projects/
 <div class="project-grid">
 
   <!-- Project 1 -->
-  <a class="project-entry" href="/projects/boston-house/">
+  <a href="/projects/boston-house/" class="project-entry">
     <div class="project-info">
       <div class="project-title">Boston House Price Prediction</div>
-      <div class="project-desc">
-        A regression-based ML project exploring BIC, RMSE, and housing feature impacts.
-      </div>
+      <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
       <div class="project-tags">
-        <span>regression</span><span>sklearn</span><span>housing</span>
+        <span>regression</span>
+        <span>sklearn</span>
+        <span>housing</span>
       </div>
       <div class="project-links">
         <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
@@ -111,21 +110,21 @@ permalink: /projects/
   </a>
 
   <!-- Project 2 -->
-  <a class="project-entry" href="/learning-bioinformatics/projects/trb-survival/">
+  <a href="/projects/trb-survival/" class="project-entry">
     <div class="project-info">
       <div class="project-title">TRB Motif-Based Survival Analysis</div>
-      <div class="project-desc">
-        Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.
-      </div>
+      <div class="project-desc">Pipeline to extract immune receptor motifs from BAM files and link to cancer survival.</div>
       <div class="project-tags">
-        <span>immunogenomics</span><span>cancer</span><span>python</span>
+        <span>immunogenomics</span>
+        <span>cancer</span>
+        <span>python</span>
       </div>
       <div class="project-links">
         <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
         <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
       </div>
     </div>
-    <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
+    <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Analysis">
   </a>
 
 </div>
