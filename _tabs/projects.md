@@ -23,6 +23,7 @@ permalink: /projects/
   flex-direction: column;
   text-decoration: none;
   position: relative;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -107,8 +108,8 @@ permalink: /projects/
         </div>
       </div>
       <div class="project-links">
-        <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
-        <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
+        <a href="#" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" title="Blog (coming soon)" target="_blank"><i class="fas fa-blog"></i></a>
       </div>
     </div>
   </a>
@@ -125,8 +126,8 @@ permalink: /projects/
         </div>
       </div>
       <div class="project-links">
-        <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
-        <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
+        <a href="#" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" title="Blog (coming soon)" target="_blank"><i class="fas fa-blog"></i></a>
       </div>
     </div>
   </a>
