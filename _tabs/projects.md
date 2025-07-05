@@ -6,71 +6,61 @@ permalink: /projects/
 ---
 
 <style>
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 2.2rem;
-  margin-top: 2rem;
-}
-
-.project-card {
-  background-color: #1f1f1f;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,255,255,0.08);
-  transition: 0.3s ease;
+.project-entry {
   display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  position: relative;
-  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: #1f1f1f;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
+  transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-  transform: scale(1.03);
+.project-entry:hover {
+  transform: scale(1.01);
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
-.project-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  border-bottom: 1px solid #333;
-}
-
-.project-content {
-  padding: 1.2rem 1.5rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.project-info {
+  flex: 1;
+  padding-right: 1.5rem;
 }
 
 .project-title {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 700;
   color: #00f2ff;
   margin-bottom: 0.4rem;
 }
 
 .project-desc {
-  font-size: 0.97rem;
   color: #ccc;
   margin-bottom: 0.8rem;
+  font-size: 1rem;
 }
 
-.project-links {
+.project-tags {
+  margin: 0.6rem 0 1rem 0;
   display: flex;
-  gap: 1.5rem;
-  align-items: center;
-  font-size: 1.6rem;
-  margin-top: 0.8rem;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-tags span {
+  background: #263238;
+  color: #00f2ff;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 10px;
 }
 
 .project-links a {
   color: #56cc9d;
-  transition: color 0.2s ease, transform 0.2s ease;
+  font-size: 1.6rem;
+  margin-right: 1.2rem;
+  transition: 0.2s ease;
 }
 
 .project-links a:hover {
@@ -78,58 +68,42 @@ permalink: /projects/
   transform: scale(1.2);
 }
 
-.project-tags {
-  margin-top: 0.8rem;
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.project-tags span {
-  background: #263238;
-  color: #00f2ff;
-  padding: 0.25rem 0.7rem;
-  border-radius: 10px;
-  font-size: 0.8rem;
+.project-thumb {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
 }
 </style>
 
-<div class="project-grid">
-
-  <!-- Project 1 -->
-  <a href="/learning-bioinformatics/projects/boston-house/" class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
-    <div class="project-content">
-      <div>
-        <div class="project-title">Boston House Price Prediction</div>
-        <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
-        <div class="project-tags">
-          <span>regression</span><span>sklearn</span><span>housing</span>
-        </div>
-      </div>
-      <div class="project-links">
-        <a href="#" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" title="Blog (coming soon)" target="_blank"><i class="fas fa-blog"></i></a>
-      </div>
+<!-- Project 1 -->
+<div class="project-entry">
+  <div class="project-info">
+    <div class="project-title">Boston House Price Prediction</div>
+    <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
+    <div class="project-tags">
+      <span>regression</span><span>sklearn</span><span>housing</span>
     </div>
-  </a>
-
-  <!-- Project 2 -->
-  <a href="/learning-bioinformatics/projects/trb-survival/" class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif">
-    <div class="project-content">
-      <div>
-        <div class="project-title">TRB Motif-Based Survival Analysis</div>
-        <div class="project-desc">Pipeline to extract immune receptor motifs from BAM files and link to cancer survival.</div>
-        <div class="project-tags">
-          <span>immunogenomics</span><span>cancer</span><span>python</span>
-        </div>
-      </div>
-      <div class="project-links">
-        <a href="#" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" title="Blog (coming soon)" target="_blank"><i class="fas fa-blog"></i></a>
-      </div>
+    <div class="project-links">
+      <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
+      <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
     </div>
-  </a>
+  </div>
+  <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+</div>
 
+<!-- Project 2 -->
+<div class="project-entry">
+  <div class="project-info">
+    <div class="project-title">TRB Motif-Based Survival Analysis</div>
+    <div class="project-desc">Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.</div>
+    <div class="project-tags">
+      <span>immunogenomics</span><span>cancer</span><span>python</span>
+    </div>
+    <div class="project-links">
+      <a href="#" title="GitHub (coming soon)"><i class="fab fa-github"></i></a>
+      <a href="#" title="Blog (coming soon)"><i class="fas fa-blog"></i></a>
+    </div>
+  </div>
+  <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
 </div>
