@@ -21,6 +21,7 @@ permalink: /projects/
   transition: 0.3s ease;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .project-card:hover {
@@ -71,30 +72,30 @@ permalink: /projects/
 
 <div class="project-grid">
 
-  <!-- Project 1 -->
-  <div class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/boston.jpg" alt="Boston Housing">
+  <!-- Project 1: Boston -->
+  <a href="/projects/boston-house/" class="project-card">
+    <img class="project-image" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
     <div class="project-content">
       <div class="project-title">Boston House Price Prediction</div>
-      <div class="project-desc">Applied linear regression and explored RMSE, BIC, and feature selection on the classic Boston housing dataset.</div>
+      <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
       <div class="project-links">
-        <a href="https://github.com/Tushar-bioinfo/boston-house-price" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="/blog/2025/07/01/boston-house-regression_preprocessing.html" title="Blog Post">Read Blog</a>
+        <i class="fab fa-github"></i>
+        <span>Blog: Coming Soon</span>
       </div>
     </div>
-  </div>
+  </a>
 
-  <!-- Project 2 -->
-  <div class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/survival-motifs.jpg" alt="Motif Survival">
+  <!-- Project 2: TRB Motif -->
+  <a href="/projects/trb-survival/" class="project-card">
+    <img class="project-image" src="/assets/img/project-thumbs/Antibody-CDR.png" alt="TRB Motif">
     <div class="project-content">
-      <div class="project-title">Motif-based Survival Analysis</div>
-      <div class="project-desc">A pipeline to extract TRB motifs and link them with survival data in multiple cancer types using logistic regression.</div>
+      <div class="project-title">TRB Motif-Based Survival Analysis</div>
+      <div class="project-desc">Built a pipeline to mine immune receptor motifs from BAM files and link them to survival outcomes in cancer.</div>
       <div class="project-links">
-        <a href="https://github.com/Tushar-bioinfo/trb-motif-survival" target="_blank"><i class="fab fa-github"></i></a>
-        <span style="color:#888;">Blog: Coming Soon</span>
+        <i class="fab fa-github"></i>
+        <span>Blog: Coming Soon</span>
       </div>
     </div>
-  </div>
+  </a>
 
 </div>
