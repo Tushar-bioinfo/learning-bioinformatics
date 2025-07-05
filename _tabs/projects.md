@@ -25,7 +25,10 @@ permalink: /projects/
 
 .project-info {
   flex: 1;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-title {
@@ -56,6 +59,12 @@ permalink: /projects/
   border-radius: 10px;
 }
 
+.project-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .project-links {
   display: flex;
   align-items: center;
@@ -77,9 +86,9 @@ permalink: /projects/
   font-size: 0.95rem;
   color: #00f2ff;
   text-decoration: none;
-  margin-left: 0.4rem;
   font-weight: 500;
-  vertical-align: middle;
+  transition: all 0.2s ease;
+  margin-left: auto;
 }
 
 .read-more:hover {
@@ -104,9 +113,11 @@ permalink: /projects/
     <div class="project-tags">
       <span>regression</span><span>sklearn</span><span>housing</span>
     </div>
-    <div class="project-links">
-      <a href="https://github.com/your-username/boston-house" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="/learning-bioinformatics/projects/boston-house/" title="Go to blog description"><i class="fas fa-blog"></i></a>
+    <div class="project-links-container">
+      <div class="project-links">
+        <a href="https://github.com/your-username/boston-house" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="/learning-bioinformatics/projects/boston-house/" title="Go to blog description"><i class="fas fa-blog"></i></a>
+      </div>
       <a class="read-more" href="/learning-bioinformatics/projects/boston-house/">more…</a>
     </div>
   </div>
@@ -121,9 +132,11 @@ permalink: /projects/
     <div class="project-tags">
       <span>immunogenomics</span><span>cancer</span><span>python</span>
     </div>
-    <div class="project-links">
-      <a href="https://github.com/your-username/trb-survival" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="/learning-bioinformatics/projects/trb-survival/" title="Go to blog description"><i class="fas fa-blog"></i></a>
+    <div class="project-links-container">
+      <div class="project-links">
+        <a href="https://github.com/your-username/trb-survival" title="GitHub (coming soon)" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="/learning-bioinformatics/projects/trb-survival/" title="Go to blog description"><i class="fas fa-blog"></i></a>
+      </div>
       <a class="read-more" href="/learning-bioinformatics/projects/trb-survival/">more…</a>
     </div>
   </div>
