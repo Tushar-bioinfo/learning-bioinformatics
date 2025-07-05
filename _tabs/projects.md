@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 icon: fas fa-flask
-permalink: /projects/
+permalink: /learning-bioinformatics/projects/
 ---
 
 <style>
@@ -62,16 +62,18 @@ permalink: /projects/
   display: flex;
   gap: 1.2rem;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
 }
 
 .project-links a {
   color: #56cc9d;
-  transition: 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .project-links a:hover {
   color: #00f2ff;
+  transform: scale(1.2);
 }
 
 .project-tags {
@@ -93,8 +95,8 @@ permalink: /projects/
 <div class="project-grid">
 
   <!-- Project 1: Boston -->
-  <a href="/projects/boston-house/" class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+  <a href="/learning-bioinformatics/projects/boston-house/" class="project-card">
+    <img class="project-image" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
     <div class="project-content">
       <div>
         <div class="project-title">Boston House Price Prediction</div>
@@ -111,8 +113,8 @@ permalink: /projects/
   </a>
 
   <!-- Project 2: TRB Motif -->
-  <a href="/projects/trb-survival/" class="project-card">
-    <img class="project-image" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif">
+  <a href="/learning-bioinformatics/projects/trb-survival/" class="project-card">
+    <img class="project-image" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif">
     <div class="project-content">
       <div>
         <div class="project-title">TRB Motif-Based Survival Analysis</div>
