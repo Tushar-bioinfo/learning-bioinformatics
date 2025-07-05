@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 icon: fas fa-flask
-permalink: /learning-bioinformatics/projects/
+permalink: /projects/
 ---
 
 <style>
@@ -93,7 +93,7 @@ permalink: /learning-bioinformatics/projects/
 <div class="project-grid">
 
   <!-- Project 1 -->
-  <a class="project-entry" href="/learning-bioinformatics/projects/boston-house/">
+  <a class="project-entry" href="/projects/boston-house/">
     <div class="project-info">
       <div class="project-title">Boston House Price Prediction</div>
       <div class="project-desc">
@@ -107,11 +107,11 @@ permalink: /learning-bioinformatics/projects/
         <a href="/learning-bioinformatics/projects/boston-house/" title="Blog / Description Page"><i class="fas fa-blog"></i></a>
       </div>
     </div>
-    <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/boston.png" alt="Boston Housing">
+    <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
   </a>
 
   <!-- Project 2 -->
-  <a class="project-entry" href="/learning-bioinformatics/projects/trb-survival/">
+  <a class="project-entry" href="/projects/trb-survival/">
     <div class="project-info">
       <div class="project-title">TRB Motif-Based Survival Analysis</div>
       <div class="project-desc">
@@ -122,10 +122,10 @@ permalink: /learning-bioinformatics/projects/
       </div>
       <div class="project-links">
         <a href="https://github.com/your-username/trb-survival" title="GitHub Repo" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="/learning-bioinformatics/projects/trb-survival/" title="Blog / Description Page"><i class="fas fa-blog"></i></a>
+        <a href="/projects/trb-survival/" title="Blog / Description Page"><i class="fas fa-blog"></i></a>
       </div>
     </div>
-    <img class="project-thumb" src="/learning-bioinformatics/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
+    <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
   </a>
 
 </div>
