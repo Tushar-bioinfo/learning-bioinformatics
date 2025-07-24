@@ -10,7 +10,6 @@ image:
 ---
 <!--more-->
 
-> **Note:** This project was part of my learning journey, not a tutorial.
 
 The Boston Housing dataset is one of the classic beginner projects in machine learning. I worked on this as part of my learning journey and wanted to share a few key steps that I personally found interesting or worth paying attention to.
 
@@ -20,6 +19,8 @@ Along the way, I’ll also be trying out a few different ways to visualize the r
 
 The idea is to keep things simple and practical. If you’re also exploring ML and want to build intuition for how regression works in real datasets, I hope this post helps you spot the “why” behind some of the steps — not just the code itself.
 
+> This project was part of my learning journey, not a tutorial.
+{: .prompt-warning }
 
 ## Import Libraries
 
