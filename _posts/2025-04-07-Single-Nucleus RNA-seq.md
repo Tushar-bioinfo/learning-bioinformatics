@@ -108,7 +108,7 @@ EnhancedVolcano(deg_balanced, lab = rownames(deg_balanced),
 
 ---
 
-## {% include label.html text="Key Insights" %}
+## Key Insights
 
 - PDX cells retained fetal liver identity; tumor cells diverged under immune pressure
 - DGE analysis revealed complement/stress response activation in tumors
