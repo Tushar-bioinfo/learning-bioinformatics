@@ -3,6 +3,7 @@ layout: page
 title: My Links
 icon: fas fa-link
 permalink: /links/
+order: 4
 ---
 
 <style>
