@@ -3,6 +3,7 @@ layout: page
 title: About
 icon: fas fa-info-circle
 permalink: /about/
+order: 5
 ---
 
 <style>
