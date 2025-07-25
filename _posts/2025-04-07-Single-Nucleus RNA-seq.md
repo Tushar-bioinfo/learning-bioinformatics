@@ -1,21 +1,23 @@
 ---
-layout: post
 title: "Single-Nucleus RNA-seq Analysis of Hepatoblastoma: Clustering, Annotation & Tumor–PDX Comparison"
+date: 2025-04-07 00:00:00 +0000
 tags: [Seurat, Harmony, Single-Nucleus RNA-seq, Hepatoblastoma, Docker, Bioinformatics]
 image:
+  path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post3/roc_curve.png
+  alt: "Boston housing prediction banner"
 ---
 
 This project presents a reproducible pipeline for analyzing **single-nucleus RNA-seq (snRNA-seq)** data from hepatoblastoma tumor, PDX, and normal samples. The workflow includes Seurat-based QC, batch correction using Harmony, clustering, cell type annotation using GeneCards, and a focused differential gene expression (DGE) analysis on cluster 1 (fetal-like hepatoblastoma).
 
 ---
 
-## {% include label.html text="Project Overview" %}
+## Project Overview
 
 > **Goal**: Analyze transcriptional differences between tumor and PDX cells within hepatoblastoma using snRNA-seq data, and understand how the tumor microenvironment influences gene expression.
 
 ---
 
-## {% include label.html text="Technologies Used" %}
+## Technologies Used
 
 - **Seurat** for preprocessing, clustering, visualization
 - **Harmony** for batch correction
@@ -25,7 +27,7 @@ This project presents a reproducible pipeline for analyzing **single-nucleus RNA
 
 ---
 
-## {% include label.html text="Step-by-Step Workflow" %}
+## Step-by-Step Workflow
 
 ### 1. Data Input & Setup
 
@@ -64,7 +66,7 @@ harmony_obj <- filtered_obj %>%
   FindClusters(resolution = 0.1)
 ```
 
-> {% include label.html text="info" %} Harmony effectively reduced batch effects across samples, enabling accurate clustering.
+> Harmony effectively reduced batch effects across samples, enabling accurate clustering.
 
 ---
 
@@ -79,7 +81,7 @@ harmony_obj$celltype <- "unknown"
 harmony_obj$celltype[which(Idents(harmony_obj) == "1")] <- "Fetal-like hepatoblastoma"
 ```
 
-> {% include label.html text="tip" %} GeneCards was used to interpret marker genes and assign biologically meaningful labels.
+> GeneCards was used to interpret marker genes and assign biologically meaningful labels. ( add tip) 
 
 ---
 
@@ -91,7 +93,7 @@ Cluster 1 showed high expression of **AFP**, **SLC22A9**, **CYP3A7** — matchin
 deg_fetal <- FindMarkers(fetal_like, ident.1 = "tumor", ident.2 = "PDX", logfc.threshold = 0.25)
 ```
 
-> {% include label.html text="warning" %} Tumor cells showed higher expression of immune/stress response genes (e.g., **CFH**, **CYP3A5**), reflecting their in vivo complexity.
+>  Tumor cells showed higher expression of immune/stress response genes (e.g., **CFH**, **CYP3A5**), reflecting their in vivo complexity. ( add - warning)
 
 ---
 
@@ -114,7 +116,7 @@ EnhancedVolcano(deg_balanced, lab = rownames(deg_balanced),
 
 ---
 
-## {% include label.html text="Docker Integration" %}
+## Docker Integration
 
 ```dockerfile
 FROM rocker/r-ver:4.3.1
@@ -122,10 +124,10 @@ RUN R -e "remotes::install_version('Seurat', version = '5.3.0')"
 ...
 ```
 
-> {% include label.html text="tip" %} Docker ensures reproducibility of the R environment and pipeline.
+> Docker ensures reproducibility of the R environment and pipeline. tip
 
 ---
 
-## {% include label.html text="Conclusion" %}
+## Conclusion
 
 This project demonstrates a full snRNA-seq analysis pipeline from raw data to biological insight. It combines technical rigor with biological interpretation, showing how tumor context alters transcriptional profiles — and how to build reproducible pipelines using Docker.
