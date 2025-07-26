@@ -801,7 +801,7 @@ plt.yticks(fontsize=10)
 
 
     
-![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_27_1.png){: width="650" height="650"} 
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_27_1.png){: width="450" height="450"} 
 
 
 ```python
