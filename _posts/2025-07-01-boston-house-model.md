@@ -278,7 +278,7 @@ For models, we use something similar called **RMSE (Root Mean Squared Error)** �
 - The model gives us a **predicted value** (the center, or "mean").
 - We then go **above and below that value** to create a **range** — using RMSE like a stand-in for standard deviation.
   
----
+
 
 ---
 
@@ -291,8 +291,9 @@ Feel free to clone it, modify it, or use it as a starting point for your own exp
 
 Thanks for reading! If you enjoyed this walkthrough or found it helpful, I’d love to connect:
 
-- [Connect with me on LinkedIn](#) 
 - Got feedback, suggestions, or questions? Let’s talk — I’m always open to learning and improving.
+>[Connect with me on LinkedIn](https://www.linkedin.com/in/tussi147/)
+{: .prompt-tip }
 
 Machine learning, like most things, is best learned **by doing and sharing**.  
 So keep experimenting, keep asking questions, and most importantly — **keep building**.
