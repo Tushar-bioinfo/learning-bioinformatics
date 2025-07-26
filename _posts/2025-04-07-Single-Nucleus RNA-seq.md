@@ -122,7 +122,7 @@ EnhancedVolcano(deg_balanced, lab = rownames(deg_balanced),
 ```
 
 
-![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/DE_volcano_tumor_PDX.png") width="50%" alt="Volcano Plot){: width="500" height="500"}
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/DE_volcano_tumor_PDX.png"){:width="500" height="500"}
 
 ---
 
