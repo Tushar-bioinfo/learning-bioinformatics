@@ -71,7 +71,7 @@ harmony_obj <- filtered_obj %>%
   FindNeighbors(reduction = 'harmony', dims = 1:20) %>%
   FindClusters(resolution = 0.1)
 ```
-![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/after_batch_removed.png){: width="650" height="650" }
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/after_batch_removed.png){: width="500" height="500" }
 > Harmony effectively reduced batch effects across samples, enabling accurate clustering.
 {: .prompt-info }
 ---
@@ -104,7 +104,7 @@ Cluster 1 showed high expression of **AFP**, **SLC22A9**, **CYP3A7** — matchin
 deg_fetal <- FindMarkers(fetal_like, ident.1 = "tumor", ident.2 = "PDX", logfc.threshold = 0.25)
 ```
 
-![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/diff_pdx_tumor_DE_test.png){: width="650" height="650"}
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/diff_pdx_tumor_DE_test.png){: width="500" height="500"}
 >  Tumor cells showed higher expression of immune/stress response genes (e.g., **CFH**, **CYP3A5**), reflecting their in vivo complexity.
 {: .prompt-warning }
 
@@ -121,7 +121,7 @@ EnhancedVolcano(deg_balanced, lab = rownames(deg_balanced),
                 x = 'avg_log2FC', y = 'p_val_adj')
 ```
 
-![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/DE_volcano_tumor_PDX.png" width="50%" alt="Volcano Plot){: width="650" height="650"}
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/DE_volcano_tumor_PDX.png" width="50%" alt="Volcano Plot){: width="500" height="500"}
 
 ---
 
