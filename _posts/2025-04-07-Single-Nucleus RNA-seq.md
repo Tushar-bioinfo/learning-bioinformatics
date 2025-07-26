@@ -71,7 +71,7 @@ harmony_obj <- filtered_obj %>%
   FindNeighbors(reduction = 'harmony', dims = 1:20) %>%
   FindClusters(resolution = 0.1)
 ```
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/after_batch_removed.png" width="65%" alt="Batch corrected UMAP"> </p>
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/after_batch_removed.png" width="50%" alt="Batch corrected UMAP"> </p>
 > Harmony effectively reduced batch effects across samples, enabling accurate clustering.
 {: .prompt-info }
 
@@ -90,7 +90,7 @@ harmony_obj$celltype <- "unknown"
 harmony_obj$celltype[which(Idents(harmony_obj) == "1")] <- "Fetal-like hepatoblastoma"
 ```
 
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/anotated_umap.png" width="65%" alt="Annotated UMAP"> </p>
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/anotated_umap.png" width="50%" alt="Annotated UMAP"> </p>
 
 > GeneCards was used to interpret marker genes and assign biologically meaningful labels.
 {: .prompt-tip }
@@ -104,7 +104,7 @@ Cluster 1 showed high expression of **AFP**, **SLC22A9**, **CYP3A7** — matchin
 ```r
 deg_fetal <- FindMarkers(fetal_like, ident.1 = "tumor", ident.2 = "PDX", logfc.threshold = 0.25)
 ```
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/diff_pdx_tumor_DE_test.png" width="65%" alt="DGE heatmap"> </p>
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/diff_pdx_tumor_DE_test.png" width="50%" alt="DGE heatmap"> </p>
 >  Tumor cells showed higher expression of immune/stress response genes (e.g., **CFH**, **CYP3A5**), reflecting their in vivo complexity.
 {: .prompt-warning }
 
@@ -120,7 +120,7 @@ DoHeatmap(harmony_obj, features = top10$gene)
 EnhancedVolcano(deg_balanced, lab = rownames(deg_balanced),
                 x = 'avg_log2FC', y = 'p_val_adj')
 ```
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/DE_volcano_tumor_PDX.png" width="65%" alt="Volcano Plot"> </p>
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/DE_volcano_tumor_PDX.png" width="50%" alt="Volcano Plot"> </p>
 
 ---
 
