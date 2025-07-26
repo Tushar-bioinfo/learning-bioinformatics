@@ -272,15 +272,15 @@ plt.hist(data["PRICE"],bins=30, color = "teal", edgecolor="black", alpha=0.7 )
 plt.xlabel("Prices in 1000s", fontsize = 12)
 plt.ylabel("Num of houses",fontsize = 12)
 ```
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_13_1.pn){: width="650" height="650"}
 
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_13_1.png" width="50%"> </p> 
 ```python
 sb.displot(data.PRICE,bins=30,kde=True)
 # sb.displot(data.PRICE)
 ```
 
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_14_1.png){: width="650" height="650"}
 
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_14_1.png" width="50%"> </p> 
 
 ```python
 data.describe()
@@ -452,9 +452,8 @@ plt.xlabel("Rooms", fontsize = 12)
 plt.ylabel("Num of houses",fontsize = 12)
 ```
 
-    
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_16_1.png){: width="650" height="650"}
 
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_16_1.png" width="50%"> </p> 
 
 ## Check Linear Correlation Between Features and Target
 
@@ -810,9 +809,7 @@ plt.yticks(fontsize=10)
 
 
     
-
-    
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_27_1.png" width="50%"> </p> 
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_27_1.png){: width="650" height="650"} 
 
 
 ```python
@@ -822,14 +819,10 @@ sb.pairplot(data, kind = "reg", plot_kws= {'line_kws':{'color':'cyan'}, 'scatter
 
 
 
-    <seaborn.axisgrid.PairGrid at 0x17ef21ed0>
-
-
-
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_36_1.png" width="50%"> </p> 
+    <seaborn.axisgrid.PairGrid at 0x17ef21ed0> 
     
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_36_1.png){: width="650" height="650"} 
 
-    
 ## Separate Features and Target Variable
 
 > We now split the dataset into:
@@ -1071,9 +1064,7 @@ plt.title("Prices with log")
     Text(0.5, 1.0, 'Prices with log')
 
 
-
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_51_1.png" width="50%"> </p> 
-
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_51_1.png){: width="650" height="650"} 
 
 ## Train Regression Model on Log-Transformed Prices
 
@@ -1854,8 +1845,8 @@ plt.grid(True)
 
 
     
+![Desktop View](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_87_0.png){: width="650" height="650"} 
 
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_87_0.png" width="50%"> </p>    
 
 ## Estimating a Prediction Range with RMSE
 
