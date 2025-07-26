@@ -22,27 +22,7 @@ The idea is to keep things simple and practical. If you’re also exploring ML a
 > This project was part of my learning journey, not a tutorial.
 {: .prompt-warning }
 
-## Import Libraries
 
-> We begin by importing essential libraries for:
-> - data handling (`pandas`, `numpy`)
-> - plotting (`seaborn`, `matplotlib`)
-> - statistical modeling and diagnostics (`statsmodels`, `math`, `sklearn`)
-> - and suppressing warnings to keep the notebook output clean.
-
-```python
-# from sklearn.datasets import load_boston
-
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sb
-from sklearn.model_selection import train_test_split as tts
-from sklearn.linear_model import LinearRegression as LR
-from math import log
-import statsmodels.api as sm
-from statsmodels.stats.outliers_influence import variance_inflation_factor as vif
-```
 ##  Load the Boston Housing Dataset from URL
 
 > The dataset is fetched directly from Carnegie Mellon University's open data repository.  
@@ -243,62 +223,6 @@ data.tail()
   </tbody>
 </table>
 
-
-
-
-```python
-data.count()    ### num of rows for each col 
-```
-
-
-
-
-    CRIM       506
-    ZN         506
-    INDUS      506
-    CHAS       506
-    NOX        506
-    RM         506
-    AGE        506
-    DIS        506
-    RAD        506
-    TAX        506
-    PTRATIO    506
-    B          506
-    LSTAT      506
-    PRICE      506
-    dtype: int64
-
-
-
-
-```python
-# any(pd.isnull(data))
-pd.isnull(data).any()
-```
-
-
-
-
-    CRIM       False
-    ZN         False
-    INDUS      False
-    CHAS       False
-    NOX        False
-    RM         False
-    AGE        False
-    DIS        False
-    RAD        False
-    TAX        False
-    PTRATIO    False
-    B          False
-    LSTAT      False
-    PRICE      False
-    dtype: bool
-
-
-
-
 ```python
 data.info()
 ```
@@ -349,17 +273,14 @@ plt.xlabel("Prices in 1000s", fontsize = 12)
 plt.ylabel("Num of houses",fontsize = 12)
 ```
 
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_13_1.png)
-    
-
-
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_13_1.png" width="50%"> </p> 
 ```python
 sb.displot(data.PRICE,bins=30,kde=True)
 # sb.displot(data.PRICE)
 ```
 
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_14_1.png)
-    
+
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_14_1.png" width="50%"> </p> 
 
 ```python
 data.describe()
@@ -532,115 +453,8 @@ plt.ylabel("Num of houses",fontsize = 12)
 ```
 
     
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_16_1.png)
-    
 
-
-
-```python
-plt.Figure(figsize=(12,8))
-plt.hist(data["LSTAT"],bins=15, color = "red", edgecolor="black", alpha=0.8 , rwidth=0.9)
-plt.xlabel("Polution", fontsize = 12)
-plt.ylabel("Num of houses",fontsize = 12)
-```
-
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_17_1.png)
-    
-
-
-
-```python
-data.RAD.value_counts()
-```
-
-
-
-
-    RAD
-    24.0    132
-    5.0     115
-    4.0     110
-    3.0      38
-    6.0      26
-    2.0      24
-    8.0      24
-    1.0      20
-    7.0      17
-    Name: count, dtype: int64
-
-
-
-
-```python
-plt.Figure(figsize=(12,8))
-# plt.hist(data["RAD"],bins=25, color = "grey", edgecolor="black", alpha=0.8 )
-plt.hist(data["RAD"],bins=25, color = "grey", edgecolor="black", alpha=0.8, rwidth=0.7 )
-plt.xlabel("Access to Highways", fontsize = 12)
-plt.ylabel("Num of houses",fontsize = 12)
-```
-
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_19_1.png)
-    
-
-
-
-```python
-###flexible way of making these without hardcoding 
-
-freq = data.RAD.value_counts()
-print(freq.index)
-
-plt.bar(freq.index, height = freq, color = "grey", edgecolor="black")
-plt.xlabel("Access to Highways", fontsize = 12)
-plt.ylabel("Num of houses",fontsize = 12)
-```
-
-    Index([24.0, 5.0, 4.0, 3.0, 6.0, 2.0, 8.0, 1.0, 7.0], dtype='float64', name='RAD')
-
-
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_20_2.png)
-    
-
-
-
-```python
-data.CHAS.value_counts()
-```
-
-
-
-
-    CHAS
-    0.0    471
-    1.0     35
-    Name: count, dtype: int64
-
-
-```python
-data.min()    ## min value in every col 
-```
-
-
-
-
-    CRIM         0.00632
-    ZN           0.00000
-    INDUS        0.46000
-    CHAS         0.00000
-    NOX          0.38500
-    RM           3.56100
-    AGE          2.90000
-    DIS          1.12960
-    RAD          1.00000
-    TAX        187.00000
-    PTRATIO     12.60000
-    B            0.32000
-    LSTAT        1.73000
-    PRICE        5.00000
-    dtype: float64
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_16_1.png" width="50%"> </p> 
 
 ## Check Linear Correlation Between Features and Target
 
@@ -996,99 +810,9 @@ plt.yticks(fontsize=10)
 
 
     
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_27_1.png)
-    
-
-
-
-```python
-plt.scatter(data.NOX,data.DIS,color = "magenta" , alpha = 0.5 , s=25)
-plt.xlabel("NOX",fontsize=12)
-plt.ylabel("Distance", fontsize=12)
-plt.grid()
-plt.style.use("classic")
-plt.xlim(0.28,0.9)
-plt.ylim(0,13)
-corr = data.NOX.corr(data.DIS).round(3)
-plt.title(f"Distance vs NOX    (Corr {corr})")
-```
-
-
-
-
-    Text(0.5, 1.0, 'Distance vs NOX    (Corr -0.769)')
-
-
-
 
     
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_28_1.png)
-    
-
-
-
-```python
-plt.figure(figsize=(14,8))
-sb.jointplot(x = data.NOX,y =data.DIS, color = "indigo", kind=  "hist")
-sb.set_style("darkgrid")
-sb.set()
-```
-
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_29_1.png)
-    
-
-
-
-```python
-plt.scatter(data.RAD,data.TAX ,color = "orange" , alpha = 0.5 , s=25)
-plt.ylabel("TAX",fontsize=12)
-plt.xlabel("RAD", fontsize=12)
-plt.grid(True)
-plt.style.use("ggplot")
-corr = data.TAX.corr(data.RAD).round(3)
-plt.title(f"RAD vs TAX   (Corr {corr})")
-```
-
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_30_1.png)
-    
-
-
-
-```python
-plt.figure(figsize=(14,8))
-sb.jointplot(x = data.RAD,y =data.TAX, color = "indigo", kind=  "reg")
-sb.set_style("darkgrid")
-```
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_31_1.png)
-    
-
-
-
-```python
-sb.lmplot(x='RAD' , y='TAX' ,data= data )
-plt.grid(True)
-```
-
-
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_32_0.png)
-    
-
-
-
-```python
-
-corr = data.PRICE.corr(data.RM).round(3)
-sb.jointplot(x = data.RM,y =data.PRICE, color = "indigo", kind=  "reg")
-sb.set_style("darkgrid")
-```
-
-
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_33_0.png)
-    
-
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_27_1.png" width="50%"> </p> <p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post3/roc_curve.png" width="50%"> </p>
 
 
 ```python
@@ -1102,9 +826,9 @@ sb.pairplot(data, kind = "reg", plot_kws= {'line_kws':{'color':'cyan'}, 'scatter
 
 
 
-
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_36_1.png" width="50%"> </p> 
     
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_36_1.png)
+
     
 ## Separate Features and Target Variable
 
@@ -1348,10 +1072,7 @@ plt.title("Prices with log")
 
 
 
-
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_51_1.png)
-    
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_51_1.png" width="50%"> </p> 
 
 
 ## Train Regression Model on Log-Transformed Prices
@@ -2122,121 +1843,7 @@ residuals = y_train - predicted_y
 ```python
 # residuals = y_train - result_x.fittedvalues   ##fitted values r predicted y
 residuals = result_x.resid
-residuals.describe()
-```
-
-
-
-
-    count    4.040000e+02
-    mean    -3.004747e-15
-    std      1.841779e-01
-    min     -7.330963e-01
-    25%     -9.881733e-02
-    50%     -1.499545e-02
-    75%      9.870289e-02
-    max      7.907087e-01
-    dtype: float64
-
-
-
-
-```python
-residuals = result_x.resid
-```
-
-
-
-
-    50    -0.056143
-    367    0.498215
-    34    -0.033868
-    78     0.043520
-    172    0.033242
-             ...   
-    320   -0.041251
-    15    -0.033156
-    484    0.074891
-    125    0.008542
-    265   -0.214594
-    Length: 404, dtype: float64
-
-
-
-
-```python
-corr = (round(y_train.corr(result_x.fittedvalues) ,3)) ## correlation btw original y values vs predicted y
-corr
-```
-
-
-
-
-    np.float64(0.89)
-
-
-
-
-```python
-
-plt.figure(figsize=(10,8))
-plt.scatter(y_train, result_x.fittedvalues, s = 50, color = "turquoise", edgecolors="black", alpha = 0.6)
-plt.plot(y_train, y_train, color = "grey" , alpha = 0.4)
-plt.xlabel("Original Values",fontsize=14)
-plt.ylabel("Predicted Values",fontsize=14)
-plt.title(f"Values in log   (Corr:{corr})",fontsize=18)
-plt.grid(True)
-plt.xlim(1.5,4.1)
-```
-
-
-
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_84_1.png)
-    
-
-
-
-```python
-
-plt.figure(figsize=(10,8))
-plt.scatter(np.e**y_train, np.e**result_x.fittedvalues, s = 50, color = "navy", edgecolors="black", alpha = 0.3)
-plt.plot(np.e**y_train, np.e**y_train, color = "grey" , alpha = 0.4)
-plt.xlabel("Original Values",fontsize=14)
-plt.ylabel("Predicted Values",fontsize=14)
-plt.title(f"Residual Test (Corr:{corr})",fontsize=18)
-plt.grid(True)
-plt.xlim(2,52)
-```
-
-
-
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_85_1.png)
-    
-
-
-
-```python
-
-plt.figure(figsize=(10,8))
-plt.scatter(result_x.fittedvalues,result_x.resid, s = 50, color = "lime", edgecolors="black", alpha = 0.6)
-# plt.plot(y_train, y_train, color = "grey" , alpha = 0.6)
-plt.ylabel("Residuals",fontsize=14)
-plt.xlabel("Predicted Values",fontsize=14)
-plt.title(f"Values in log",fontsize=18)
-plt.grid(True)
-```
-
-
-    
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_86_0.png)
-    
-
-
-
-```python
-
+## plot
 plt.figure(figsize=(10,8))
 plt.scatter(np.e**result_x.fittedvalues,np.e**result_x.resid, s = 50, color = "red", edgecolors="black", alpha = 0.6)
 plt.ylabel("Residuals",fontsize=14)
@@ -2247,9 +1854,8 @@ plt.grid(True)
 
 
     
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_87_0.png)
-    
 
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_87_0.png" width="50%"> </p>    
 
 
 ```python
@@ -2277,8 +1883,8 @@ plt.xlabel("Residual")
 
 
     
-![png](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_89_2.png)
-    
+
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_89_2.png" width="50%"> </p>
 
 
 
