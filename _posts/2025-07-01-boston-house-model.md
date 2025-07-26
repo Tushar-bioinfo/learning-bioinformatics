@@ -31,20 +31,7 @@ We’ll walk through:
 
 Let’s begin!
 
-### Imports
 
-
-```python
-import pandas as pd 
-import numpy as np
-from sklearn.linear_model import LinearRegression as LR
-from sklearn.metrics import mean_squared_error as mse
-from sklearn.model_selection import train_test_split as tts
-import matplotlib.pyplot as plt
-import seaborn as sb
-import statsmodels.api as sm
-from statsmodels.stats.outliers_influence import variance_inflation_factor as vif
-```
 ### Preparing the Data
 
 > *Check out the [previous blog post](#) to learn how to load the dataset, including the data URL and preprocessing steps up to this point.*
