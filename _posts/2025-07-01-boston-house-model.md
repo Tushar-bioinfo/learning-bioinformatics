@@ -282,9 +282,9 @@ For models, we use something similar called **RMSE (Root Mean Squared Error)** �
 
 ---
 
-### Full Code and Next Steps
+### Full Code & Next Steps
 
-If you'd like to explore the full code behind this project, you can find it in my [GitHub repository](#) *(insert your repo link here)*.  
+If you'd like to explore the full code behind this project, you can find it in my [GitHub repository](https://tushar-bioinfo.github.io/learning-bioinformatics/posts/boston-house-model/) *(insert your repo link here)*.  
 Feel free to clone it, modify it, or use it as a starting point for your own experiments with regression modeling.
 
 ---
@@ -292,10 +292,8 @@ Feel free to clone it, modify it, or use it as a starting point for your own exp
 Thanks for reading! If you enjoyed this walkthrough or found it helpful, I’d love to connect:
 
 
-> [Connect with me on LinkedIn](https://www.linkedin.com/in/tussi147/)
-{: .prompt-tip }
-
 Machine learning, like most things, is best learned **by doing and sharing**.  
 So keep experimenting, keep asking questions, and most importantly — **keep building**.
-
 Until next time, happy coding! 
+> [Connect with me on LinkedIn](https://www.linkedin.com/in/tussi147/)
+{:.prompt-tip }
