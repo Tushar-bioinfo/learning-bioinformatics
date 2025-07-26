@@ -295,5 +295,5 @@ Thanks for reading! If you enjoyed this walkthrough or found it helpful, I’d l
 Machine learning, like most things, is best learned **by doing and sharing**.  
 So keep experimenting, keep asking questions, and most importantly — **keep building**.
 Until next time, happy coding! 
-> [Connect with me on LinkedIn](https://www.linkedin.com/in/tussi147/)
+> [Let'sConnect](https://www.linkedin.com/in/tussi147/)
 {:.prompt-tip }
