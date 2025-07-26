@@ -1857,47 +1857,6 @@ plt.grid(True)
 
 <p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_87_0.png" width="50%"> </p>    
 
-
-```python
-residual_mean = round(result_x.resid.mean(),2)
-residual_skew = round(result_x.resid.skew(),2)
-
-```
-
-
-
-
-    np.float64(-0.0)
-
-
-
-
-```python
-plt.figure(figsize=(14,8))
-sb.displot(result_x.resid, kde=True , color = "#FC427B" , alpha =0.8, edgecolor="black")
-plt.title(f"Values in log (Mean: {residual_mean}, Skew: {residual_skew})")
-plt.xlabel("Residual")
-```
-
-
-
-
-    
-
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_89_2.png" width="50%"> </p>
-
-
-
-```python
-result_x.mse_resid
-```
-
-
-
-
-    np.float64(0.03487337082354599)
-
-
 ## Estimating a Prediction Range with RMSE
 
 > After calculating the **Mean Squared Error (MSE)**, we take its square root to get **Root Mean Squared Error (RMSE)**, which serves as a stand-in for **standard deviation** of our model's error.
