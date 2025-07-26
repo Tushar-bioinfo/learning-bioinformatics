@@ -812,7 +812,7 @@ plt.yticks(fontsize=10)
     
 
     
-<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_27_1.png" width="50%"> </p> <p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post3/roc_curve.png" width="50%"> </p>
+<p align="center"> <img src="https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/main_27_1.png" width="50%"> </p> 
 
 
 ```python
