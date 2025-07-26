@@ -138,5 +138,5 @@ EnhancedVolcano(deg_balanced, lab = rownames(deg_balanced),
 
 This project demonstrates a full snRNA-seq analysis pipeline from raw data to biological insight. It combines technical rigor with biological interpretation, showing how tumor context alters transcriptional profiles — and how to build reproducible pipelines using Docker.
 
-> Checkout my github repo for this project [Github-Link](https://github.com/Tushar-bioinfo/Single-Cell-RNA-Seq-Analysis-of-Hepatoblastoma-Tumors)
+> Checkout my github repo for this project [Github-Link](https://github.com/Tushar-bioinfo/ScRNAseq-Hepatoblastoma)
 {: .prompt-tip }
