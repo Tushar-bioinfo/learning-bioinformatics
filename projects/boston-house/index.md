@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Boston Housing Price Prediction
+title: 
 permalink: /projects/boston-house/
 icon: fas fa-house-user
-tags: [regression, sklearn, ML]
 ---
 
 <style>
@@ -93,15 +92,15 @@ tags: [regression, sklearn, ML]
 
 <div class="project-container">
 
-<h1>🏡 Boston Housing Price Prediction</h1>
+<h1>Boston Housing Price Prediction</h1>
 <p class="meta"><strong>Duration:</strong> May 2025 – June 2025 &nbsp; | &nbsp; <strong>Tags:</strong> regression, sklearn, ML</p>
 
-<h2>📌 Summary</h2>
+<h2>Summary</h2>
 <p>
 This project builds a complete machine learning pipeline using Python’s <code>scikit-learn</code> to predict Boston housing prices. The workflow focuses on feature selection, multivariable regression, residual diagnostics, and visual interpretability using <code>Matplotlib</code> and <code>Seaborn</code>.
 </p>
 
-<h2>⚙️ What I Did</h2>
+<h2>What I Did</h2>
 <ul>
   <li>Built a multivariable linear regression model with <strong>>80% R²</strong> on test data.</li>
   <li>Performed <strong>correlation analysis</strong> and addressed multicollinearity with <code>VIF</code>.</li>
@@ -110,7 +109,7 @@ This project builds a complete machine learning pipeline using Python’s <code>
   <li>Used <code>Matplotlib</code> and <code>Seaborn</code> for plotting residuals, confidence bands, and prediction trends.</li>
 </ul>
 
-<h2>🧠 Tools & Skills</h2>
+<h2> </h2>
 <div class="project-tags">
   <span class="project-tag">scikit-learn</span>
   <span class="project-tag">Linear Regression</span>
@@ -120,13 +119,13 @@ This project builds a complete machine learning pipeline using Python’s <code>
   <span class="project-tag">Exploratory Data Analysis</span>
 </div>
 
-<h2>🔗 Links</h2>
+<h2> </h2>
 <div class="project-links">
   <a href="https://github.com/Tushar-bioinfo/Boston-house-price-prediction" target="_blank">
-    <i class="fab fa-github"></i> View Code on GitHub
+    <i class="fab fa-github"></i> GitHub
   </a>
   <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/boston-house-model/" target="_blank">
-    <i class="fas fa-book-open"></i> Read Blog Post
+    <i class="fas fa-book-open"></i> Blog
   </a>
 </div>
 
