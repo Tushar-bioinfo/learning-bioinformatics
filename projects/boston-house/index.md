@@ -98,6 +98,8 @@ icon: fas fa-house-user
 <p>
 This project builds a complete machine learning pipeline using Python’s <code>scikit-learn</code> to predict Boston housing prices. The workflow focuses on feature selection, multivariable regression, residual diagnostics, and visual interpretability using <code>Matplotlib</code> and <code>Seaborn</code>.
 </p>
+
+<h2>What I Did</h2>
 <ul>
   <li>Built a multivariable linear regression model with <strong>>80% R²</strong> on test data.</li>
   <li>Performed <strong>correlation analysis</strong> and addressed multicollinearity with <code>VIF</code>.</li>
