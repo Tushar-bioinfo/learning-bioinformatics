@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 
-permalink: /projects/hepatoblastoma/
+permalink: /projects/project-2/
 icon: fas fa-dna
 ---
 
