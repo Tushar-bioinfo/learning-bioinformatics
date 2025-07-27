@@ -6,58 +6,65 @@ permalink: /projects/
 order: 3
 ---
 
-<div class="project-entry" onclick="toggleProjectDetails(this)" style="background: #212121; border-left: 5px solid #00f2ff;">
+<!-- Project 1 -->
+<div class="project-entry">
   <div class="project-info">
-    <div class="project-title">Tumor vs Normal CDR3 Classifier</div>
-    <p class="project-subtitle">LSTM-based classification from TCR β-chain sequences</p>
-    <div class="project-details">
-      <p>This deep learning project predicts tumor vs normal tissue from TCR repertoires using LSTM. It’s containerized with Docker and pipeline-managed with Nextflow for full reproducibility.</p>
-      <p><strong>Tech Stack:</strong> <span class="badge">PyTorch</span> <span class="badge">Nextflow</span> <span class="badge">Docker</span> <span class="badge">JSONL</span></p>
-      <a href="https://github.com/yourusername/yourproject" target="_blank">🔗 View on GitHub</a>
+    <div class="project-title">Boston House Price Prediction</div>
+    <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
+    <div class="project-tags">
+      <span>regression</span><span>sklearn</span><span>housing</span>
+    </div>
+    <div class="project-links-container">
+      <div class="project-links">
+        <a href="https://github.com/your-username/boston-house" title="GitHub Repo" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="/learning-bioinformatics/projects/boston-house/" title="Read Blog" target="_blank">
+          <i class="fas fa-blog"></i>
+        </a>
+      </div>
+      <a class="read-more" href="/learning-bioinformatics/projects/boston-house/">more…</a>
     </div>
   </div>
+  <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
 </div>
 
-<div class="project-entry" onclick="toggleProjectDetails(this)" style="background: #212121; border-left: 5px solid #00f2ff;">
+<!-- Project 2 -->
+<div class="project-entry">
   <div class="project-info">
-    <div class="project-title">Tumor vs Normal CDR3 Classifier</div>
-    <p class="project-subtitle">LSTM-based classification from TCR β-chain sequences</p>
-    <div class="project-details">
-      <p>This deep learning project predicts tumor vs normal tissue from TCR repertoires using LSTM. It’s containerized with Docker and pipeline-managed with Nextflow for full reproducibility.</p>
-      <p><strong>Tech Stack:</strong> <span class="badge">PyTorch</span> <span class="badge">Nextflow</span> <span class="badge">Docker</span> <span class="badge">JSONL</span></p>
-      <a href="https://github.com/yourusername/project1" target="_blank">🔗 View on GitHub</a>
+    <div class="project-title">TRB Motif-Based Survival Analysis</div>
+    <div class="project-desc">Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.</div>
+    <div class="project-tags">
+      <span>immunogenomics</span><span>cancer</span><span>python</span>
+    </div>
+    <div class="project-links-container">
+      <div class="project-links">
+        <a href="https://github.com/your-username/trb-survival" title="GitHub Repo" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="/learning-bioinformatics/projects/trb-survival/" title="Read Blog" target="_blank">
+          <i class="fas fa-blog"></i>
+        </a>
+      </div>
+      <a class="read-more" href="/learning-bioinformatics/projects/trb-survival/">more…</a>
     </div>
   </div>
+  <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
 </div>
 
-
-<div class="project-entry" onclick="toggleProjectDetails(this)" style="background: #212121; border-left: 5px solid #ff4da6;">
-  <div class="project-info">
-    <div class="project-title">Single-Nucleus RNA-seq of Hepatoblastoma</div>
-    <p class="project-subtitle">Cluster annotation, DEG analysis, and Nextflow pipeline</p>
-    <div class="project-details">
-      <p>This single-nucleus RNA-seq project analyzes tumor heterogeneity in hepatoblastoma using Seurat and Harmony. It includes custom scripts for cell type annotation and differential expression.</p>
-      <p><strong>Tech Stack:</strong> <span class="badge">Seurat</span> <span class="badge">Nextflow</span> <span class="badge">Docker</span> <span class="badge">R</span></p>
-      <a href="https://github.com/yourusername/project2" target="_blank">🔗 View on GitHub</a>
-    </div>
-  </div>
-</div>
-
-
+<!-- CSS Styling -->
 <style>
 .project-entry {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background: #1f1f1f;
   margin: 2rem 0;
   padding: 1.5rem 2rem;
   border-radius: 18px;
   box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
-  transition: transform 0.3s ease, max-height 0.5s ease;
-  cursor: pointer;
-  overflow: hidden;
-  max-height: 160px;
-  color: #ffffff;
+  transition: transform 0.3s ease;
+  flex-wrap: wrap;
 }
 
 .project-entry:hover {
@@ -65,47 +72,108 @@ order: 3
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
+.project-info {
+  flex: 1 1 300px;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .project-title {
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #00f2ff;
+  margin-bottom: 0.4rem;
 }
 
-.project-subtitle {
+.project-desc {
+  color: #ccc;
+  margin-bottom: 0.8rem;
   font-size: 1rem;
-  opacity: 0.8;
 }
 
-.project-details {
-  margin-top: 1rem;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.project-tags {
+  margin: 0.6rem 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
-.project-entry.expanded {
-  max-height: 600px;
-  background: #292929;
+.project-tags span {
+  background: #263238;
+  color: #00f2ff;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 10px;
 }
 
-.project-entry.expanded .project-details {
-  display: block;
-  opacity: 1;
+.project-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.badge {
-  background-color: #00f2ff;
-  color: #000;
-  padding: 0.2em 0.6em;
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.project-links a {
+  color: #56cc9d;
+  transition: 0.2s ease;
+}
+
+.project-links a:hover {
+  color: #00f2ff;
+  transform: scale(1.2);
+}
+
+.read-more {
+  font-size: 0.95rem;
+  color: #00f2ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-left: auto;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.project-thumb {
+  width: 280px;
+  max-width: 100%;
   border-radius: 12px;
-  font-size: 0.75rem;
-  margin-right: 0.5em;
+  object-fit: cover;
+  border: 2px solid #2c2c2c;
+}
+
+/* Responsive stacking on small screens */
+@media (max-width: 768px) {
+  .project-entry {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-thumb {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .project-links-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .read-more {
+    margin-left: 0;
+  }
 }
 </style>
-
-<script>
-function toggleProjectDetails(card) {
-  card.classList.toggle("expanded");
-}
-</script>
-
