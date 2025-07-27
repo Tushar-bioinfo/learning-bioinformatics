@@ -85,15 +85,15 @@ order: 3
 <!-- Project Card 1 -->
 <div class="project-card">
   <div class="project-number">01</div>
-  <div class="project-title">Tumor vs Normal TCR Classifier</div>
+  <div class="project-title">Boston House Price Prediction</div>
   <div class="project-description">
-    LSTM-based deep learning on TRB CDR3 repertoires to classify tumor vs normal tissue. Fully reproducible pipeline with Docker and Nextflow integration.
+    This project builds a complete machine learning pipeline using Python’s scikit-learn to predict Boston housing prices. 
   </div>
   <div class="tech-stack">
-    <span class="tech-badge">PyTorch</span>
-    <span class="tech-badge">Nextflow</span>
+    <span class="tech-badge">Scikit-learn</span>
+    <span class="tech-badge">Linear Regression</span>
     <span class="tech-badge">Docker</span>
-    <span class="tech-badge">JSONL</span>
+    <span class="tech-badge">Machine Learning</span>
   </div>
   <a href="/learning-bioinformatics/projects/boston-house/" class="project-link-icon" title="Project Details">
     <i class="fas fa-arrow-up-right-from-square"></i>
@@ -109,11 +109,11 @@ order: 3
   </div>
   <div class="tech-stack">
     <span class="tech-badge">Seurat</span>
-    <span class="tech-badge">Harmony</span>
-    <span class="tech-badge">R</span>
-    <span class="tech-badge">Nextflow</span>
+    <span class="tech-badge">DGE</span>
+    <span class="tech-badge">PCA</span>
+    <span class="tech-badge">Docker</span>
   </div>
-  <a href="/learning-bioinformatics/projects/trb-survival/" class="project-link-icon" title="Project Details">
+  <a href="/learning-bioinformatics/projects/project-2/" class="project-link-icon" title="Project Details">
     <i class="fas fa-arrow-up-right-from-square"></i>
   </a>
 </div>
