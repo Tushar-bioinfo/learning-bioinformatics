@@ -95,7 +95,7 @@ order: 3
     <span class="tech-badge">Docker</span>
     <span class="tech-badge">JSONL</span>
   </div>
-  <a href="https://tushar-bioinfo.github.io/projects/boston-house/index.md" class="project-link-icon" title="Project Details">
+  <a href="/learning-bioinformatics/projects/boston-house/" class="project-link-icon" title="Project Details">
     <i class="fas fa-arrow-up-right-from-square"></i>
   </a>
 </div>
@@ -113,7 +113,7 @@ order: 3
     <span class="tech-badge">R</span>
     <span class="tech-badge">Nextflow</span>
   </div>
-  <a href="/projects/hepatoblastoma.md" class="project-link-icon" title="Project Details">
+  <a href="/learning-bioinformatics/projects/trb-survival/" class="project-link-icon" title="Project Details">
     <i class="fas fa-arrow-up-right-from-square"></i>
   </a>
 </div>
