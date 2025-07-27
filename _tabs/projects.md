@@ -95,7 +95,7 @@ order: 3
     <span class="tech-badge">Docker</span>
     <span class="tech-badge">JSONL</span>
   </div>
-  <a href="/projects/tumor-tcr.md" class="project-link-icon" title="Project Details">
+  <a href="https://tushar-bioinfo.github.io/projects/boston-house/index.md" class="project-link-icon" title="Project Details">
     <i class="fas fa-arrow-up-right-from-square"></i>
   </a>
 </div>
