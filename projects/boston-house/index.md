@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Boston Housing Price Prediction
-permalink: /projects/boston-housing/
+permalink: /projects/boston-house/
 icon: fas fa-house-user
 ---
 
@@ -87,10 +87,10 @@ Built a complete machine learning pipeline using Python’s `scikit-learn` to pr
 <span class="badge">Pandas</span>
 
 <div class="project-links">
-  <a href="https://github.com/yourusername/boston-house-regression" target="_blank">
+  <a href="https://github.com/Tushar-bioinfo/Boston-house-price-prediction" target="_blank">
     <i class="fab fa-github"></i> View Code on GitHub
   </a>
-  <a href="/blog/2025/07/01/boston-house-regression_preprocessing.html">
+  <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/boston-house-model/">
     <i class="fas fa-book-open"></i> Read Blog Post
   </a>
 </div>
