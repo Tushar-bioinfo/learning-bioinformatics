@@ -6,130 +6,116 @@ permalink: /projects/
 order: 3
 ---
 
-<div class="project-entry" onclick="toggleProjectDetails(this)" style="background: #212121; border-left: 5px solid #00f2ff;">
-  <div class="project-info">
-    <div class="project-title">Tumor vs Normal CDR3 Classifier</div>
-    <p class="project-subtitle">LSTM-based classification from TCR β-chain sequences</p>
-    <div class="project-details">
-      <p>This deep learning project predicts tumor vs normal tissue from TCR repertoires using LSTM. It’s containerized with Docker and pipeline-managed with Nextflow for full reproducibility.</p>
-      <p><strong>Tech Stack:</strong> <span class="badge">PyTorch</span> <span class="badge">Nextflow</span> <span class="badge">Docker</span> <span class="badge">JSONL</span></p>
-      <div class="project-links">
-        <a href="https://github.com/yourusername/yourproject" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://yourblog.com/project1" target="_blank" title="Blog"><i class="fas fa-blog"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="project-entry" onclick="toggleProjectDetails(this)" style="background: #212121; border-left: 5px solid #00f2ff;">
-  <div class="project-info">
-    <div class="project-title">Tumor vs Normal CDR3 Classifier</div>
-    <p class="project-subtitle">LSTM-based classification from TCR β-chain sequences</p>
-    <div class="project-details">
-      <p>This deep learning project predicts tumor vs normal tissue from TCR repertoires using LSTM. It’s containerized with Docker and pipeline-managed with Nextflow for full reproducibility.</p>
-      <p><strong>Tech Stack:</strong> <span class="badge">PyTorch</span> <span class="badge">Nextflow</span> <span class="badge">Docker</span> <span class="badge">JSONL</span></p>
-      <div class="project-links">
-        <a href="https://github.com/yourusername/project1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://yourblog.com/project1" target="_blank" title="Blog"><i class="fas fa-blog"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="project-entry" onclick="toggleProjectDetails(this)" style="background: #212121; border-left: 5px solid #ff4da6;">
-  <div class="project-info">
-    <div class="project-title">Single-Nucleus RNA-seq of Hepatoblastoma</div>
-    <p class="project-subtitle">Cluster annotation, DEG analysis, and Nextflow pipeline</p>
-    <div class="project-details">
-      <p>This single-nucleus RNA-seq project analyzes tumor heterogeneity in hepatoblastoma using Seurat and Harmony. It includes custom scripts for cell type annotation and differential expression.</p>
-      <p><strong>Tech Stack:</strong> <span class="badge">Seurat</span> <span class="badge">Nextflow</span> <span class="badge">Docker</span> <span class="badge">R</span></p>
-      <div class="project-links">
-        <a href="https://github.com/yourusername/project2" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://yourblog.com/project2" target="_blank" title="Blog"><i class="fas fa-blog"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-
 <style>
-.project-entry {
-  display: flex;
-  flex-direction: column;
-  background: #1f1f1f;
-  margin: 2rem 0;
-  padding: 1.5rem 2rem;
-  border-radius: 18px;
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
-  transition: transform 0.3s ease, max-height 0.5s ease;
-  cursor: pointer;
-  overflow: hidden;
-  max-height: 160px;
-  color: #ffffff;
+.project-card {
   position: relative;
+  background: #1f1f1f;
+  padding: 1.8rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+  border: 1px solid #333;
 }
 
-.project-entry:hover {
+.project-card:hover {
   transform: scale(1.01);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.project-number {
+  font-family: monospace;
+  font-size: 1rem;
+  color: #00f2ff;
+  margin-bottom: 0.4rem;
 }
 
 .project-title {
-  font-size: 1.4rem;
   font-weight: bold;
-  color: #00f2ff;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
 }
 
-.project-subtitle {
+.project-description {
   font-size: 1rem;
-  opacity: 0.8;
+  color: #ccc;
+  margin-bottom: 1rem;
 }
 
-.project-details {
-  margin-top: 1rem;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
-.project-entry.expanded {
-  max-height: 600px;
-  background: #292929;
-}
-
-.project-entry.expanded .project-details {
-  display: block;
-  opacity: 1;
-}
-
-.badge {
-  background-color: #00f2ff;
-  color: #000;
-  padding: 0.2em 0.6em;
+.tech-badge {
+  background: #101010;
+  border: 1px solid #333;
+  color: #eee;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.7rem;
   border-radius: 12px;
-  font-size: 0.75rem;
-  margin-right: 0.5em;
+  font-family: monospace;
 }
 
-.project-links {
-  margin-top: 1rem;
-  text-align: right;
+.project-link-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: #2c2c2c;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
 }
 
-.project-links a {
-  color: #00f2ff;
-  margin-left: 1rem;
-  font-size: 1.4rem;
-  text-decoration: none;
-  transition: color 0.3s;
+.project-link-icon:hover {
+  background: #00f2ff;
 }
 
-.project-links a:hover {
-  color: #ff4da6;
+.project-link-icon i {
+  color: white;
+  font-size: 1rem;
 }
 </style>
 
-<script>
-function toggleProjectDetails(card) {
-  card.classList.toggle("expanded");
-}
-</script>
+<!-- Project Card 1 -->
+<div class="project-card">
+  <div class="project-number">01</div>
+  <div class="project-title">Tumor vs Normal TCR Classifier</div>
+  <div class="project-description">
+    LSTM-based deep learning on TRB CDR3 repertoires to classify tumor vs normal tissue. Fully reproducible pipeline with Docker and Nextflow integration.
+  </div>
+  <div class="tech-stack">
+    <span class="tech-badge">PyTorch</span>
+    <span class="tech-badge">Nextflow</span>
+    <span class="tech-badge">Docker</span>
+    <span class="tech-badge">JSONL</span>
+  </div>
+  <a href="/projects/tumor-tcr.md" class="project-link-icon" title="Project Details">
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
+
+<!-- Project Card 2 -->
+<div class="project-card">
+  <div class="project-number">02</div>
+  <div class="project-title">Single-Nucleus RNA-seq of Hepatoblastoma</div>
+  <div class="project-description">
+    snRNA-seq analysis using Seurat and Harmony to identify cell clusters and tumor subtypes. Includes DEG analysis, Dockerization, and automated workflow.
+  </div>
+  <div class="tech-stack">
+    <span class="tech-badge">Seurat</span>
+    <span class="tech-badge">Harmony</span>
+    <span class="tech-badge">R</span>
+    <span class="tech-badge">Nextflow</span>
+  </div>
+  <a href="/projects/hepatoblastoma.md" class="project-link-icon" title="Project Details">
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
+
+<!-- Add more cards as needed -->
