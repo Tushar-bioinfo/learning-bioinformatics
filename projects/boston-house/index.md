@@ -19,7 +19,7 @@ This project builds a full machine learning pipeline using Python’s `scikit-le
 
 ---
 
-## ⚙What I Did
+## What I Did
 
 - Developed a linear regression model with **>80% R²** on test data.
 - Performed **correlation analysis** and addressed multicollinearity using **VIF**.
