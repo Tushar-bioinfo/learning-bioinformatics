@@ -110,11 +110,12 @@ This project builds a complete machine learning pipeline using Python’s <code>
 
 <h2> </h2>
 <div class="project-tags">
-  <span class="project-tag">scikit-learn</span>
+  <span class="project-tag">Scikit-learn</span>
   <span class="project-tag">Linear Regression</span>
   <span class="project-tag">Matplotlib</span>
   <span class="project-tag">Seaborn</span>
   <span class="project-tag">Pandas</span>
+  <span class="project-tag">Statsmodels</span>
   <span class="project-tag">Exploratory Data Analysis</span>
 </div>
 
