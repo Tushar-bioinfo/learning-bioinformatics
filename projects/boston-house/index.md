@@ -96,7 +96,7 @@ Built a complete machine learning pipeline using Python’s `scikit-learn` to pr
 
 ---
 
-### ⚙️ What I Did
+### What I Did
 
 <ul>
   <li>Developed a linear regression model with <strong>>80% R²</strong> on test data using <code>scikit-learn</code>.</li>
