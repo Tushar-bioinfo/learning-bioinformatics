@@ -93,7 +93,6 @@ icon: fas fa-house-user
 <div class="project-container">
 
 <h1>Boston Housing Price Prediction</h1>
-<p class="meta"><strong>Duration:</strong> May 2025 – June 2025 &nbsp; | &nbsp; <strong>Tags:</strong> regression, sklearn, ML</p>
 
 <h2>Summary</h2>
 <p>
