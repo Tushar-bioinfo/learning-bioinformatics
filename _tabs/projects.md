@@ -6,53 +6,6 @@ permalink: /projects/
 order: 3
 ---
 
-<!-- Project 1 -->
-<div class="project-entry">
-  <div class="project-info">
-    <div class="project-title">Boston House Price Prediction</div>
-    <div class="project-desc">A regression-based ML project exploring BIC, RMSE, and housing feature impacts.</div>
-    <div class="project-tags">
-      <span>regression</span><span>sklearn</span><span>housing</span>
-    </div>
-    <div class="project-links-container">
-      <div class="project-links">
-        <a href="https://github.com/your-username/boston-house" title="GitHub Repo" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="/learning-bioinformatics/projects/boston-house/" title="Read Blog" target="_blank">
-          <i class="fas fa-blog"></i>
-        </a>
-      </div>
-      <a class="read-more" href="/learning-bioinformatics/projects/boston-house/">more…</a>
-    </div>
-  </div>
-  <img class="project-thumb" src="/assets/img/project-thumbs/boston.png" alt="Boston Housing">
-</div>
-
-<!-- Project 2 -->
-<div class="project-entry">
-  <div class="project-info">
-    <div class="project-title">TRB Motif-Based Survival Analysis</div>
-    <div class="project-desc">Built a pipeline to extract immune receptor motifs from BAM files and link them to cancer survival outcomes.</div>
-    <div class="project-tags">
-      <span>immunogenomics</span><span>cancer</span><span>python</span>
-    </div>
-    <div class="project-links-container">
-      <div class="project-links">
-        <a href="https://github.com/your-username/trb-survival" title="GitHub Repo" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="/learning-bioinformatics/projects/trb-survival/" title="Read Blog" target="_blank">
-          <i class="fas fa-blog"></i>
-        </a>
-      </div>
-      <a class="read-more" href="/learning-bioinformatics/projects/trb-survival/">more…</a>
-    </div>
-  </div>
-  <img class="project-thumb" src="/assets/img/project-thumbs/unannotated_clusters.png" alt="TRB Motif Analysis">
-</div>
-
-<!-- CSS Styling -->
 <style>
 .project-entry {
   display: flex;
@@ -64,7 +17,7 @@ order: 3
   border-radius: 18px;
   box-shadow: 0 0 12px rgba(0, 255, 255, 0.08);
   transition: transform 0.3s ease;
-  flex-wrap: wrap;
+  position: relative;
 }
 
 .project-entry:hover {
@@ -73,11 +26,8 @@ order: 3
 }
 
 .project-info {
-  flex: 1 1 300px;
-  padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1;
+  padding-right: 1.5rem;
 }
 
 .project-title {
@@ -87,93 +37,62 @@ order: 3
   margin-bottom: 0.4rem;
 }
 
-.project-desc {
-  color: #ccc;
-  margin-bottom: 0.8rem;
+.project-description {
   font-size: 1rem;
-}
-
-.project-tags {
-  margin: 0.6rem 0 1rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.project-tags span {
-  background: #263238;
-  color: #00f2ff;
-  padding: 0.3rem 0.75rem;
-  font-size: 0.8rem;
-  border-radius: 10px;
-}
-
-.project-links-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  color: #ccc;
 }
 
 .project-links {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
   display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  font-size: 1.6rem;
+  gap: 1rem;
 }
 
 .project-links a {
-  color: #56cc9d;
-  transition: 0.2s ease;
+  color: #00f2ff;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
 }
 
 .project-links a:hover {
-  color: #00f2ff;
-  transform: scale(1.2);
-}
-
-.read-more {
-  font-size: 0.95rem;
-  color: #00f2ff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  margin-left: auto;
-}
-
-.read-more:hover {
-  text-decoration: underline;
-  transform: scale(1.05);
-}
-
-.project-thumb {
-  width: 280px;
-  max-width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  border: 2px solid #2c2c2c;
-}
-
-/* Responsive stacking on small screens */
-@media (max-width: 768px) {
-  .project-entry {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .project-thumb {
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .project-links-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-  }
-
-  .read-more {
-    margin-left: 0;
-  }
+  color: #ffffff;
 }
 </style>
+
+<div class="project-entry">
+  <div class="project-info">
+    <div class="project-title">Tumor vs Normal TCR Classification</div>
+    <div class="project-description">
+      Deep learning on TRB CDR3 sequences using LSTM to classify tumor vs normal immune repertoires. Fully tokenized, normalized, and modular with Optuna tuning and Nextflow + Docker integration.
+    </div>
+  </div>
+  <div class="project-links">
+    <a href="https://github.com/yourusername/tcr-tumor-normal" target="_blank" title="GitHub Repository">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="/blog/2025/07/25/tcr-tumor-normal-deep-learning.html" title="Read Blog Post">
+      <i class="fas fa-book-open"></i>
+    </a>
+  </div>
+</div>
+
+<div class="project-entry">
+  <div class="project-info">
+    <div class="project-title">Single-Nucleus RNA-Seq of Hepatoblastoma</div>
+    <div class="project-description">
+      Processed and analyzed fetal-like tumor vs PDX using Seurat, Harmony, and differential expression. Includes cluster annotation and professional visualization. Dockerized for reproducibility.
+    </div>
+  </div>
+  <div class="project-links">
+    <a href="https://github.com/yourusername/snRNAseq-hepatoblastoma" target="_blank" title="GitHub Repository">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="/blog/2025/07/21/hepatoblastoma-snRNAseq-cluster-analysis.html" title="Read Blog Post">
+      <i class="fas fa-book-open"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Add more project-entry blocks below as needed -->
