@@ -118,6 +118,7 @@ This project builds a complete machine learning pipeline using Python’s <code>
   <span class="project-tag">Pandas</span>
   <span class="project-tag">Statsmodels</span>
   <span class="project-tag">Exploratory Data Analysis</span>
+  <span class="project-tag">Docker</span>
 </div>
 
 <h2> </h2>
