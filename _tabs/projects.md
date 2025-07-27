@@ -109,7 +109,7 @@ order: 3
   </div>
   <div class="tech-stack">
     <span class="tech-badge">Seurat</span>
-    <span class="tech-badge">DGE</span>
+    <span class="tech-badge">Differential Expression</span>
     <span class="tech-badge">PCA</span>
     <span class="tech-badge">Docker</span>
   </div>
