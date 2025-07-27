@@ -13,7 +13,10 @@ order: 3
     <div class="project-details">
       <p>This deep learning project predicts tumor vs normal tissue from TCR repertoires using LSTM. It’s containerized with Docker and pipeline-managed with Nextflow for full reproducibility.</p>
       <p><strong>Tech Stack:</strong> <span class="badge">PyTorch</span> <span class="badge">Nextflow</span> <span class="badge">Docker</span> <span class="badge">JSONL</span></p>
-      <a href="https://github.com/yourusername/yourproject" target="_blank">🔗 View on GitHub</a>
+      <div class="project-links">
+        <a href="https://github.com/yourusername/yourproject" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://yourblog.com/project1" target="_blank" title="Blog"><i class="fas fa-blog"></i></a>
+      </div>
     </div>
   </div>
 </div>
@@ -25,11 +28,13 @@ order: 3
     <div class="project-details">
       <p>This deep learning project predicts tumor vs normal tissue from TCR repertoires using LSTM. It’s containerized with Docker and pipeline-managed with Nextflow for full reproducibility.</p>
       <p><strong>Tech Stack:</strong> <span class="badge">PyTorch</span> <span class="badge">Nextflow</span> <span class="badge">Docker</span> <span class="badge">JSONL</span></p>
-      <a href="https://github.com/yourusername/project1" target="_blank">🔗 View on GitHub</a>
+      <div class="project-links">
+        <a href="https://github.com/yourusername/project1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://yourblog.com/project1" target="_blank" title="Blog"><i class="fas fa-blog"></i></a>
+      </div>
     </div>
   </div>
 </div>
-
 
 <div class="project-entry" onclick="toggleProjectDetails(this)" style="background: #212121; border-left: 5px solid #ff4da6;">
   <div class="project-info">
@@ -38,11 +43,13 @@ order: 3
     <div class="project-details">
       <p>This single-nucleus RNA-seq project analyzes tumor heterogeneity in hepatoblastoma using Seurat and Harmony. It includes custom scripts for cell type annotation and differential expression.</p>
       <p><strong>Tech Stack:</strong> <span class="badge">Seurat</span> <span class="badge">Nextflow</span> <span class="badge">Docker</span> <span class="badge">R</span></p>
-      <a href="https://github.com/yourusername/project2" target="_blank">🔗 View on GitHub</a>
+      <div class="project-links">
+        <a href="https://github.com/yourusername/project2" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://yourblog.com/project2" target="_blank" title="Blog"><i class="fas fa-blog"></i></a>
+      </div>
     </div>
   </div>
 </div>
-
 
 <style>
 .project-entry {
@@ -58,6 +65,7 @@ order: 3
   overflow: hidden;
   max-height: 160px;
   color: #ffffff;
+  position: relative;
 }
 
 .project-entry:hover {
@@ -101,6 +109,23 @@ order: 3
   font-size: 0.75rem;
   margin-right: 0.5em;
 }
+
+.project-links {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.project-links a {
+  color: #00f2ff;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-links a:hover {
+  color: #ff4da6;
+}
 </style>
 
 <script>
@@ -108,4 +133,3 @@ function toggleProjectDetails(card) {
   card.classList.toggle("expanded");
 }
 </script>
-
