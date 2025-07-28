@@ -111,7 +111,7 @@ order: 3
     <span class="tech-badge">Seurat</span>
     <span class="tech-badge">Differential Expression</span>
     <span class="tech-badge">PCA</span>
-    <span class="tech-badge">Docker</span>
+    <span class="tech-badge">Dimensionality Reduction</span>
   </div>
   <a href="/learning-bioinformatics/projects/project-2/" class="project-link-icon" title="Project Details">
     <i class="fas fa-arrow-up-right-from-square"></i>
@@ -146,7 +146,7 @@ order: 3
   <div class="tech-stack">
     <span class="tech-badge">metapredict</span>
     <span class="tech-badge">SAMtools</span>
-    <span class="tech-badge">GDC Data Transfer Tool</span>
+    <span class="tech-badge">GDC (Data Transfer Tool)</span>
     <span class="tech-badge">HPC</span>
   </div>
   <a href="/learning-bioinformatics/projects/project-4/" class="project-link-icon" title="Project Details">
