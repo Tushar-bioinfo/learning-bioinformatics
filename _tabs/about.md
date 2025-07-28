@@ -7,136 +7,174 @@ order: 5
 ---
 
 <style>
-.about-container {
+.about-wrapper {
   text-align: center;
   padding: 2rem;
-  color: #ccc;
+  color: #fff;
 }
 
-.about-container img {
-  width: 170px;
-  height: 170px;
+.about-wrapper img {
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #00f2ff;
-  box-shadow: 0 0 12px rgba(0,255,255,0.2);
   margin-bottom: 1rem;
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.2);
 }
 
-.about-container h1 {
-  font-size: 1.6rem;
-  color: #00f2ff;
-  margin-bottom: 0.5rem;
+.about-wrapper h1 {
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
 }
 
-.about-container p {
-  max-width: 700px;
-  margin: 0 auto 1.5rem auto;
-  line-height: 1.7;
+.about-wrapper p {
+  max-width: 750px;
+  margin: 0 auto 1.8rem auto;
   font-size: 1rem;
-  color: #d4d4d4;
+  line-height: 1.7;
+  color: #ccc;
 }
 
-.skill-group {
-  margin: 2rem auto;
-  max-width: 850px;
-  padding: 1.2rem 1.5rem;
-  background: #1f1f1f;
+/* Skill Section Styling */
+.skill-category {
+  background: #1a1a1a;
   border-radius: 14px;
-  box-shadow: 0 0 12px rgba(0,255,255,0.05);
-}
-
-.skill-group h3 {
+  padding: 1.5rem 1.2rem;
+  margin: 1.8rem auto;
+  max-width: 860px;
+  box-shadow: 0 0 14px rgba(0,255,255,0.05);
   text-align: left;
-  font-size: 1.2rem;
-  color: #00f2ff;
-  margin-bottom: 1rem;
 }
 
-.skill-tags {
+.skill-category h3 {
+  font-size: 1.1rem;
+  color: #00f2ff;
+  margin-bottom: 0.9rem;
+  font-weight: 600;
+}
+
+.icon-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.8rem;
 }
 
-.skill-tags a {
-  text-decoration: none;
+.icon-grid .icon-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2a2a;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-size: 1.3rem;
   color: #00f2ff;
-  background: #2c2c2c;
-  padding: 0.4rem 0.8rem;
-  border-radius: 10px;
-  font-size: 0.85rem;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  width: 52px;
+  height: 52px;
 }
 
-.skill-tags a:hover {
+.icon-grid .icon-tag:hover {
   background: #00f2ff;
   color: #000;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 </style>
 
-<div class="about-container">
-  <img src="/assets/img/tushar-profile.png" alt="Profile Photo">
+<div class="about-wrapper">
+  <img src="/assets/img/profile.png" alt="Tushar">
   <h1>MS Bioinformatics & Computational Biology</h1>
 
   <p>
-    Hi, I’m Tushar, focused on applying machine learning and deep learning to biological data, with a particular interest in cancer research, immunogenomics, and transcriptomics.
+    Hi, I’m Tushar. I’m currently exploring how machine learning and deep learning can be applied to biological data, with a growing focus on cancer research, immunogenomics, and transcriptomics.
+    <br><br>
+    My work so far includes projects on immune receptor sequence analysis, single-nucleus RNA-seq profiling, and structural characterization of CDR3 regions. I'm learning to build scalable, reproducible pipelines using tools like Nextflow, Docker, and HPC, and I enjoy tackling real-world biomedical data challenges as I continue developing my skills.
   </p>
-  <p>
-    My work bridges deep learning with immune receptor sequence analysis, single-nucleus RNA-seq profiling, and structural characterization of CDR3 regions. I design modular, reproducible bioinformatics pipelines using tools like Nextflow, Docker, and HPC, enabling scalable analysis of real-world biomedical datasets.
-  </p>
 </div>
 
-<!-- Skill Groups -->
-<div class="skill-group">
-  <h3>🧠 Machine & Deep Learning</h3>
-  <div class="skill-tags">
-    <a href="#">scikit-learn</a>
-    <a href="#">XGBoost</a>
-    <a href="#">LSTM</a>
-    <a href="#">Mean Pooling</a>
-    <a href="#">PyTorch</a>
-    <a href="#">Optuna</a>
+<!-- Skill Categories -->
+
+<!-- ==================== Bioinformatics ==================== -->
+<div class="skill-category">
+  <h3>Bioinformatics</h3>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Seurat — Single-cell RNA-seq">SR</div>
+    <div class="icon-tag" title="Scanpy — Single-cell RNA-seq (Python)">SC</div>
+    <div class="icon-tag" title="Bioconductor — R genomics packages">BC</div>
+    <div class="icon-tag" title="STAR — RNA-seq aligner">STAR</div>
+    <div class="icon-tag" title="BEDTools — Genomic intervals">BT</div>
+    <div class="icon-tag" title="Bowtie2 — Short-read aligner">B2</div>
+    <div class="icon-tag" title="MiXCR — TCR/BCR repertoire">MX</div>
+    <div class="icon-tag" title="VDJdb — Immune repertoire DB">VDJ</div>
+    <div class="icon-tag" title="DESeq2 — Differential expression">D2</div>
+    <div class="icon-tag" title="GATK — Variant calling toolkit">GATK</div>
+    <div class="icon-tag" title="SAMtools — BAM/SAM processing">ST</div>
+    <div class="icon-tag" title="BLAST — Sequence search/alignment">BL</div>
+  </div>
+</div>
+<!-- ==================== AI & Machine Learning ==================== -->
+<div class="skill-category">
+  <h3>AI & Machine Learning</h3>
+  <div class="icon-grid">
+    <div class="icon-tag" title="scikit-learn — ML toolkit">SK</div>
+    <div class="icon-tag" title="XGBoost — Gradient boosting trees">XG</div>
+    <div class="icon-tag" title="Random Forest — Ensemble method">RF</div>
+    <div class="icon-tag" title="Support Vector Machine — SVM classifier">SVM</div>
+    <div class="icon-tag" title="LSTM — Long Short-Term Memory network">LSTM</div>
+    <div class="icon-tag" title="Transformer — Attention-based models">TRF</div>
+    <div class="icon-tag" title="Attention Mechanisms — Deep learning attention layers">ATT</div>
+    <div class="icon-tag" title="PyTorch — Deep learning framework">PT</div>
+    <div class="icon-tag" title="TensorFlow — Deep learning framework">TF</div>
+    <div class="icon-tag" title="Keras — High-level neural networks API">KR</div>
+    <div class="icon-tag" title="SHAP — Explainable AI (model interpretability)">XAI</div>
+  </div>
+</div>
+<!-- ==================== Pipelines & Reproducibility ==================== -->
+<div class="skill-category">
+  <h3>Pipelines & Reproducibility</h3>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Nextflow — Workflow management">NF</div>
+    <div class="icon-tag" title="Docker — Containerization">DK</div>
+    <div class="icon-tag" title="Singularity — HPC containers">SG</div>
+    <div class="icon-tag" title="Conda — Environment management">CD</div>
+    <div class="icon-tag" title="AWS — Cloud computing">AWS</div>
   </div>
 </div>
 
-<div class="skill-group">
-  <h3>🔬 Bioinformatics</h3>
-  <div class="skill-tags">
-    <a href="#">Seurat</a>
-    <a href="#">Harmony</a>
-    <a href="#">VDJdb</a>
-    <a href="#">metapredict</a>
-    <a href="#">SAMtools</a>
+<!-- ==================== Statistical & Survival Analysis ==================== -->
+<div class="skill-category">
+  <h3>Statistical & Survival Analysis</h3>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Kaplan–Meier estimator">KM</div>
+    <div class="icon-tag" title="Cox Regression — Proportional hazards">COX</div>
+    <div class="icon-tag" title="Fisher's Exact Test">FT</div>
+    <div class="icon-tag" title="Log-Rank Test — Survival analysis">LR</div>
   </div>
 </div>
 
-<div class="skill-group">
-  <h3>🛠️ Pipelines & Reproducibility</h3>
-  <div class="skill-tags">
-    <a href="#">Nextflow</a>
-    <a href="#">Docker</a>
-    <a href="#">Conda</a>
-    <a href="#">NGC</a>
+<!-- ==================== Data Tools & HPC ==================== -->
+<div class="skill-category">
+  <h3>Data Tools & HPC</h3>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Slurm — HPC job scheduler">SL</div>
+    <div class="icon-tag" title="GDC Toolkit — Genomic Data Commons">GDC</div>
+    <div class="icon-tag" title="Pandas — Python data analysis">PD</div>
+    <div class="icon-tag" title="NumPy — Numerical computing">NP</div>
   </div>
 </div>
 
-<div class="skill-group">
-  <h3>⚙️ HPC & Data Tools</h3>
-  <div class="skill-tags">
-    <a href="#">Slurm</a>
-    <a href="#">GDC Toolkit</a>
-    <a href="#">Pandas</a>
-    <a href="#">NumPy</a>
-    <a href="#">JSONL</a>
+<!-- ==================== Visualization ==================== -->
+<div class="skill-category">
+  <h3>Visualization</h3>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Matplotlib — Python plots">MPL</div>
+    <div class="icon-tag" title="Seaborn — Statistical visualization">SNS</div>
+    <div class="icon-tag" title="ggplot2 — R plotting system">GG</div>
+    <div class="icon-tag" title="UMAP — Dimensionality reduction">UM</div>
+    <div class="icon-tag" title="t-SNE — Nonlinear dimensionality reduction">TSNE</div>
   </div>
 </div>
 
-<div class="skill-group">
-  <h3>📊 Data Visualization</h3>
-  <div class="skill-tags">
-    <a href="#">Matplotlib</a>
-    <a href="#">Seaborn</a>
-    <a href="#">UMAP</a>
-  </div>
-</div>
