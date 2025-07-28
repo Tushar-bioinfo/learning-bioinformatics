@@ -92,42 +92,41 @@ icon: fas fa-dna
 
 <div class="project-container">
 
-<h1>Single-nucleus RNA-Seq of Hepatoblastoma Tumors</h1>
+  <h1>Single-nucleus RNA-Seq of Hepatoblastoma Tumors</h1>
 
-<h2>Summary</h2>
-<p>
-This project analyzes the single-nucleus transcriptomic landscape of hepatoblastoma tumors and matched PDX models. Using <code>Seurat</code> and <code>Harmony</code>, we performed batch correction, dimensionality reduction, and unsupervised clustering to dissect tumor heterogeneity and microenvironmental structure.
-</p>
+  <h2>Summary</h2>
+  <p>
+    This project explores the single-nucleus transcriptomic landscape of hepatoblastoma tumors and matched PDX models. Using <code>Seurat</code> and <code>Harmony</code>, I performed batch correction, dimensionality reduction, unsupervised clustering, and detailed cell type annotation to dissect tumor heterogeneity and the tumor microenvironment.
+  </p>
 
-<h2>What I Did</h2>
-<ul>
-  <li>Developed a fully Dockerized snRNA-seq pipeline using <strong>Seurat</strong> and <strong>Harmony</strong> for batch correction and UMAP visualization.</li>
-  <li>Annotated over <strong>10 cell clusters</strong> using marker gene expression profiles and GeneCards cross-referencing.</li>
-  <li>Identified tumor subtypes and microenvironmental components including stromal and immune populations.</li>
-  <li>Performed <strong>differential expression analysis</strong> between tumor and PDX nuclei in fetal-like clusters, revealing immune and stress-related signatures.</li>
-</ul>
+  <h2>What I Did</h2>
+  <ul>
+    <li>Built a fully Dockerized snRNA-seq workflow using <strong>Seurat</strong> and <strong>Harmony</strong> for batch correction and UMAP projection.</li>
+    <li>Annotated over <strong>10 cell clusters</strong> using marker gene signatures and GeneCards cross-referencing.</li>
+    <li>Identified tumor subtypes and key microenvironmental compartments including stromal and immune cells.</li>
+    <li>Performed <strong>differential expression analysis</strong> between tumor and PDX nuclei within fetal-like clusters, highlighting immune activation and stress pathways.</li>
+  </ul>
 
-<h2> </h2>
-<div class="project-tags">
-  <span class="project-tag">R</span>
-  <span class="project-tag">Seurat</span>
-  <span class="project-tag">Batch Correction</span>
-  <span class="project-tag">Harmony</span>
-  <span class="project-tag">Dimensionality Reduction</span>
-  <span class="project-tag">Differential Expression</span>
-  <span class="project-tag">PCA</span>
-  <span class="project-tag">Docker</span>
-</div>
+  <div class="project-tags">
+    <span class="project-tag">R</span>
+    <span class="project-tag">Seurat</span>
+    <span class="project-tag">Batch Correction</span>
+    <span class="project-tag">Harmony</span>
+    <span class="project-tag">UMAP</span>
+    <span class="project-tag">Cluster Annotation</span>
+    <span class="project-tag">Differential Expression</span>
+    <span class="project-tag">Docker</span>
+  </div>
 
-<h2> </h2>
-<div class="project-links">
-  <a href="https://github.com/Tushar-bioinfo/ScRNAseq-Hepatoblastoma" target="_blank">
-    <i class="fab fa-github"></i>GitHub
-  </a>
-  <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/Single-Nucleus-RNA-seq/" target="_blank">
-    <i class="fas fa-book-open"></i>Blog
-  </a>
-</div>
+  <div class="project-links" style="margin-top: 1rem; display: flex; gap: 1rem;">
+    <a href="https://github.com/Tushar-bioinfo/ScRNAseq-Hepatoblastoma" target="_blank" style="text-decoration: none; color: #00f2ff;">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/Single-Nucleus-RNA-seq/" target="_blank" style="text-decoration: none; color: #00f2ff;">
+      <i class="fas fa-book-open"></i> Blog
+    </a>
+  </div>
 
 </div>
+
 
