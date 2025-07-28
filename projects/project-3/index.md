@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tumor vs Normal TCR Classification 
-permalink: /projects/trb-cdr3-classifier/
+permalink: /projects/project-3/
 icon: fas fa-brain
 ---
 
