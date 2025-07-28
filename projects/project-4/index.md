@@ -120,7 +120,7 @@ This project explores the structural flexibility of TCR and BCR CDR3 regions by 
 <h2> </h2>
 <div class="project-links">
   <a href="https://github.com/Tushar-bioinfo/CDR3-Intrinsic-Disorder" target="_blank">
-    <i class="fab fa-github"></i> View Code on GitHub
+    <i class="fab fa-github"></i>GitHub
   </a>
 </div>
 
