@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SRA to BAM:
+title: 
 permalink: /projects/immune-receptor-pipeline/
 icon: fas fa-code-branch
 ---
