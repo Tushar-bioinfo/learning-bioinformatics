@@ -163,7 +163,7 @@ order: 3
   </div>
   <div class="tech-stack">
     <span class="tech-badge">Nextflow</span>
-    <span class="tech-badge">SLURM</span>
+    <span class="tech-badge">Conda</span>
     <span class="tech-badge">NCBI SRA Toolkit</span>
     <span class="tech-badge">STAR Aligner</span>
   </div>
