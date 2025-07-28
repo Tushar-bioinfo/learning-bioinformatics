@@ -1,6 +1,6 @@
-sklearn:
-  color: blue
-  icon: python
-logistic regression:
-  color: green
-  icon: chart-line
+#sklearn:
+ # color: blue
+  #icon: python
+#logistic regression:
+ # color: green
+  #icon: chart-line
