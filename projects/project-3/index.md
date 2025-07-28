@@ -121,10 +121,10 @@ This project uses deep learning to classify tumor vs normal immune repertoires u
 <h2> </h2>
 <div class="project-links">
   <a href="https://github.com/Tushar-bioinfo/DL-TCR-TRB-CDR3-Classification" target="_blank">
-    <i class="fab fa-github"></i> View Code on GitHub
+    <i class="fab fa-github"></i>GitHub
   </a>
   <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/TRB-CDR3-DL/" target="_blank">
-    <i class="fas fa-book-open"></i> Read Blog Post
+    <i class="fas fa-book-open"></i>Blog
   </a>
 </div>
 
