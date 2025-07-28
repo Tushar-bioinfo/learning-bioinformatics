@@ -25,7 +25,7 @@ order: 5
 
 .about-wrapper h1 {
   font-size: 1.7rem;
-  color: #ffffff;
+  color: #00f2ff;
   margin-bottom: 0.6rem;
   font-weight: 700;
 }
@@ -67,19 +67,19 @@ order: 5
   align-items: center;
   justify-content: center;
   background: #2a2a2a;
-  padding: 0.8rem;
+  padding: 0.8rem 1.2rem;
   border-radius: 12px;
-  font-size: 1.3rem;
-  color: #00f2ff;
+  font-size: 0.95rem;
+  color: #fff;
   transition: all 0.3s ease;
-  width: 52px;
-  height: 52px;
+  font-weight: 500;
+  border: 1px solid #00f2ff2f;
 }
 
 .icon-grid .icon-tag:hover {
   background: #00f2ff;
   color: #000;
-  transform: scale(1.2);
+  transform: scale(1.1);
   cursor: pointer;
 }
 </style>
@@ -95,52 +95,57 @@ order: 5
   </p>
 </div>
 
-<!-- Skill Categories -->
+<!-- ==================== Skills Heading ==================== -->
+<div class="about-wrapper">
+  <h1>Skills</h1>
+</div>
 
 <!-- ==================== Bioinformatics ==================== -->
 <div class="skill-category">
   <h3>Bioinformatics</h3>
   <div class="icon-grid">
-    <div class="icon-tag" title="Seurat — Single-cell RNA-seq">SR</div>
-    <div class="icon-tag" title="Scanpy — Single-cell RNA-seq (Python)">SC</div>
-    <div class="icon-tag" title="Bioconductor — R genomics packages">BC</div>
+    <div class="icon-tag" title="Seurat — Single-cell RNA-seq">Seurat</div>
+    <div class="icon-tag" title="Scanpy — Single-cell RNA-seq (Python)">Scanpy</div>
+    <div class="icon-tag" title="Bioconductor — R genomics packages">Bioconductor</div>
     <div class="icon-tag" title="STAR — RNA-seq aligner">STAR</div>
-    <div class="icon-tag" title="BEDTools — Genomic intervals">BT</div>
-    <div class="icon-tag" title="Bowtie2 — Short-read aligner">B2</div>
-    <div class="icon-tag" title="MiXCR — TCR/BCR repertoire">MX</div>
-    <div class="icon-tag" title="VDJdb — Immune repertoire DB">VDJ</div>
-    <div class="icon-tag" title="DESeq2 — Differential expression">D2</div>
+    <div class="icon-tag" title="BEDTools — Genomic intervals">BEDTools</div>
+    <div class="icon-tag" title="Bowtie2 — Short-read aligner">Bowtie2</div>
+    <div class="icon-tag" title="MiXCR — TCR/BCR repertoire">MiXCR</div>
+    <div class="icon-tag" title="VDJdb — Immune repertoire DB">VDJdb</div>
+    <div class="icon-tag" title="DESeq2 — Differential expression">DESeq2</div>
     <div class="icon-tag" title="GATK — Variant calling toolkit">GATK</div>
-    <div class="icon-tag" title="SAMtools — BAM/SAM processing">ST</div>
-    <div class="icon-tag" title="BLAST — Sequence search/alignment">BL</div>
+    <div class="icon-tag" title="SAMtools — BAM/SAM processing">SAMtools</div>
+    <div class="icon-tag" title="BLAST — Sequence search/alignment">BLAST</div>
   </div>
 </div>
+
 <!-- ==================== AI & Machine Learning ==================== -->
 <div class="skill-category">
   <h3>AI & Machine Learning</h3>
   <div class="icon-grid">
-    <div class="icon-tag" title="scikit-learn — ML toolkit">SK</div>
-    <div class="icon-tag" title="XGBoost — Gradient boosting trees">XG</div>
-    <div class="icon-tag" title="Random Forest — Ensemble method">RF</div>
+    <div class="icon-tag" title="scikit-learn — ML toolkit">scikit-learn</div>
+    <div class="icon-tag" title="XGBoost — Gradient boosting trees">XGBoost</div>
+    <div class="icon-tag" title="Random Forest — Ensemble method">Random Forest</div>
     <div class="icon-tag" title="Support Vector Machine — SVM classifier">SVM</div>
     <div class="icon-tag" title="LSTM — Long Short-Term Memory network">LSTM</div>
-    <div class="icon-tag" title="Transformer — Attention-based models">TRF</div>
-    <div class="icon-tag" title="Attention Mechanisms — Deep learning attention layers">ATT</div>
-    <div class="icon-tag" title="PyTorch — Deep learning framework">PT</div>
-    <div class="icon-tag" title="TensorFlow — Deep learning framework">TF</div>
-    <div class="icon-tag" title="Keras — High-level neural networks API">KR</div>
-    <div class="icon-tag" title="SHAP — Explainable AI (model interpretability)">XAI</div>
+    <div class="icon-tag" title="Transformer — Attention-based models">Transformer</div>
+    <div class="icon-tag" title="Attention — Deep learning layers">Attention</div>
+    <div class="icon-tag" title="PyTorch — Deep learning framework">PyTorch</div>
+    <div class="icon-tag" title="TensorFlow — Deep learning framework">TensorFlow</div>
+    <div class="icon-tag" title="Keras — High-level API">Keras</div>
+    <div class="icon-tag" title="SHAP — Model interpretability">SHAP</div>
   </div>
 </div>
+
 <!-- ==================== Pipelines & Reproducibility ==================== -->
 <div class="skill-category">
   <h3>Pipelines & Reproducibility</h3>
   <div class="icon-grid">
-    <div class="icon-tag" title="Nextflow — Workflow management">NF</div>
-    <div class="icon-tag" title="Docker — Containerization">DK</div>
-    <div class="icon-tag" title="Singularity — HPC containers">SG</div>
-    <div class="icon-tag" title="Conda — Environment management">CD</div>
-    <div class="icon-tag" title="AWS — Cloud computing">AWS</div>
+    <div class="icon-tag" title="Nextflow — Workflow automation">Nextflow</div>
+    <div class="icon-tag" title="Docker — Containerization">Docker</div>
+    <div class="icon-tag" title="Singularity — HPC containers">Singularity</div>
+    <div class="icon-tag" title="Conda — Env management">Conda</div>
+    <div class="icon-tag" title="AWS — Cloud">AWS</div>
   </div>
 </div>
 
@@ -148,10 +153,10 @@ order: 5
 <div class="skill-category">
   <h3>Statistical & Survival Analysis</h3>
   <div class="icon-grid">
-    <div class="icon-tag" title="Kaplan–Meier estimator">KM</div>
-    <div class="icon-tag" title="Cox Regression — Proportional hazards">COX</div>
-    <div class="icon-tag" title="Fisher's Exact Test">FT</div>
-    <div class="icon-tag" title="Log-Rank Test — Survival analysis">LR</div>
+    <div class="icon-tag" title="Kaplan–Meier estimator">Kaplan–Meier</div>
+    <div class="icon-tag" title="Cox Regression — Survival modeling">Cox Regression</div>
+    <div class="icon-tag" title="Fisher’s Exact Test">Fisher's Test</div>
+    <div class="icon-tag" title="Log-Rank Test — Survival stats">Log-Rank Test</div>
   </div>
 </div>
 
@@ -159,10 +164,10 @@ order: 5
 <div class="skill-category">
   <h3>Data Tools & HPC</h3>
   <div class="icon-grid">
-    <div class="icon-tag" title="Slurm — HPC job scheduler">SL</div>
-    <div class="icon-tag" title="GDC Toolkit — Genomic Data Commons">GDC</div>
-    <div class="icon-tag" title="Pandas — Python data analysis">PD</div>
-    <div class="icon-tag" title="NumPy — Numerical computing">NP</div>
+    <div class="icon-tag" title="Slurm — HPC job manager">Slurm</div>
+    <div class="icon-tag" title="GDC Toolkit — Data commons">GDC Toolkit</div>
+    <div class="icon-tag" title="Pandas — Python data analysis">Pandas</div>
+    <div class="icon-tag" title="NumPy — Scientific computing">NumPy</div>
   </div>
 </div>
 
@@ -170,11 +175,10 @@ order: 5
 <div class="skill-category">
   <h3>Visualization</h3>
   <div class="icon-grid">
-    <div class="icon-tag" title="Matplotlib — Python plots">MPL</div>
-    <div class="icon-tag" title="Seaborn — Statistical visualization">SNS</div>
-    <div class="icon-tag" title="ggplot2 — R plotting system">GG</div>
-    <div class="icon-tag" title="UMAP — Dimensionality reduction">UM</div>
-    <div class="icon-tag" title="t-SNE — Nonlinear dimensionality reduction">TSNE</div>
+    <div class="icon-tag" title="Matplotlib — Plots">Matplotlib</div>
+    <div class="icon-tag" title="Seaborn — Stats viz">Seaborn</div>
+    <div class="icon-tag" title="ggplot2 — R visualization">ggplot2</div>
+    <div class="icon-tag" title="UMAP — Dim. reduction">UMAP</div>
+    <div class="icon-tag" title="t-SNE — Visualization">t-SNE</div>
   </div>
 </div>
-
