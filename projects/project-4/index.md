@@ -92,36 +92,37 @@ icon: fas fa-vial
 
 <div class="project-container">
 
-<h1>Intrinsic Disorder Analysis of Immune Receptor CDR3 Regions</h1>
+  <h1>Intrinsic Disorder Analysis of Immune Receptor CDR3 Regions</h1>
 
-<h2>Summary</h2>
-<p>
-This project explores the structural flexibility of TCR and BCR CDR3 regions by predicting their intrinsic disorder levels using <code>metapredict</code>. A custom pipeline was built to extract immune receptor sequences from cancer patient BAM files, perform disorder analysis, and compare CDR3 vs V and J segment regions to investigate their biophysical uniqueness.
-</p>
+  <h2>Summary</h2>
+  <p>
+    This project investigates the structural flexibility of TCR and BCR CDR3 regions by predicting their intrinsic disorder using <code>metapredict</code>. I built a custom pipeline to extract receptor sequences from cancer patient BAM files, run disorder analysis, and compare CDR3 segments to V and J regions to highlight unique biophysical properties.
+  </p>
 
-<h2>What I Did</h2>
-<ul>
-  <li>Built a bioinformatics pipeline to extract CDR3 sequences from GDC-aligned BAM files using custom VDJ mining scripts and <code>SAMtools</code>.</li>
-  <li>Validated extracted sequences using <code>VDJdb</code> and processed datasets in R and Python.</li>
-  <li>Applied <strong>metapredict</strong> to predict per-residue disorder scores across CDR3, V, and J regions.</li>
-  <li>Quantified and visualized disorder trends, showing CDR3 regions are moderately disordered but less so than their flanking domains.</li>
-  <li>Suggested potential links between disorder levels and antigen-binding flexibility in immune response.</li>
-</ul>
+  <h2>What I Did</h2>
+  <ul>
+    <li>Developed a bioinformatics pipeline to extract CDR3 sequences from GDC-aligned BAM files using custom VDJ mining scripts and <code>SAMtools</code>.</li>
+    <li>Validated extracted repertoires with <code>VDJdb</code> and processed data using R and Python.</li>
+    <li>Applied <strong>metapredict</strong> to generate per-residue disorder profiles for CDR3, V, and J segments.</li>
+    <li>Visualized disorder scores to show CDR3s are moderately disordered but less so than flanking regions.</li>
+    <li>Explored implications for antigen-binding flexibility and immune recognition.</li>
+  </ul>
 
-<h2> </h2>
-<div class="project-tags">
-  <span class="project-tag">metapredict</span>
-  <span class="project-tag">SAMtools</span>
-  <span class="project-tag">GDC Data Transfer Tool</span>
-  <span class="project-tag">HPC</span>
-  <span class="project-tag">Matplotlib</span>
-</div>
+  <div class="project-tags">
+    <span class="project-tag">Intrinsic Disorder</span>
+    <span class="project-tag">metapredict</span>
+    <span class="project-tag">SAMtools</span>
+    <span class="project-tag">VDJdb</span>
+    <span class="project-tag">HPC</span>
+    <span class="project-tag">R</span>
+    <span class="project-tag">Python</span>
+    <span class="project-tag">Matplotlib</span>
+  </div>
 
-<h2> </h2>
-<div class="project-links">
-  <a href="https://github.com/Tushar-bioinfo/CDR3-Intrinsic-Disorder" target="_blank">
-    <i class="fab fa-github"></i>GitHub
-  </a>
-</div>
+  <div class="project-links" style="margin-top: 1rem; display: flex; gap: 1rem;">
+    <a href="https://github.com/Tushar-bioinfo/CDR3-Intrinsic-Disorder" target="_blank" style="text-decoration: none; color: #00f2ff;">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
 
 </div>
