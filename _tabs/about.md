@@ -76,7 +76,7 @@ order: 5
 </style>
 
 <div class="about-container">
-  <img src="//assets/img/tushar-profile.png" alt="Profile Photo">
+  <img src="/assets/img/tushar-profile.png" alt="Profile Photo">
   <h1>MS Bioinformatics & Computational Biology</h1>
 
   <p>
