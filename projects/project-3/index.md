@@ -99,7 +99,7 @@ icon: fas fa-brain
     This project applies deep learning to classify tumor versus normal immune repertoires using TRB CDR3 sequences from lung cancer patients in the CPTAC dataset. The pipeline covers end-to-end preprocessing, variable-length sequence modeling, and interpretability, with modular, reproducible code.
   </p>
 
-  <h2>What I Did</h2>
+  <h2>Project Highlights</h2>
   <ul>
     <li>Designed a deep learning workflow to classify tumor vs normal tissue using patient-level TRB CDR3 repertoires.</li>
     <li>Preprocessed and tokenized variable-length CDR3 sequences with <strong>padding</strong> and <strong>mean pooling</strong>.</li>
