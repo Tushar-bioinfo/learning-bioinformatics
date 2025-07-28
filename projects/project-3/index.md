@@ -92,40 +92,40 @@ icon: fas fa-brain
 
 <div class="project-container">
 
-<h1>Tumor vs Normal TCR Classification</h1>
+  <h1>Tumor vs Normal TCR Classification</h1>
 
+  <h2>Summary</h2>
+  <p>
+    This project applies deep learning to classify tumor versus normal immune repertoires using TRB CDR3 sequences from lung cancer patients in the CPTAC dataset. The pipeline covers end-to-end preprocessing, variable-length sequence modeling, and interpretability, with modular, reproducible code.
+  </p>
 
-<h2>Summary</h2>
-<p>
-This project uses deep learning to classify tumor vs normal immune repertoires using TRB CDR3 sequences from lung cancer patients in the CPTAC dataset. The pipeline includes preprocessing, sequence modeling, and interpretability — with modular code structured for reproducibility.
-</p>
+  <h2>What I Did</h2>
+  <ul>
+    <li>Designed a deep learning workflow to classify tumor vs normal tissue using patient-level TRB CDR3 repertoires.</li>
+    <li>Preprocessed and tokenized variable-length CDR3 sequences with <strong>padding</strong> and <strong>mean pooling</strong>.</li>
+    <li>Built and compared <strong>mean pooling</strong> and <strong>LSTM</strong>-based sequence models in PyTorch.</li>
+    <li>Evaluated models using <strong>ROC AUC</strong>, <strong>F1-score</strong>, and <strong>confusion matrices</strong>.</li>
+    <li>Structured the pipeline for full reproducibility with a <strong>Nextflow-inspired modular design</strong>.</li>
+  </ul>
 
-<h2>What I Did</h2>
-<ul>
-  <li>Developed a deep learning pipeline to classify tumor vs normal tissue using patient-level TRB CDR3 repertoires.</li>
-  <li>Processed and tokenized variable-length CDR3 sequences with <strong>padding and mean-pooling</strong> strategies.</li>
-  <li>Built and compared <strong>mean pooling</strong> and <strong>LSTM</strong>-based architectures in PyTorch.</li>
-  <li>Evaluated models with <strong>ROC AUC</strong>, <strong>F1-score</strong>, and <strong>confusion matrices</strong>.</li>
-  <li>Structured the code with modular, reproducible design following <strong>Nextflow-inspired principles</strong>.</li>
-</ul>
+  <div class="project-tags">
+    <span class="project-tag">Deep Learning</span>
+    <span class="project-tag">PyTorch</span>
+    <span class="project-tag">LSTM</span>
+    <span class="project-tag">Sequence Modeling</span>
+    <span class="project-tag">Immune Repertoires</span>
+    <span class="project-tag">Tokenization</span>
+    <span class="project-tag">Nextflow</span>
+  </div>
 
-<h2> </h2>
-<div class="project-tags">
-  <span class="project-tag">Deep Learning</span>
-  <span class="project-tag">LSTM</span>
-  <span class="project-tag">PyTorch</span>
-  <span class="project-tag">Mean Pooling</span>
-  <span class="project-tag">Tokenization</span>
+  <div class="project-links" style="margin-top: 1rem; display: flex; gap: 1rem;">
+    <a href="https://github.com/Tushar-bioinfo/DL-TCR-TRB-CDR3-Classification" target="_blank" style="text-decoration: none; color: #00f2ff;">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/TRB-CDR3-DL/" target="_blank" style="text-decoration: none; color: #00f2ff;">
+      <i class="fas fa-book-open"></i> Blog
+    </a>
+  </div>
+
 </div>
 
-<h2> </h2>
-<div class="project-links">
-  <a href="https://github.com/Tushar-bioinfo/DL-TCR-TRB-CDR3-Classification" target="_blank">
-    <i class="fab fa-github"></i>GitHub
-  </a>
-  <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/TRB-CDR3-DL/" target="_blank">
-    <i class="fas fa-book-open"></i>Blog
-  </a>
-</div>
-
-</div>
