@@ -82,9 +82,62 @@ order: 3
 }
 </style>
 
-<!-- Project Card 1 -->
+<!-- Project Card 01 -->
 <div class="project-card">
-  <div class="project-number">01</div>
+  <div class="project-number">02</div>
+  <div class="project-title">Single-Nucleus RNA-seq of Hepatoblastoma</div>
+  <div class="project-description">
+    I built a complete end-to-end machine learning pipeline in Python using scikit-learn to predict Boston housing prices. This project demonstrates my ability to perform data cleaning, feature engineering, multivariable regression, diagnostic evaluation, and clear result interpretation — skills I also apply to biological datasets. Visualizations were created with Matplotlib and Seaborn for clear insights.
+  </div>
+  <div class="tech-stack">
+    <span class="tech-badge">Seurat</span>
+    <span class="tech-badge">Differential Expression</span>
+    <span class="tech-badge">PCA</span>
+    <span class="tech-badge">Dimensionality Reduction</span>
+  </div>
+  <a href="/learning-bioinformatics/projects/project-2/" class="project-link-icon" title="Project Details">
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
+
+<!-- Project Card 2 -->
+<div class="project-card">
+  <div class="project-number">02</div>
+  <div class="project-title">Tumor vs Normal TCR Classification</div>
+  <div class="project-description">
+    This project applies deep learning to classify tumor versus normal immune repertoires using TRB CDR3 sequences from lung cancer patients in the CPTAC dataset. The pipeline covers end-to-end preprocessing, variable-length sequence modeling, and interpretability.
+  </div>
+  <div class="tech-stack">
+    <span class="tech-badge">Deep Learning</span>
+    <span class="tech-badge">LSTM</span>
+    <span class="tech-badge">PyTorch</span>
+    <span class="tech-badge">Mean Pooling</span>
+  </div>
+  <a href="/learning-bioinformatics/projects/project-3/" class="project-link-icon" title="Project Details">
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
+
+<!-- Project Card 3 -->
+<div class="project-card">
+  <div class="project-number">03</div>
+  <div class="project-title">SRA to BAM: Immune Receptor Extraction Pipeline</div>
+  <div class="project-description">
+    This modular Nextflow pipeline automates immune receptor region extraction from public sequencing datasets. It processes SRA accessions end-to-end: from FASTQ conversion and genome alignment to BAM slicing and cleanup — enabling high-throughput analysis of TCR/BCR regions for immunogenomic studies.
+  </div>
+  <div class="tech-stack">
+    <span class="tech-badge">Nextflow</span>
+    <span class="tech-badge">Conda</span>
+    <span class="tech-badge">NCBI SRA Toolkit</span>
+    <span class="tech-badge">STAR Aligner</span>
+  </div>
+  <a href="/learning-bioinformatics/projects/project-4/" class="project-link-icon" title="Project Details">
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
+<!-- Project Card 4 -->
+<div class="project-card">
+  <div class="project-number">04</div>
   <div class="project-title">Boston House Price Prediction</div>
   <div class="project-description">
     This project builds a complete machine learning pipeline using Python’s scikit-learn to predict Boston housing prices. 
@@ -100,48 +153,12 @@ order: 3
   </a>
 </div>
 
-<!-- Project Card 2 -->
+<!-- Project Card 5 -->
 <div class="project-card">
-  <div class="project-number">02</div>
-  <div class="project-title">Single-Nucleus RNA-seq of Hepatoblastoma</div>
-  <div class="project-description">
-    snRNA-seq analysis using Seurat and Harmony to identify cell clusters and tumor subtypes. Includes DEG analysis, Dockerization, and automated workflow.
-  </div>
-  <div class="tech-stack">
-    <span class="tech-badge">Seurat</span>
-    <span class="tech-badge">Differential Expression</span>
-    <span class="tech-badge">PCA</span>
-    <span class="tech-badge">Dimensionality Reduction</span>
-  </div>
-  <a href="/learning-bioinformatics/projects/project-2/" class="project-link-icon" title="Project Details">
-    <i class="fas fa-arrow-up-right-from-square"></i>
-  </a>
-</div>
-
-<!-- Project Card 3 -->
-<div class="project-card">
-  <div class="project-number">03</div>
-  <div class="project-title">Tumor vs Normal TCR Classification</div>
-  <div class="project-description">
-    This project uses deep learning to classify tumor vs normal immune repertoires using TRB CDR3 sequences from lung cancer patients in the CPTAC dataset. The pipeline includes preprocessing, sequence modeling, and interpretability — with modular code structured for reproducibility.
-  </div>
-  <div class="tech-stack">
-    <span class="tech-badge">Deep Learning</span>
-    <span class="tech-badge">LSTM</span>
-    <span class="tech-badge">PyTorch</span>
-    <span class="tech-badge">Mean Pooling</span>
-  </div>
-  <a href="/learning-bioinformatics/projects/project-3/" class="project-link-icon" title="Project Details">
-    <i class="fas fa-arrow-up-right-from-square"></i>
-  </a>
-</div>
-
-<!-- Project Card 4 -->
-<div class="project-card">
-  <div class="project-number">04</div>
+  <div class="project-number">05</div>
   <div class="project-title">Intrinsic Disorder Analysis of Immune Receptor CDR3 Regions</div>
   <div class="project-description">
-    This project explores the structural flexibility of TCR and BCR CDR3 regions by predicting their intrinsic disorder levels using <code>metapredict</code>. A custom pipeline was built to extract immune receptor sequences from cancer patient BAM files, perform disorder analysis, and compare CDR3 vs V and J segment regions to investigate their biophysical uniqueness.
+    This project investigates the structural flexibility of TCR and BCR CDR3 regions by predicting their intrinsic disorder using metapredict. I built a custom pipeline to extract receptor sequences from cancer patient BAM files, run disorder analysis, and compare CDR3 segments to V and J regions to highlight unique biophysical properties.
   </div>
   <div class="tech-stack">
     <span class="tech-badge">metapredict</span>
@@ -154,21 +171,4 @@ order: 3
   </a>
 </div>
 
-<!-- Project Card 5 -->
-<div class="project-card">
-  <div class="project-number">05</div>
-  <div class="project-title">SRA to BAM: Immune Receptor Extraction Pipeline</div>
-  <div class="project-description">
-    This modular Nextflow pipeline automates immune receptor region extraction from public sequencing datasets. It processes SRA accessions end-to-end: from FASTQ conversion and genome alignment to BAM slicing and cleanup — enabling high-throughput analysis of TCR/BCR regions for immunogenomic studies.
-  </div>
-  <div class="tech-stack">
-    <span class="tech-badge">Nextflow</span>
-    <span class="tech-badge">Conda</span>
-    <span class="tech-badge">NCBI SRA Toolkit</span>
-    <span class="tech-badge">STAR Aligner</span>
-  </div>
-  <a href="/learning-bioinformatics/projects/project-4/" class="project-link-icon" title="Project Details">
-    <i class="fas fa-arrow-up-right-from-square"></i>
-  </a>
-</div>
 <!-- Add more cards -->
