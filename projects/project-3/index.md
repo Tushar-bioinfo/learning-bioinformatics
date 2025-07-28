@@ -105,7 +105,6 @@ icon: fas fa-brain
     <li>Preprocessed and tokenized variable-length CDR3 sequences with <strong>padding</strong> and <strong>mean pooling</strong>.</li>
     <li>Built and compared <strong>mean pooling</strong> and <strong>LSTM</strong>-based sequence models in PyTorch.</li>
     <li>Evaluated models using <strong>ROC AUC</strong>, <strong>F1-score</strong>, and <strong>confusion matrices</strong>.</li>
-    <li>Structured the pipeline for full reproducibility with a <strong>Nextflow-inspired modular design</strong>.</li>
   </ul>
 
   <div class="project-tags">
@@ -115,7 +114,6 @@ icon: fas fa-brain
     <span class="project-tag">Sequence Modeling</span>
     <span class="project-tag">Immune Repertoires</span>
     <span class="project-tag">Tokenization</span>
-    <span class="project-tag">Nextflow</span>
   </div>
 
   <div class="project-links" style="margin-top: 1rem; display: flex; gap: 1rem;">
