@@ -7,82 +7,48 @@ order: 5
 ---
 
 <style>
-.about-wrapper {
-  text-align: center;
-  padding: 2rem;
-  color: #fff;
-}
-
-.about-wrapper img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #00f2ff;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 14px rgba(0, 255, 255, 0.2);
-}
-
-.about-wrapper h1 {
-  font-size: 1.7rem;
-  color: #00f2ff;
-  margin-bottom: 0.6rem;
-  font-weight: 700;
-}
-
-.about-wrapper p {
-  max-width: 750px;
-  margin: 0 auto 1.8rem auto;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #ccc;
-}
-
-/* Skill Section Styling */
 .skill-category {
   background: #1a1a1a;
-  border-radius: 14px;
-  padding: 1.5rem 1.2rem;
-  margin: 1.8rem auto;
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  margin: 1.5rem auto;
   max-width: 860px;
-  box-shadow: 0 0 14px rgba(0,255,255,0.05);
+  box-shadow: 0 0 12px rgba(0,255,255,0.04);
   text-align: left;
 }
 
 .skill-category h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #00f2ff;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.6rem;
   font-weight: 600;
 }
 
 .icon-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.6rem;
 }
 
 .icon-grid .icon-tag {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #2a2a2a;
-  padding: 0.8rem 1.2rem;
-  border-radius: 12px;
-  font-size: 0.95rem;
-  color: #fff;
-  transition: all 0.3s ease;
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  color: #e2e2e2;
   font-weight: 500;
-  border: 1px solid #00f2ff2f;
+  border: 1px solid #00f2ff2a;
+  transition: all 0.3s ease;
 }
 
 .icon-grid .icon-tag:hover {
   background: #00f2ff;
   color: #000;
-  transform: scale(1.1);
+  transform: scale(1.05);
   cursor: pointer;
 }
 </style>
+
 
 <div class="about-wrapper">
   <img src="/assets/img/tushar-profile.png" alt="Tushar">
