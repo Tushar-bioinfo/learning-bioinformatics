@@ -120,10 +120,10 @@ This project analyzes the single-nucleus transcriptomic landscape of hepatoblast
 
 <h2> </h2>
 <div class="project-links">
-  <a href="https://github.com/yourusername/snRNAseq-hepatoblastoma" target="_blank">
+  <a href="https://github.com/Tushar-bioinfo/ScRNAseq-Hepatoblastoma" target="_blank">
     <i class="fab fa-github"></i>GitHub
   </a>
-  <a href="/blog/2025/07/21/hepatoblastoma-snRNAseq-cluster-analysis.html" target="_blank">
+  <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/Single-Nucleus-RNA-seq/" target="_blank">
     <i class="fas fa-book-open"></i>Blog
   </a>
 </div>
