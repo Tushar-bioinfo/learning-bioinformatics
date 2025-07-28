@@ -92,7 +92,7 @@ icon: fas fa-brain
 
 <div class="project-container">
 
-<h1>Tumor vs Normal TCR Classification (Deep Learning)</h1>
+<h1>Tumor vs Normal TCR Classification</h1>
 
 
 <h2>Summary</h2>
