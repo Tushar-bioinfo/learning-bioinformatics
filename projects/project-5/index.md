@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 
-permalink: /projects/immune-receptor-pipeline/
+permalink: /projects/project-5/
 icon: fas fa-code-branch
 ---
 
