@@ -136,7 +136,7 @@ order: 3
   </a>
 </div>
 
-<!-- Project Card 3 -->
+<!-- Project Card 4 -->
 <div class="project-card">
   <div class="project-number">04</div>
   <div class="project-title">Intrinsic Disorder Analysis of Immune Receptor CDR3 Regions</div>
@@ -154,4 +154,21 @@ order: 3
   </a>
 </div>
 
+<!-- Project Card 5 -->
+<div class="project-card">
+  <div class="project-number">05</div>
+  <div class="project-title">SRA to BAM: Immune Receptor Extraction Pipeline</div>
+  <div class="project-description">
+    This modular Nextflow pipeline automates immune receptor region extraction from public sequencing datasets. It processes SRA accessions end-to-end: from FASTQ conversion and genome alignment to BAM slicing and cleanup — enabling high-throughput analysis of TCR/BCR regions for immunogenomic studies.
+  </div>
+  <div class="tech-stack">
+    <span class="tech-badge">Nextflow</span>
+    <span class="tech-badge">SLURM</span>
+    <span class="tech-badge">NCBI SRA Toolkit</span>
+    <span class="tech-badge">STAR Aligner</span>
+  </div>
+  <a href="/learning-bioinformatics/projects/project-4/" class="project-link-icon" title="Project Details">
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
 <!-- Add more cards -->
