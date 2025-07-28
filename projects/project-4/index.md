@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Intrinsic Disorder Analysis of Immune Receptor CDR3 Regions
+title: 
 permalink: /projects/project-4/
 icon: fas fa-vial
 ---
