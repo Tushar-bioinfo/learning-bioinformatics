@@ -99,7 +99,7 @@ icon: fas fa-vial
     This project investigates the structural flexibility of TCR and BCR CDR3 regions by predicting their intrinsic disorder using <code>metapredict</code>. I built a custom pipeline to extract receptor sequences from cancer patient BAM files, run disorder analysis, and compare CDR3 segments to V and J regions to highlight unique biophysical properties.
   </p>
 
-  <h2>What I Did</h2>
+  <h2>Project Highlights</h2>
   <ul>
     <li>Developed a bioinformatics pipeline to extract CDR3 sequences from GDC-aligned BAM files using custom VDJ mining scripts and <code>SAMtools</code>.</li>
     <li>Validated extracted repertoires with <code>VDJdb</code> and processed data using R and Python.</li>
