@@ -1,7 +1,7 @@
 ---
 title: "Single-Nucleus RNA-seq Analysis of Hepatoblastoma: Clustering, Annotation & Tumor–PDX Comparison"
 date: 2025-04-07 00:00:00 +0000
-tags: 
+author: Tushar Singh
 image:
   path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/hepato_img.jpg
   alt: "Boston housing prediction banner"
