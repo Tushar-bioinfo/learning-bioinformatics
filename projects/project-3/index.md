@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tumor vs Normal TCR Classification 
+title:  
 permalink: /projects/project-3/
 icon: fas fa-brain
 ---
