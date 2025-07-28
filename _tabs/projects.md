@@ -120,8 +120,8 @@ order: 3
 
 <!-- Project Card 3 -->
 <div class="project-card">
-  <div class="project-number">02</div>
-  <div class="project-title">Single-Nucleus RNA-seq of Hepatoblastoma</div>
+  <div class="project-number">03</div>
+  <div class="project-title">Tumor vs Normal TCR Classification</div>
   <div class="project-description">
     This project uses deep learning to classify tumor vs normal immune repertoires using TRB CDR3 sequences from lung cancer patients in the CPTAC dataset. The pipeline includes preprocessing, sequence modeling, and interpretability — with modular code structured for reproducibility.
   </div>
