@@ -111,10 +111,11 @@ This project analyzes the single-nucleus transcriptomic landscape of hepatoblast
 <div class="project-tags">
   <span class="project-tag">R</span>
   <span class="project-tag">Seurat</span>
+  <span class="project-tag">Batch Correction</span>
   <span class="project-tag">Harmony</span>
-  <span class="project-tag">PCA</span>
-  <span class="project-tag">UMAP</span>
+  <span class="project-tag">Dimensionality Reduction</span>
   <span class="project-tag">Differential Expression</span>
+  <span class="project-tag">PCA</span>
   <span class="project-tag">Docker</span>
 </div>
 
