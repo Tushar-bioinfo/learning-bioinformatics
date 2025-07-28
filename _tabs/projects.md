@@ -129,7 +129,7 @@ order: 3
     <span class="tech-badge">Nextflow</span>
     <span class="tech-badge">Conda</span>
     <span class="tech-badge">NCBI SRA Toolkit</span>
-    <span class="tech-badge">STAR Aligner</span>
+    <span class="tech-badge">STAR</span>
   </div>
   <a href="/learning-bioinformatics/projects/project-4/" class="project-link-icon" title="Project Details">
     <i class="fas fa-arrow-up-right-from-square"></i>
