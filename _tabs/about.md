@@ -85,7 +85,7 @@ order: 5
 </style>
 
 <div class="about-wrapper">
-  <img src="/assets/img/profile.png" alt="Tushar">
+  <img src="/assets/img/tushar-profile.png" alt="Tushar">
   <h1>MS Bioinformatics & Computational Biology</h1>
 
   <p>
