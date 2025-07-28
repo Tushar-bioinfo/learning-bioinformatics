@@ -2,6 +2,7 @@
 title: "Predicting Boston Housing Prices : Exploratory Data Analysis (EDA) "
 date: 2025-06-30 00:00:00 +0000
 math: true
+author: Tushar Singh
 image:
   path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/theater-district.jpg
   alt: "Boston housing prediction banner"
