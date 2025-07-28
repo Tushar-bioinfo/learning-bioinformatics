@@ -89,43 +89,44 @@ icon: fas fa-code-branch
   font-size: 1rem;
 }
 </style>
-
 <div class="project-container">
 
-  <h1>SRA to BAM: Immune Receptor Extraction Pipeline</h1>
+<h1>SRA to BAM: Immune Receptor Extraction Pipeline</h1>
+<p class="meta"><strong>Duration:</strong> Jul 2025 &nbsp;|&nbsp; <strong>Tags:</strong> Nextflow, SRA, BAM, Immune Receptors, HPC</p>
 
-  <h2>Summary</h2>
-  <p>
-    This modular <code>Nextflow</code> pipeline automates extraction of immune receptor regions (TCR/BCR) from public sequencing datasets. It processes SRA accessions end-to-end: FASTQ conversion, genome alignment, BAM slicing, and cleanup — enabling scalable, reproducible immunogenomic studies.
-  </p>
+<h2>Summary</h2>
+<p>
+This modular Nextflow pipeline automates immune receptor region extraction from public sequencing datasets. It processes SRA accessions end-to-end: from FASTQ conversion and genome alignment to BAM slicing and cleanup — enabling high-throughput analysis of TCR/BCR regions for immunogenomic studies.
+</p>
 
-  <h2>Project Highlights</h2>
-  <ul>
-    <li>Developed a robust <strong>Nextflow DSL2 pipeline</strong> to convert raw SRA reads into receptor-specific BAMs.</li>
-    <li>Integrated <code>prefetch</code>, <code>fasterq-dump</code>, and <code>STAR</code> or <code>bwa mem</code> for alignment.</li>
-    <li>Used <strong>SAMtools</strong> to extract TRA, TRB, IGH, IGK, and IGL regions from aligned BAMs.</li>
-    <li>Implemented automatic sorting, indexing, and optional cleanup to optimize storage and runtime.</li>
-    <li>Designed for reproducibility with <strong>SLURM</strong> HPC support, containerization, and flexible config profiles.</li>
-  </ul>
+<h2>Project Highlights</h2>
+<ul>
+  <li>Designed a fully modular <strong>Nextflow DSL2 pipeline</strong> to convert SRA data to immune receptor-specific BAM files.</li>
+  <li>Integrated <code>prefetch</code>, <code>fasterq-dump</code>, and <code>STAR</code>/<code>bwa mem</code> aligners.</li>
+  <li>Used <strong>SAMtools</strong> to extract genomic regions corresponding to TRA, TRB, IGH, IGK, and IGL loci.</li>
+  <li>Included automatic sorting, indexing, and optional deletion of intermediate files for space efficiency.</li>
+  <li>Built for reproducibility and HPC execution with <strong>SLURM</strong> support, <strong>containerization</strong>, and configurable profiles.</li>
+</ul>
 
-  <div class="project-tags">
-    <span class="project-tag">Nextflow</span>
-    <span class="project-tag">SRA Toolkit</span>
-    <span class="project-tag">STAR</span>
-    <span class="project-tag">bwa mem</span>
-    <span class="project-tag">SAMtools</span>
-    <span class="project-tag">HPC</span>
-    <span class="project-tag">SLURM</span>
-    <span class="project-tag">Conda</span>
-  </div>
+<h2> </h2>
+<div class="project-tags">
+  <span class="project-tag">Nextflow</span>
+  <span class="project-tag">SRA Toolkit</span>
+  <span class="project-tag">STAR</span>
+  <span class="project-tag">bwa mem</span>
+  <span class="project-tag">SAMtools</span>
+  <span class="project-tag">HPC</span>
+  <span class="project-tag">Immune Receptors</span>
+</div>
 
-  <div class="project-links" style="margin-top: 1rem; display: flex; gap: 1rem;">
-    <a href="https://github.com/yourusername/immune-receptor-nextflow" target="_blank" style="text-decoration: none; color: #00f2ff;">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="/blog/2025/07/28/nextflow-immune-receptor-pipeline.html" target="_blank" style="text-decoration: none; color: #00f2ff;">
-      <i class="fas fa-book-open"></i> Blog
-    </a>
-  </div>
+<h2> </h2>
+<div class="project-links">
+  <a href="https://github.com/yourusername/immune-receptor-nextflow" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-github"></i>GitHub
+  </a>
+  <a href="/blog/2025/07/28/nextflow-immune-receptor-pipeline.html" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-book-open"></i>Blog
+  </a>
+</div>
 
 </div>
