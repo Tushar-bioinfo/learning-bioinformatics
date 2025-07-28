@@ -99,7 +99,7 @@ icon: fas fa-dna
     This project explores the single-nucleus transcriptomic landscape of hepatoblastoma tumors and matched PDX models. Using <code>Seurat</code> and <code>Harmony</code>, I performed batch correction, dimensionality reduction, unsupervised clustering, and detailed cell type annotation to dissect tumor heterogeneity and the tumor microenvironment.
   </p>
 
-  <h2>What I Did</h2>
+  <h2>Project Highlights</h2>
   <ul>
     <li>Built a fully Dockerized snRNA-seq workflow using <strong>Seurat</strong> and <strong>Harmony</strong> for batch correction and UMAP projection.</li>
     <li>Annotated over <strong>10 cell clusters</strong> using marker gene signatures and GeneCards cross-referencing.</li>
