@@ -138,7 +138,7 @@ order: 3
 
 <!-- Project Card 3 -->
 <div class="project-card">
-  <div class="project-number">03</div>
+  <div class="project-number">04</div>
   <div class="project-title">Intrinsic Disorder Analysis of Immune Receptor CDR3 Regions</div>
   <div class="project-description">
     This project explores the structural flexibility of TCR and BCR CDR3 regions by predicting their intrinsic disorder levels using <code>metapredict</code>. A custom pipeline was built to extract immune receptor sequences from cancer patient BAM files, perform disorder analysis, and compare CDR3 vs V and J segment regions to investigate their biophysical uniqueness.
