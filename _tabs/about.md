@@ -3,92 +3,75 @@ layout: page
 title: About
 permalink: /about/
 icon: fas fa-user
-order: 2
+order: 5
 ---
 
 <style>
-.about-wrapper {
+.about-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
 }
 
-.about-image {
-  flex: 0 0 180px;
-  max-width: 180px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 0 15px rgba(0,255,255,0.1);
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
 }
 
-.about-image img {
-  width: 100%;
-  border-radius: 16px;
-  display: block;
+.heading {
+  font-size: 1.8rem;
+  color: #00f2ff;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .about-text {
-  flex: 1;
-  min-width: 260px;
-  background: #1f1f1f;
-  padding: 2rem 2.5rem;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
-  color: #eaeaea;
-  line-height: 1.75;
+  max-width: 800px;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #e0e0e0;
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 
-.about-text h1 {
-  color: #00f2ff;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about-text p {
-  margin-bottom: 1rem;
-}
-
-.skill-section {
-  background: #111;
-  border-radius: 14px;
+.skill-wrapper {
+  max-width: 960px;
+  margin: 2.5rem auto 4rem;
   padding: 1.5rem 2rem;
-  box-shadow: 0 0 10px rgba(0,255,255,0.03);
-  margin-top: 2rem;
+  background: #1c1c1c;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.05);
 }
 
-.skill-section h2 {
-  font-size: 1.2rem;
+.skill-title {
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #00f2ff;
-  margin-bottom: 1rem;
-}
-
-.skill-category {
   margin-bottom: 1.2rem;
-}
-
-.skill-category-title {
-  font-weight: bold;
-  font-size: 0.95rem;
-  color: #ccc;
-  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.7rem;
+  justify-content: center;
 }
 
 .skill-tag {
-  background-color: #2c2c2c;
+  background-color: #2a2a2a;
   color: #00f2ff;
-  padding: 0.35rem 0.8rem;
+  padding: 0.5rem 1rem;
   border-radius: 12px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .skill-tag:hover {
@@ -97,87 +80,58 @@ order: 2
 }
 </style>
 
-<div class="about-wrapper">
-  <div class="about-image">
-    <img src="/assets/img/tushar-profile.png" alt="Tushar's profile photo">
-  </div>
+<div class="about-container">
+  <img src="/assets/img/profile.jpg" alt="Tushar" class="profile-pic">
+
+  <div class="heading">MS Bioinformatics & Computational Biology</div>
+
   <div class="about-text">
-    <h1>👋 About Me</h1>
-    <p>
-      Hi, I'm Tushar — a Master’s student in Bioinformatics and Computational Biology at the University of South Florida (Class of 2026).
-      I specialize in applying machine learning and deep learning to biological data, with a focus on <strong>cancer research</strong>,
-      <strong>immunogenomics</strong>, and <strong>transcriptomics</strong>.
-    </p>
-    <p>
-      My projects span deep learning on immune receptor sequences, single-nucleus RNA-seq analysis, and structural profiling of CDR3 regions.
-      I develop reproducible, modular pipelines using <strong>Nextflow</strong>, <strong>Docker</strong>, and <strong>HPC</strong> to handle real-world biomedical data.
-    </p>
+    Hi, I’m Tushar — a Master's student in Bioinformatics & Computational Biology at the University of South Florida (Class of 2026), 
+    focused on applying machine learning and deep learning to biological data, with a particular interest in cancer research, 
+    immunogenomics, and transcriptomics.
+
+    <br><br>
+
+    My work bridges deep learning with immune receptor sequence analysis, single-nucleus RNA-seq profiling, and structural 
+    characterization of CDR3 regions. I design modular, reproducible bioinformatics pipelines using tools like Nextflow, Docker, 
+    and HPC, enabling scalable analysis of real-world biomedical datasets.
   </div>
 </div>
 
-<div class="skill-section">
-  <h2>🛠️ Skills & Tools</h2>
-
-  <div class="skill-category">
-    <div class="skill-category-title">Machine Learning & Deep Learning</div>
-    <div class="skill-tags">
-      <span class="skill-tag">scikit-learn</span>
-      <span class="skill-tag">PyTorch</span>
-      <span class="skill-tag">Optuna</span>
-      <span class="skill-tag">LSTM</span>
-      <span class="skill-tag">ROC AUC</span>
-      <span class="skill-tag">F1 Score</span>
-      <span class="skill-tag">Mean Pooling</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <div class="skill-category-title">Bioinformatics & Genomics</div>
-    <div class="skill-tags">
-      <span class="skill-tag">Seurat</span>
-      <span class="skill-tag">Harmony</span>
-      <span class="skill-tag">DADA2</span>
-      <span class="skill-tag">VDJdb</span>
-      <span class="skill-tag">metapredict</span>
-      <span class="skill-tag">GDC / TCGA</span>
-      <span class="skill-tag">snRNA-seq</span>
-      <span class="skill-tag">CDR3 Analysis</span>
-      <span class="skill-tag">Differential Expression</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <div class="skill-category-title">Pipelines & Reproducibility</div>
-    <div class="skill-tags">
-      <span class="skill-tag">Nextflow (DSL2)</span>
-      <span class="skill-tag">SLURM</span>
-      <span class="skill-tag">Docker</span>
-      <span class="skill-tag">Conda</span>
-      <span class="skill-tag">HPC</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <div class="skill-category-title">NGS Data Processing</div>
-    <div class="skill-tags">
-      <span class="skill-tag">SRA Toolkit</span>
-      <span class="skill-tag">STAR</span>
-      <span class="skill-tag">bwa mem</span>
-      <span class="skill-tag">SAMtools</span>
-      <span class="skill-tag">BAM Slicing</span>
-      <span class="skill-tag">fasterq-dump</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <div class="skill-category-title">Visualization & Analysis</div>
-    <div class="skill-tags">
-      <span class="skill-tag">Seaborn</span>
-      <span class="skill-tag">Matplotlib</span>
-      <span class="skill-tag">ggplot2</span>
-      <span class="skill-tag">UMAP</span>
-      <span class="skill-tag">PCA</span>
-      <span class="skill-tag">EDA</span>
-    </div>
+<div class="skill-wrapper">
+  <div class="skill-title">🧠 Tools, Frameworks, & Techniques</div>
+  <div class="skill-tags">
+    <span class="skill-tag">scikit-learn</span>
+    <span class="skill-tag">PyTorch</span>
+    <span class="skill-tag">Optuna</span>
+    <span class="skill-tag">LSTM</span>
+    <span class="skill-tag">Mean Pooling</span>
+    <span class="skill-tag">ROC AUC</span>
+    <span class="skill-tag">F1 Score</span>
+    <span class="skill-tag">Seurat</span>
+    <span class="skill-tag">Harmony</span>
+    <span class="skill-tag">DADA2</span>
+    <span class="skill-tag">snRNA-seq</span>
+    <span class="skill-tag">VDJdb</span>
+    <span class="skill-tag">CDR3 Analysis</span>
+    <span class="skill-tag">Differential Expression</span>
+    <span class="skill-tag">metapredict</span>
+    <span class="skill-tag">GDC / TCGA</span>
+    <span class="skill-tag">Nextflow (DSL2)</span>
+    <span class="skill-tag">Docker</span>
+    <span class="skill-tag">Conda</span>
+    <span class="skill-tag">HPC</span>
+    <span class="skill-tag">SLURM</span>
+    <span class="skill-tag">SAMtools</span>
+    <span class="skill-tag">STAR</span>
+    <span class="skill-tag">bwa mem</span>
+    <span class="skill-tag">fasterq-dump</span>
+    <span class="skill-tag">SRA Toolkit</span>
+    <span class="skill-tag">Matplotlib</span>
+    <span class="skill-tag">Seaborn</span>
+    <span class="skill-tag">ggplot2</span>
+    <span class="skill-tag">UMAP</span>
+    <span class="skill-tag">PCA</span>
+    <span class="skill-tag">EDA</span>
   </div>
 </div>
