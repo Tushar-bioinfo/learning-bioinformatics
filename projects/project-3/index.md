@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tumor vs Normal TCR Classification (Deep Learning)
+title: Tumor vs Normal TCR Classification 
 permalink: /projects/trb-cdr3-classifier/
 icon: fas fa-brain
 ---
