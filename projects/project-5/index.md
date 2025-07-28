@@ -99,7 +99,7 @@ icon: fas fa-code-branch
     This modular <code>Nextflow</code> pipeline automates extraction of immune receptor regions (TCR/BCR) from public sequencing datasets. It processes SRA accessions end-to-end: FASTQ conversion, genome alignment, BAM slicing, and cleanup — enabling scalable, reproducible immunogenomic studies.
   </p>
 
-  <h2>What I Did</h2>
+  <h2>Project Highlights</h2>
   <ul>
     <li>Developed a robust <strong>Nextflow DSL2 pipeline</strong> to convert raw SRA reads into receptor-specific BAMs.</li>
     <li>Integrated <code>prefetch</code>, <code>fasterq-dump</code>, and <code>STAR</code> or <code>bwa mem</code> for alignment.</li>
