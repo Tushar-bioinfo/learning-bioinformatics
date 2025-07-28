@@ -95,7 +95,7 @@ sequence learning, or integrated omics workflows.
 </div>
 
 <div class="skill-section">
-  <h2>🛠️ Skills & Tools</h2>
+  <h2>Skills & Tools</h2>
 
   <div class="skill-category">
     <div class="skill-category-title">Machine Learning & Deep Learning</div>
