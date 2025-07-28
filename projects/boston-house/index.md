@@ -92,43 +92,42 @@ icon: fas fa-house-user
 
 <div class="project-container">
 
-<h1>Boston Housing Price Prediction</h1>
+  <h1>Boston Housing Price Prediction</h1>
 
-<h2>Summary</h2>
-<p>
-This project builds a complete machine learning pipeline using Python’s <code>scikit-learn</code> to predict Boston housing prices. The workflow focuses on feature selection, multivariable regression, residual diagnostics, and visual interpretability using <code>Matplotlib</code> and <code>Seaborn</code>.
-</p>
+  <h2>Summary</h2>
+  <p>
+    I built a complete end-to-end machine learning pipeline in Python using <code>scikit-learn</code> to predict Boston housing prices. This project demonstrates my ability to perform data cleaning, feature engineering, multivariable regression, diagnostic evaluation, and clear result interpretation — skills I also apply to biological datasets. Visualizations were created with <code>Matplotlib</code> and <code>Seaborn</code> for clear insights.
+  </p>
 
-<h2>What I Did</h2>
-<ul>
-  <li>Built a multivariable linear regression model with <strong>>80% R²</strong> on test data.</li>
-  <li>Performed <strong>correlation analysis</strong> and addressed multicollinearity with <code>VIF</code>.</li>
-  <li>Used <strong>RMSE</strong>, residual plots, and diagnostic graphs for performance assessment.</li>
-  <li>Structured the ML pipeline end-to-end: <em>preprocessing → model training → threshold tuning → visualization</em>.</li>
-  <li>Used <code>Matplotlib</code> and <code>Seaborn</code> for plotting residuals, confidence bands, and prediction trends.</li>
-</ul>
+  <h2>What I Did</h2>
+  <ul>
+    <li>Developed a multivariable linear regression model achieving <strong>R² > 80%</strong> on test data.</li>
+    <li>Performed <strong>correlation analysis</strong> and addressed multicollinearity using <code>VIF</code>.</li>
+    <li>Validated model performance with <strong>RMSE</strong>, residual plots, and diagnostic graphs.</li>
+    <li>Structured the pipeline end-to-end: <em>data preprocessing → feature selection → model training → evaluation → visualization</em>.</li>
+    <li>Used <code>Matplotlib</code> and <code>Seaborn</code> for residuals, confidence intervals, and prediction trends.</li>
+  </ul>
 
-<h2> </h2>
-<div class="project-tags">
-  <span class="project-tag">Machine Learning</span>
-  <span class="project-tag">Scikit-learn</span>
-  <span class="project-tag">Linear Regression</span>
-  <span class="project-tag">Matplotlib</span>
-  <span class="project-tag">Seaborn</span>
-  <span class="project-tag">Pandas</span>
-  <span class="project-tag">Statsmodels</span>
-  <span class="project-tag">Exploratory Data Analysis</span>
-  <span class="project-tag">Docker</span>
-</div>
+  <div class="project-tags">
+    <span class="project-tag">Machine Learning</span>
+    <span class="project-tag">Scikit-learn</span>
+    <span class="project-tag">Linear Regression</span>
+    <span class="project-tag">Matplotlib</span>
+    <span class="project-tag">Seaborn</span>
+    <span class="project-tag">Pandas</span>
+    <span class="project-tag">Statsmodels</span>
+    <span class="project-tag">EDA</span>
+    <span class="project-tag">Docker</span>
+  </div>
 
-<h2> </h2>
-<div class="project-links">
-  <a href="https://github.com/Tushar-bioinfo/Boston-house-price-prediction" target="_blank">
-    <i class="fab fa-github"></i> GitHub
-  </a>
-  <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/boston-house-model/" target="_blank">
-    <i class="fas fa-book-open"></i> Blog
-  </a>
-</div>
+  <div class="project-links" style="margin-top: 1rem; display: flex; gap: 1rem;">
+    <a href="https://github.com/Tushar-bioinfo/Boston-house-price-prediction" target="_blank" style="text-decoration: none; color: #00f2ff;">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/boston-house-model/" target="_blank" style="text-decoration: none; color: #00f2ff;">
+      <i class="fas fa-book-open"></i> Blog
+    </a>
+  </div>
 
 </div>
+
