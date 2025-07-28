@@ -25,7 +25,7 @@ order: 5
 
 .about-wrapper h1 {
   font-size: 1.7rem;
-  color: #00f2ff;
+  color: #ffffff;
   margin-bottom: 0.6rem;
   font-weight: 700;
 }
@@ -38,46 +38,48 @@ order: 5
   color: #ccc;
 }
 
-/* Skills Section */
-
+/* Skill Section Styling */
 .skill-category {
   background: #1a1a1a;
   border-radius: 14px;
-  padding: 1.2rem 1rem;
-  margin: 2rem auto;
+  padding: 1.5rem 1.2rem;
+  margin: 1.8rem auto;
   max-width: 860px;
-  box-shadow: 0 0 12px rgba(0,255,255,0.04);
+  box-shadow: 0 0 14px rgba(0,255,255,0.05);
   text-align: left;
 }
 
 .skill-category h3 {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #00f2ff;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.9rem;
   font-weight: 600;
 }
 
-.tech-stack {
+.icon-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.8rem;
 }
 
-.tech-badge {
-  background: #101010;
-  border: 1px solid #333;
-  color: #eee;
-  font-size: 0.78rem;
-  padding: 0.3rem 0.75rem;
+.icon-grid .icon-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2a2a;
+  padding: 0.8rem;
   border-radius: 12px;
-  font-family: monospace;
+  font-size: 1.3rem;
+  color: #00f2ff;
   transition: all 0.3s ease;
+  width: 52px;
+  height: 52px;
 }
 
-.tech-badge:hover {
+.icon-grid .icon-tag:hover {
   background: #00f2ff;
   color: #000;
-  transform: scale(1.05);
+  transform: scale(1.2);
   cursor: pointer;
 }
 </style>
@@ -87,93 +89,92 @@ order: 5
   <h1>MS Bioinformatics & Computational Biology</h1>
 
   <p>
-    Hi, I’m Tushar — a Master's student in Bioinformatics & Computational Biology at the University of South Florida (Class of 2026), focused on applying machine learning and deep learning to biological data, with a particular interest in cancer research, immunogenomics, and transcriptomics.
+    Hi, I’m Tushar, I’m currently exploring how machine learning and deep learning can be applied to biological data, with a growing focus on cancer research, immunogenomics, and transcriptomics.
     <br><br>
-    My work bridges deep learning with immune receptor sequence analysis, single-nucleus RNA-seq profiling, and structural characterization of CDR3 regions. I design modular, reproducible bioinformatics pipelines using tools like Nextflow, Docker, and HPC, enabling scalable analysis of real-world biomedical datasets.
+    My work so far includes projects on immune receptor sequence analysis, single-nucleus RNA-seq profiling, and structural characterization of CDR3 regions. I'm learning to build scalable, reproducible pipelines using tools like Nextflow, Docker, and HPC, and I enjoy tackling real-world biomedical data challenges as I continue developing my skills.
   </p>
 </div>
 
-<h2 style="text-align:center; color:#00f2ff;">Skills</h2>
+<!-- Skill Categories -->
 
 <!-- ==================== Bioinformatics ==================== -->
 <div class="skill-category">
   <h3>Bioinformatics</h3>
-  <div class="tech-stack">
-    <div class="tech-badge">Seurat</div>
-    <div class="tech-badge">Scanpy</div>
-    <div class="tech-badge">Bioconductor</div>
-    <div class="tech-badge">STAR</div>
-    <div class="tech-badge">BEDTools</div>
-    <div class="tech-badge">Bowtie2</div>
-    <div class="tech-badge">MiXCR</div>
-    <div class="tech-badge">VDJdb</div>
-    <div class="tech-badge">DESeq2</div>
-    <div class="tech-badge">GATK</div>
-    <div class="tech-badge">SAMtools</div>
-    <div class="tech-badge">BLAST</div>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Seurat — Single-cell RNA-seq">SR</div>
+    <div class="icon-tag" title="Scanpy — Single-cell RNA-seq (Python)">SC</div>
+    <div class="icon-tag" title="Bioconductor — R genomics packages">BC</div>
+    <div class="icon-tag" title="STAR — RNA-seq aligner">STAR</div>
+    <div class="icon-tag" title="BEDTools — Genomic intervals">BT</div>
+    <div class="icon-tag" title="Bowtie2 — Short-read aligner">B2</div>
+    <div class="icon-tag" title="MiXCR — TCR/BCR repertoire">MX</div>
+    <div class="icon-tag" title="VDJdb — Immune repertoire DB">VDJ</div>
+    <div class="icon-tag" title="DESeq2 — Differential expression">D2</div>
+    <div class="icon-tag" title="GATK — Variant calling toolkit">GATK</div>
+    <div class="icon-tag" title="SAMtools — BAM/SAM processing">ST</div>
+    <div class="icon-tag" title="BLAST — Sequence search/alignment">BL</div>
   </div>
 </div>
-
 <!-- ==================== AI & Machine Learning ==================== -->
 <div class="skill-category">
   <h3>AI & Machine Learning</h3>
-  <div class="tech-stack">
-    <div class="tech-badge">scikit-learn</div>
-    <div class="tech-badge">XGBoost</div>
-    <div class="tech-badge">Random Forest</div>
-    <div class="tech-badge">SVM</div>
-    <div class="tech-badge">LSTM</div>
-    <div class="tech-badge">Transformer</div>
-    <div class="tech-badge">Attention</div>
-    <div class="tech-badge">PyTorch</div>
-    <div class="tech-badge">TensorFlow</div>
-    <div class="tech-badge">Keras</div>
-    <div class="tech-badge">SHAP</div>
+  <div class="icon-grid">
+    <div class="icon-tag" title="scikit-learn — ML toolkit">SK</div>
+    <div class="icon-tag" title="XGBoost — Gradient boosting trees">XG</div>
+    <div class="icon-tag" title="Random Forest — Ensemble method">RF</div>
+    <div class="icon-tag" title="Support Vector Machine — SVM classifier">SVM</div>
+    <div class="icon-tag" title="LSTM — Long Short-Term Memory network">LSTM</div>
+    <div class="icon-tag" title="Transformer — Attention-based models">TRF</div>
+    <div class="icon-tag" title="Attention Mechanisms — Deep learning attention layers">ATT</div>
+    <div class="icon-tag" title="PyTorch — Deep learning framework">PT</div>
+    <div class="icon-tag" title="TensorFlow — Deep learning framework">TF</div>
+    <div class="icon-tag" title="Keras — High-level neural networks API">KR</div>
+    <div class="icon-tag" title="SHAP — Explainable AI (model interpretability)">XAI</div>
   </div>
 </div>
-
 <!-- ==================== Pipelines & Reproducibility ==================== -->
 <div class="skill-category">
   <h3>Pipelines & Reproducibility</h3>
-  <div class="tech-stack">
-    <div class="tech-badge">Nextflow</div>
-    <div class="tech-badge">Docker</div>
-    <div class="tech-badge">Singularity</div>
-    <div class="tech-badge">Conda</div>
-    <div class="tech-badge">AWS</div>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Nextflow — Workflow management">NF</div>
+    <div class="icon-tag" title="Docker — Containerization">DK</div>
+    <div class="icon-tag" title="Singularity — HPC containers">SG</div>
+    <div class="icon-tag" title="Conda — Environment management">CD</div>
+    <div class="icon-tag" title="AWS — Cloud computing">AWS</div>
   </div>
 </div>
 
 <!-- ==================== Statistical & Survival Analysis ==================== -->
 <div class="skill-category">
   <h3>Statistical & Survival Analysis</h3>
-  <div class="tech-stack">
-    <div class="tech-badge">Kaplan–Meier</div>
-    <div class="tech-badge">Cox Regression</div>
-    <div class="tech-badge">Fisher's Exact Test</div>
-    <div class="tech-badge">Log-Rank Test</div>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Kaplan–Meier estimator">KM</div>
+    <div class="icon-tag" title="Cox Regression — Proportional hazards">COX</div>
+    <div class="icon-tag" title="Fisher's Exact Test">FT</div>
+    <div class="icon-tag" title="Log-Rank Test — Survival analysis">LR</div>
   </div>
 </div>
 
 <!-- ==================== Data Tools & HPC ==================== -->
 <div class="skill-category">
   <h3>Data Tools & HPC</h3>
-  <div class="tech-stack">
-    <div class="tech-badge">Slurm</div>
-    <div class="tech-badge">GDC Toolkit</div>
-    <div class="tech-badge">Pandas</div>
-    <div class="tech-badge">NumPy</div>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Slurm — HPC job scheduler">SL</div>
+    <div class="icon-tag" title="GDC Toolkit — Genomic Data Commons">GDC</div>
+    <div class="icon-tag" title="Pandas — Python data analysis">PD</div>
+    <div class="icon-tag" title="NumPy — Numerical computing">NP</div>
   </div>
 </div>
 
 <!-- ==================== Visualization ==================== -->
 <div class="skill-category">
   <h3>Visualization</h3>
-  <div class="tech-stack">
-    <div class="tech-badge">Matplotlib</div>
-    <div class="tech-badge">Seaborn</div>
-    <div class="tech-badge">ggplot2</div>
-    <div class="tech-badge">UMAP</div>
-    <div class="tech-badge">t-SNE</div>
+  <div class="icon-grid">
+    <div class="icon-tag" title="Matplotlib — Python plots">MPL</div>
+    <div class="icon-tag" title="Seaborn — Statistical visualization">SNS</div>
+    <div class="icon-tag" title="ggplot2 — R plotting system">GG</div>
+    <div class="icon-tag" title="UMAP — Dimensionality reduction">UM</div>
+    <div class="icon-tag" title="t-SNE — Nonlinear dimensionality reduction">TSNE</div>
   </div>
 </div>
+
