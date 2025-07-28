@@ -84,7 +84,7 @@ order: 3
 
 <!-- Project Card 01 -->
 <div class="project-card">
-  <div class="project-number">02</div>
+  <div class="project-number">01</div>
   <div class="project-title">Single-Nucleus RNA-seq of Hepatoblastoma</div>
   <div class="project-description">
     I built a complete end-to-end machine learning pipeline in Python using scikit-learn to predict Boston housing prices. This project demonstrates my ability to perform data cleaning, feature engineering, multivariable regression, diagnostic evaluation, and clear result interpretation — skills I also apply to biological datasets. Visualizations were created with Matplotlib and Seaborn for clear insights.
