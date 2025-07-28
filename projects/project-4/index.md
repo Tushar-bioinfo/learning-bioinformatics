@@ -92,7 +92,7 @@ icon: fas fa-vial
 
 <div class="project-container">
 
-<h1>Structural Disorder Analysis of Immune Receptor CDR3 Regions</h1>
+<h1>Intrinsic Disorder Analysis of Immune Receptor CDR3 Regions</h1>
 
 <h2>Summary</h2>
 <p>
