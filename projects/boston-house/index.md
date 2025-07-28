@@ -99,7 +99,7 @@ icon: fas fa-house-user
     I built a complete end-to-end machine learning pipeline in Python using <code>scikit-learn</code> to predict Boston housing prices. This project demonstrates my ability to perform data cleaning, feature engineering, multivariable regression, diagnostic evaluation, and clear result interpretation — skills I also apply to biological datasets. Visualizations were created with <code>Matplotlib</code> and <code>Seaborn</code> for clear insights.
   </p>
 
-  <h2>What I Did</h2>
+  <h2>Project Highlights</h2>
   <ul>
     <li>Developed a multivariable linear regression model achieving <strong>R² > 80%</strong> on test data.</li>
     <li>Performed <strong>correlation analysis</strong> and addressed multicollinearity using <code>VIF</code>.</li>
