@@ -5,7 +5,7 @@ math: true
 author: Tushar Singh
 image:
   path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/caption.jpg
-  alt: "Boston housing prediction banner"
+  alt: "Boston housing prediction banner"  
 ---
 
 
