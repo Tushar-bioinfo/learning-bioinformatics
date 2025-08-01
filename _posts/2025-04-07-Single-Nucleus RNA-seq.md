@@ -8,7 +8,7 @@ image:
 ---
 
 This project presents a reproducible pipeline for analyzing **single-nucleus RNA-seq (snRNA-seq)** data from hepatoblastoma tumor, PDX, and normal samples. The workflow includes Seurat-based QC, batch correction using Harmony, clustering, cell type annotation using GeneCards, and a focused differential gene expression (DGE) analysis on cluster 1 (fetal-like hepatoblastoma).
-
+ 
 ---
 
 ## Project Overview
