@@ -1,5 +1,12 @@
+---
+title: "Tumor Severity Stratification in Lung Cancer from Gene Expression Profiles Using Supervised Learning"
+date: 2025-08-05 22:00:00 +0000
+math: true
+author: Tushar Singh
+image:
+  path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post5/caption.jpg
+---
 
-# Predicting Tumor Severity in Lung Adenocarcinoma Using RNA-Seq and Machine Learning
 
 In this project, we built a machine learning pipeline to classify **tumor severity** in lung adenocarcinoma patients using RNA-seq gene expression data from TCGA-LUAD (via cBioPortal). Patients with **pathological stage > 1** were labeled as "severe," and those with **stage = 1** as "non-severe."
 
