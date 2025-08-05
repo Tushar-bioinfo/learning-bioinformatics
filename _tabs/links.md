@@ -6,7 +6,7 @@ permalink: /links/
 order: 4
 ---
 
-<style>
+<style> 
 /* Icon grid layout */
 .icon-grid {
   display: grid;
