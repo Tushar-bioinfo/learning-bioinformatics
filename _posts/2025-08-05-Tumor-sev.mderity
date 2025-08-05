@@ -8,7 +8,7 @@ image:
 ---
 
 
-In this project, we built a machine learning pipeline to classify **tumor severity** in lung adenocarcinoma patients using RNA-seq gene expression data from TCGA-LUAD (via cBioPortal). Patients with **pathological stage > 1** were labeled as "severe," and those with **stage = 1** as "non-severe."
+In this project, we built a pipeline to classify **tumor severity** in lung adenocarcinoma patients using RNA-seq gene expression data from TCGA-LUAD (via cBioPortal). Patients with **pathological stage > 1** were labeled as "severe," and those with **stage = 1** as "non-severe."
 
 > 510 patients — 55% severe, 45% non-severe  
 > ML models: Logistic Regression, SVM, Random Forest, CNN  
