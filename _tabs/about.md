@@ -6,7 +6,7 @@ icon: fas fa-user
 order: 5
 ---
  
-<style>
+<style> 
 .about-wrapper {
   text-align: center;
   padding: 2rem;
