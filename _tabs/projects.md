@@ -5,7 +5,7 @@ icon: fas fa-flask
 permalink: /projects/
 order: 3
 ---
-
+ 
 <style>
 .project-card {
   position: relative;
