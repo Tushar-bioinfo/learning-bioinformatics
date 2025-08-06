@@ -122,10 +122,10 @@ Designed and implemented a machine learning and deep learning pipeline to classi
 
 <h2></h2>
 <div class="project-links">
-  <a href="https://github.com/yourusername/tumor-severity-ml" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/Tushar-bioinfo/tumor-severity-gexpr" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-github"></i>GitHub
   </a>
-  <a href="/blog/2025/08/06/tumor-severity-prediction-rnaseq.html" target="_blank" rel="noopener noreferrer">
+  <a href="https://tushar-bioinfo.github.io/learning-bioinformatics/posts/Tumor-sev/" target="_blank" rel="noopener noreferrer">
     <i class="fas fa-book-open"></i>Blog
   </a>
 </div>
