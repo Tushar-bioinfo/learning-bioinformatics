@@ -171,4 +171,22 @@ order: 3
   </a>
 </div>
 
+<!-- Project Card 6 -->
+<div class="project-card">
+  <div class="project-number">06</div>
+  <div class="project-title">Tumor Severity Prediction from RNA-Seq using ML & Deep Learning</div>
+  <div class="project-description">
+    Developed a reproducible ML/DL pipeline to classify tumor severity in lung adenocarcinoma using TCGA-LUAD RNA-seq data. Applied ANOVA F-test for gene selection, benchmarked classical models against a CNN with Optuna tuning, and achieved 79% accuracy. Dockerized the project and integrated a future-ready Nextflow pipeline for scalable optimization.
+  </div>
+  <div class="tech-stack">
+    <span class="tech-badge">Keras</span>
+    <span class="tech-badge">Optuna</span>
+    <span class="tech-badge">CNN</span>
+    <span class="tech-badge">RNA-Seq</span>
+  </div>
+  <a href="/learning-bioinformatics/projects/project-tumor-severity/" class="project-link-icon" title="Project Details">
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
+
 <!-- Add more cards -->
