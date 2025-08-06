@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tumor Severity Prediction from RNA-Seq
+title: 
 permalink: /projects/project-tumor-severity/
 icon: fas fa-dna
 ---
