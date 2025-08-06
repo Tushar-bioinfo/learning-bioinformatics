@@ -4,7 +4,7 @@ date: 2025-06-30 00:00:00 +0000
 math: true
 author: Tushar Singh
 image:
-  path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/img_eda.jpg
+  path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/post1/img_eda.png
   alt: "Boston housing prediction banner"
 ---
 <!--more-->
