@@ -92,7 +92,6 @@ icon: fas fa-dna
 <div class="project-container">
 
 <h1>Tumor Severity Prediction from RNA-Seq</h1>
-<p class="meta"><strong>Duration:</strong> Aug 2025 &nbsp;|&nbsp; <strong>Tags:</strong> RNA-Seq, ML, Deep Learning, Docker, TCGA-LUAD</p>
 
 <h2>Summary</h2>
 <p>
