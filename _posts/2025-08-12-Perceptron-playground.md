@@ -1,9 +1,10 @@
 ---
 title: "Perceptron Playground — When It Works and When It Fails"
 date: 2025-08-12 00:00:00 +0000
+image:
+  path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/snrna-04-07-2025/img-.png
+  alt: "Boston housing prediction banner"
 ---
-
-# Perceptron Playground — When It Works and When It Fails
 
 Today, I decided to dive into one of the most classic machine learning algorithms: the **Perceptron**.  
 It’s simple, fast, and a great starting point for understanding how linear models work — but also a perfect example of their limitations.
@@ -14,7 +15,7 @@ A perceptron is essentially a single neuron: it takes input features, multiplies
 
 ---
 
-## 1️⃣ Linearly Separable Data — The Perceptron’s Comfort Zone
+## Linearly Separable Data — The Perceptron’s Comfort Zone
 
 To warm up, I generated two Gaussian blobs that can be perfectly split by a straight line.  
 Here’s what happened when I trained a perceptron:
@@ -30,7 +31,7 @@ If your dataset *can* be split perfectly by a straight line, a perceptron will f
 
 ---
 
-## 2️⃣ Partial Overlap — Imperfect but Still Linear
+## Partial Overlap — Imperfect but Still Linear
 
 I then moved the blobs closer together, creating some overlap.
 
@@ -45,7 +46,7 @@ Don’t expect 100% accuracy if your classes overlap — no matter how long you 
 
 ---
 
-## 3️⃣ The Famous XOR Problem — A Hard Fail
+## The Famous XOR Problem — A Hard Fail
 
 The **XOR** dataset labels alternate corners differently.  
 No single straight line can separate these points.
@@ -58,7 +59,7 @@ No single straight line can separate these points.
 
 ---
 
-## 4️⃣ Curved Boundaries — Moons and Circles
+## Curved Boundaries — Moons and Circles
 
 I also tried datasets where the boundary is curved:
 
