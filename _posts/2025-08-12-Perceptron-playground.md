@@ -9,7 +9,7 @@ image:
 Today, I decided to dive into one of the most classic machine learning algorithms: the **Perceptron**.  
 It’s simple, fast, and a great starting point for understanding how linear models work — but also a perfect example of their limitations.
 
-{: .info }
+{: .prompt-info }
 **What is a Perceptron?**  
 A perceptron is essentially a single neuron: it takes input features, multiplies them by weights, adds a bias, and passes the sum through a step function to decide between two classes.
 
@@ -26,7 +26,7 @@ Here’s what happened when I trained a perceptron:
 - The perceptron quickly converged and drew a straight boundary between the two classes.
 - Training accuracy: **100%** — exactly what we expect when the data are **linearly separable**.
 
-{: .tip }
+{: .prompt-tip }
 If your dataset *can* be split perfectly by a straight line, a perceptron will find that line and stop updating its weights once all points are correctly classified.
 
 ---
@@ -41,7 +41,7 @@ I then moved the blobs closer together, creating some overlap.
 - The perceptron still learned a straight line, but **couldn’t separate overlapping points**.
 - Accuracy dropped below 1.0 because no linear boundary can fix mislabeled regions.
 
-{: .warning }
+{: .prompt-warning }
 Don’t expect 100% accuracy if your classes overlap — no matter how long you train, a linear model can’t do magic here.
 
 ---
@@ -83,7 +83,7 @@ I also tried datasets where the boundary is curved:
    - Multi-layer networks (MLPs) with non-linear activations
 3. The XOR problem is the classic proof that **we need hidden layers**.
 
-{: .tip }
+{: .prompt-tip }
 This is exactly why modern deep learning architectures stack multiple layers with non-linearities — so they can model boundaries of *any* shape, not just straight lines.
 
 ---
