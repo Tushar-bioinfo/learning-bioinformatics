@@ -10,7 +10,8 @@ It’s simple, lightning-fast to train, and a great first stop for anyone trying
 But — as I quickly learned — it’s also the perfect example of why we sometimes need more than just a straight line.
 
 
-> What is a Perceptron? Think of it as a single neuron in a brain-inspired network: it takes in input features → multiplies them by weights → adds a bias → and runs the sum through a step function to decide between two classes.{: .prompt-info }
+> What is a Perceptron? Think of it as a single neuron in a brain-inspired network: it takes in input features → multiplies them by weights → adds a bias → and runs the sum through a step function to decide between two classes.
+{: .prompt-info }
 
 
 ---
