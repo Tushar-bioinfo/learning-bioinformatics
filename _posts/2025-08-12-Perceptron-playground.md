@@ -22,7 +22,6 @@ Here’s what happened when I trained a perceptron:
 
 ![Perceptron Linear](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot1.png){: width="500" height="500" }
 
-**Observation:**  
 When I trained the perceptron on this perfectly separable dataset, it almost felt too easy — the algorithm just kept adjusting the weights until it found the exact straight line that separated the two groups. Once that line was found, it stopped making updates, because every single point was classified correctly. On the plot, you can see a clear boundary running right between the blobs with no mistakes at all. This is the perceptron in its happy place.
 
 
@@ -37,7 +36,6 @@ I then moved the blobs closer together, creating some overlap.
 
 ![Perceptron Overlap](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot2.png){: width="500" height="500" }
 
-**Observation:**  
 When I moved the blobs closer, things got trickier. The perceptron still tried its best to find a straight line, but now some points from different classes were mixed together in the same space. No matter how the line was drawn, a few points were always on the wrong side. You can actually see this in the plot — the boundary runs in the middle, but there are little “intruders” in both regions. This is a limitation of any model that’s only allowed to draw a straight line: it simply can’t separate overlapping data perfectly.
 
 
