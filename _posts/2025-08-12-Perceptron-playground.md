@@ -20,7 +20,7 @@ A perceptron is essentially a single neuron: it takes input features, multiplies
 To warm up, I generated two Gaussian blobs that can be perfectly split by a straight line.  
 Here’s what happened when I trained a perceptron:
 
-![Perceptron Linear](/assets/img/posts/perceptron_linear.png)
+![Perceptron Linear](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot1.png){: width="500" height="500" }
 
 **Observation:**  
 - The perceptron quickly converged and drew a straight boundary between the two classes.
@@ -35,7 +35,7 @@ If your dataset *can* be split perfectly by a straight line, a perceptron will f
 
 I then moved the blobs closer together, creating some overlap.
 
-![Perceptron Overlap](/assets/img/posts/perceptron_overlap.png)
+![Perceptron Overlap](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot2.png){: width="500" height="500" }
 
 **Observation:**  
 - The perceptron still learned a straight line, but **couldn’t separate overlapping points**.
@@ -51,7 +51,7 @@ Don’t expect 100% accuracy if your classes overlap — no matter how long you 
 The **XOR** dataset labels alternate corners differently.  
 No single straight line can separate these points.
 
-![Perceptron XOR](/assets/img/posts/perceptron_xor.png)
+![Perceptron XOR](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot3.png){: width="500" height="500" }
 
 **What happened:**  
 - The perceptron kept updating but couldn’t improve beyond ~50% accuracy.
@@ -66,8 +66,8 @@ I also tried datasets where the boundary is curved:
 - **Two Moons:** Interleaved crescents.  
 - **Concentric Circles:** Inner ring vs outer ring.
 
-![Perceptron Moons](/assets/img/posts/perceptron_moons.png)  
-![Perceptron Circles](/assets/img/posts/perceptron_circles.png)
+![Perceptron Moons](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot4.png){: width="500" height="500" }
+![Perceptron Circles](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot5.png){: width="500" height="500" }
 
 **Observation:**  
 - The perceptron draws a straight line through the pattern, cutting across both shapes.  
