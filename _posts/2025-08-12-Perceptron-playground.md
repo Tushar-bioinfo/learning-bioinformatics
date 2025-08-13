@@ -6,12 +6,14 @@ image:
   alt: "Boston housing prediction banner"
 ---
 
-Today, I decided to dive into one of the most classic machine learning algorithms: the **Perceptron**.  
-It’s simple, fast, and a great starting point for understanding how linear models work — but also a perfect example of their limitations.
+Today, I took a step back to explore one of the **most classic** algorithms in machine learning: the **Perceptron**.  
+It’s simple, lightning-fast to train, and a great first stop for anyone trying to understand how linear models work.  
+But — as I quickly learned — it’s also the perfect example of why we sometimes need more than just a straight line.
 
 {: .prompt-info }
 **What is a Perceptron?**  
-A perceptron is essentially a single neuron: it takes input features, multiplies them by weights, adds a bias, and passes the sum through a step function to decide between two classes.
+Think of it as a single neuron in a brain-inspired network:  
+it takes in input features → multiplies them by weights → adds a bias → and runs the sum through a step function to decide between two classes.
 
 ---
 
