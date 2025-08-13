@@ -10,10 +10,8 @@ It’s simple, lightning-fast to train, and a great first stop for anyone trying
 But — as I quickly learned — it’s also the perfect example of why we sometimes need more than just a straight line.
 
 
-**What is a Perceptron?**  
-Think of it as a single neuron in a brain-inspired network:  
-it takes in input features → multiplies them by weights → adds a bias → and runs the sum through a step function to decide between two classes.
-{: .prompt-info }
+> What is a Perceptron? Think of it as a single neuron in a brain-inspired network: it takes in input features → multiplies them by weights → adds a bias → and runs the sum through a step function to decide between two classes.{: .prompt-info }
+
 
 ---
 
@@ -28,7 +26,7 @@ Here’s what happened when I trained a perceptron:
 When I trained the perceptron on this perfectly separable dataset, it almost felt too easy — the algorithm just kept adjusting the weights until it found the exact straight line that separated the two groups. Once that line was found, it stopped making updates, because every single point was classified correctly. On the plot, you can see a clear boundary running right between the blobs with no mistakes at all. This is the perceptron in its happy place.
 
 
-If your dataset *can* be split perfectly by a straight line, a perceptron will find that line and stop updating its weights once all points are correctly classified
+> If your dataset *can* be split perfectly by a straight line, a perceptron will find that line and stop updating its weights once all points are correctly classified
 {: .prompt-tip }
 
 ---
@@ -45,7 +43,7 @@ When I moved the blobs closer, things got trickier. The perceptron still tried i
 
 
 
-Don’t expect 100% accuracy if your classes overlap — no matter how long you train, a linear model can’t do magic here.
+> Don’t expect 100% accuracy if your classes overlap — no matter how long you train, a linear model can’t do magic here.
 {: .prompt-warning }
 
 ---
@@ -86,7 +84,7 @@ When I tested the perceptron on datasets with curved shapes, like the “two moo
 3. The XOR problem is the classic proof that **we need hidden layers**.
 
 
-This is exactly why modern deep learning architectures stack multiple layers with non-linearities — so they can model boundaries of *any* shape, not just straight lines.
+> This is exactly why modern deep learning architectures stack multiple layers with non-linearities — so they can model boundaries of *any* shape, not just straight lines.
 {: .prompt-tip }
 ---
 
