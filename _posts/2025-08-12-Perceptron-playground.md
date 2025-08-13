@@ -3,7 +3,6 @@ title: "Perceptron Playground — When It Works and When It Fails"
 date: 2025-08-12 00:00:00 +0000
 image:
   path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/icon.png
-  alt: "Boston housing prediction banner"
 ---
 
 Today, I took a step back to explore one of the **most classic** algorithms in machine learning: the **Perceptron**.  
