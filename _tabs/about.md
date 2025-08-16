@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 icon: fas fa-user
 order: 5
----  
+---   
 
 <style> 
 .about-wrapper {
