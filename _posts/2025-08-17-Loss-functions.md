@@ -3,7 +3,7 @@ title: "Cost Functions in Deep Learning — Explained Simply (with a Bio Twist)"
 date: 2025-08-17 00:00:00 +0000
 math: true
 image:
-  path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/icon2.png
+  path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog2/cover.png
 ---
 
 
