@@ -91,4 +91,4 @@ When I tested the perceptron on datasets with curved shapes, like the “two moo
 ## What’s Next?
 In the next post, I’ll explore some other new learnings — building on today’s perceptron insights and diving deeper into my ML/DL journey.
 
-**Full notebook:** [Perceptron Playground on GitHub](https://github.com/Tushar-bioinfo/Blogs/blob/main/perceptron_playground.ipynb)  
+**Full notebook:** [Perceptron Playground on GitHub](https://github.com/Tushar-bioinfo/Blogs/blob/main/blog1/perceptron_playground.ipynb)  
