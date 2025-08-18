@@ -5,7 +5,6 @@ image:
   path: https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/icon2.png
 ---
 
-# Cost Functions in Deep Learning — The “How Wrong Am I?” Question  
 
 Every deep learning model asks itself the same thing after making a prediction:  
 
