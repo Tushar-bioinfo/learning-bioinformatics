@@ -40,7 +40,7 @@ $$
 > MSE is a *perfectionist*. Small mistakes don’t bother it much, but big errors get punished heavily.
 {: .prompt-info }
 
-![Perceptron Overlap](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot2.png){: width="500" height="500" }
+![MSE](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog2/plot1.png){: width="500" height="500" }
 
 **Example:**  
 If your model predicts a tumor volume of 3 cm³ when it’s actually 5 cm³, that’s an error of 2. Squared = 4.  
@@ -77,7 +77,7 @@ $$
 > Think of hinge loss like a strict teacher. Even if you get the answer right, if you say it in a shaky voice, you still lose points.
 {: .prompt-tip }
 
-![Perceptron Overlap](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot2.png){: width="500" height="500" }
+![Hinge Loss](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog2/plot2.png){: width="500" height="500" }
 
 **Example:**  
 In medical diagnosis, hinge loss encourages models to separate healthy vs cancer patients with a *clear margin*, not just a guess that’s barely correct.
@@ -104,7 +104,7 @@ $$
 > Cross-entropy *hates misplaced confidence*. If your model is 99% sure a tumor is benign but it’s actually malignant — the penalty is enormous.
 {: .prompt-warning }
 
-![Perceptron Overlap](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot2.png){: width="500" height="500" }
+![Cross Entropy](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog2/ceplot.png){: width="500" height="500" }
 
 **Example:**  
 If your model predicts 95% cancer when the patient really has cancer → tiny loss (great!).  
@@ -125,3 +125,5 @@ They’re the compass that guides deep learning models through the training proc
 
 >Think of cost functions as biology’s version of *fitness landscapes*. Just as evolution favors mutations that minimize survival cost, models evolve by minimizing error cost.
 {: .prompt-tip }
+
+**Full notebook:** [Perceptron Playground on GitHub](https://github.com/Tushar-bioinfo/Blogs/blob/main/perceptron_playground.ipynb)  
