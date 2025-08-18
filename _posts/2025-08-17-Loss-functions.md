@@ -126,4 +126,4 @@ They’re the compass that guides deep learning models through the training proc
 >Think of cost functions as biology’s version of *fitness landscapes*. Just as evolution favors mutations that minimize survival cost, models evolve by minimizing error cost.
 {: .prompt-tip }
 
-**Full notebook:** [Perceptron Playground on GitHub](https://github.com/Tushar-bioinfo/Blogs/blob/main/perceptron_playground.ipynb)  
+**Full notebook:** [Perceptron Playground on GitHub](https://github.com/Tushar-bioinfo/Blogs/blob/main/blog2/Cost_Functions_Bio_Intro.ipynb)  
