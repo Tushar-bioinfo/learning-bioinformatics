@@ -104,7 +104,7 @@ $$
 > Cross-entropy *hates misplaced confidence*. If your model is 99% sure a tumor is benign but it’s actually malignant — the penalty is enormous.
 {: .prompt-warning }
 
-![Cross Entropy](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog2/ceplot.png){: width="500" height="500" }
+![Cross Entropy](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog2/ceplot.png){: width="600" height="600" }
 
 **Example:**  
 If your model predicts 95% cancer when the patient really has cancer → tiny loss (great!).  
