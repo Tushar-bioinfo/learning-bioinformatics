@@ -35,11 +35,14 @@ $$
 **In words:**  
 - Find the difference between the true value (\(y_i\)) and predicted value (\(\hat{y}_i\)).  
 - Square the difference (so negatives don’t cancel out, and big mistakes hurt more).  
-- Average across all samples.  
+- Average across all samples.
+  
+> MSE is a *perfectionist*. Small mistakes don’t bother it much, but big errors get punished heavily.
+{: .prompt-info }
 
-{% include tip.html content="MSE is a *perfectionist*. Small mistakes don’t bother it much, but big errors get punished heavily." %}
+![Perceptron Overlap](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot2.png){: width="500" height="500" }
 
-**Bio example:**  
+**Example:**  
 If your model predicts a tumor volume of 3 cm³ when it’s actually 5 cm³, that’s an error of 2. Squared = 4.  
 But if it predicts 1 cm³ instead of 5 cm³, the error is 4. Squared = 16.  
 The second mistake looks *4x worse* even though it’s only twice as far off.
@@ -71,9 +74,12 @@ $$
 - If it’s right but unsure (too close to the decision boundary) → small loss.  
 - If it’s wrong → big loss.  
 
-{% include info.html content="Think of hinge loss like a strict teacher. Even if you get the answer right, if you say it in a shaky voice, you still lose points." %}
+> Think of hinge loss like a strict teacher. Even if you get the answer right, if you say it in a shaky voice, you still lose points.
+{: .prompt-tip }
 
-**Bio example:**  
+![Perceptron Overlap](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot2.png){: width="500" height="500" }
+
+**Example:**  
 In medical diagnosis, hinge loss encourages models to separate healthy vs cancer patients with a *clear margin*, not just a guess that’s barely correct.
 
 ---
@@ -95,9 +101,12 @@ $$
 - Confident **but wrong** → huge loss.  
 - Uncertain predictions → medium loss.  
 
-{% include warning.html content="Cross-entropy *hates misplaced confidence*. If your model is 99% sure a tumor is benign but it’s actually malignant — the penalty is enormous." %}
+> Cross-entropy *hates misplaced confidence*. If your model is 99% sure a tumor is benign but it’s actually malignant — the penalty is enormous.
+{: .prompt-warning }
 
-**Bio example:**  
+![Perceptron Overlap](https://tushar-bioinfo.github.io/learning-bioinformatics/assets/img/blog1/plot2.png){: width="500" height="500" }
+
+**Example:**  
 If your model predicts 95% cancer when the patient really has cancer → tiny loss (great!).  
 If it predicts 99% healthy when the patient has cancer → huge loss (disaster).  
 
@@ -114,4 +123,5 @@ This makes cross-entropy ideal for tasks like **disease subtype prediction**, wh
 At the end of the day, cost functions are just **different ways of saying “how wrong am I?”**  
 They’re the compass that guides deep learning models through the training process, step by step, toward better predictions.  
 
-{% include tip.html content="Think of cost functions as biology’s version of *fitness landscapes*. Just as evolution favors mutations that minimize survival cost, models evolve by minimizing error cost." %}
+>Think of cost functions as biology’s version of *fitness landscapes*. Just as evolution favors mutations that minimize survival cost, models evolve by minimizing error cost.
+{: .prompt-tip }
