@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Cost Functions 101"
 date: 2025-08-17 00:00:00 +0000
 math: true
