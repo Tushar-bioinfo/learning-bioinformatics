@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Perceptron Playground — When It Works and When It Fails"
 date: 2025-08-12 00:00:00 +0000
 image:
