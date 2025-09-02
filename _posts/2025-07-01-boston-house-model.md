@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Boston House Price Prediction – Linear Regression in Action"
 date: 2025-07-01 22:00:00 +0000
 math: true
