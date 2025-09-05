@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Single-Nucleus RNA-seq Analysis of Hepatoblastoma"        
+title: "Single-Nucleus RNA-seq Analysis of Hepatoblastoma"         
 date: 2025-04-07 00:00:00 +0000 
 author: Tushar Singh
 image:
