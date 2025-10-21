@@ -15,7 +15,7 @@ This project presents a reproducible pipeline for analyzing **single-nucleus RNA
 
 > **Goal**: Analyze transcriptional differences between tumor and PDX cells within hepatoblastoma using snRNA-seq data, and understand how the tumor microenvironment influences gene expression.
 
----
+--- 
 
 ## Technologies Used
 
