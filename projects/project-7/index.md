@@ -124,7 +124,7 @@ Built an end-to-end, HPC-optimized copy number variation (CNV) pipeline for dbGa
 
 <h2></h2>
 <div class="project-links">
-  <a href="https://github.com/Tushar-bioinfo" target="_blank" rel="noopener noreferrer">
+  <a href="[https://github.com/Tushar-bioinfo](https://github.com/Tushar-bioinfo/gatk-CNV)" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-github"></i>GitHub
   </a>
   <a href="#" target="_blank" rel="noopener noreferrer">
