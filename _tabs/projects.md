@@ -188,5 +188,21 @@ order: 3
     <i class="fas fa-arrow-up-right-from-square"></i>
   </a>
 </div>
-
+<!-- Project Card 7 -->
+<div class="project-card">
+  <div class="project-number">07</div>
+  <div class="project-title">GATK4 CNV Analysis in Glioblastoma</div>
+  <div class="project-description">
+    Built an end-to-end, HPC-optimized copy number variation (CNV) pipeline for dbGaP-protected cancer RNA-seq data using GATK4 CNV, automating SRA-to-BAM processing and genome-wide CNV calling across large patient cohorts on the USF RRA cluster.
+  </div>
+  <div class="tech-stack">
+    <span class="tech-badge">GATK4</span>
+    <span class="tech-badge">CNV analysis</span>
+    <span class="tech-badge">Shell scripting</span>
+    <span class="tech-badge">Variant Calling & Structural Variant Detection</span>
+  </div>
+  <a href="/learning-bioinformatics/projects/project-cnv-gatk4/" class="project-link-icon" title="Project Details">
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
+</div>
 <!-- Add more cards -->
