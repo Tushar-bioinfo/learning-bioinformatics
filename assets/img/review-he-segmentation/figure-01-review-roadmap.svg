@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333333" />
+    </marker>
+    <style>
+      .title { font-family: Arial, sans-serif; font-weight: bold; font-size: 16px; fill: #ffffff; text-anchor: middle; }
+      .body { font-family: Arial, sans-serif; font-size: 14px; fill: #333333; text-anchor: middle; }
+      .box { fill: #f8f9fa; stroke: #2c3e50; stroke-width: 2px; rx: 8px; }
+      .header-box { fill: #2c3e50; }
+      .line { stroke: #333333; stroke-width: 2px; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <line x1="200" y1="150" x2="255" y2="150" class="line" />
+  <line x1="445" y1="150" x2="500" y2="150" class="line" />
+  <line x1="690" y1="150" x2="745" y2="150" class="line" />
+  <line x1="935" y1="150" x2="990" y2="150" class="line" />
+
+  <g transform="translate(20, 50)">
+    <rect width="180" height="200" class="box" />
+    <rect width="180" height="40" class="header-box" rx="8" />
+    <rect width="180" height="20" y="20" fill="#2c3e50" />
+    <text x="90" y="26" class="title">H&amp;E Image</text>
+    <text x="90" y="80" class="body">Raw Input Data</text>
+    <text x="90" y="115" class="body">Tissue Context</text>
+    <text x="90" y="150" class="body">Cellular Structures</text>
+  </g>
+
+  <g transform="translate(265, 50)">
+    <rect width="180" height="200" class="box" />
+    <rect width="180" height="40" class="header-box" rx="8" />
+    <rect width="180" height="20" y="20" fill="#2c3e50" />
+    <text x="90" y="26" class="title">Task Definitions</text>
+    <text x="90" y="80" class="body">Semantic Seg.</text>
+    <text x="90" y="115" class="body">Instance Seg.</text>
+    <text x="90" y="150" class="body">Nuclei Tracking</text>
+  </g>
+
+  <g transform="translate(510, 50)">
+    <rect width="180" height="200" class="box" />
+    <rect width="180" height="40" class="header-box" rx="8" />
+    <rect width="180" height="20" y="20" fill="#2c3e50" />
+    <text x="90" y="26" class="title">Model Families</text>
+    <text x="90" y="80" class="body">Classic Methods</text>
+    <text x="90" y="115" class="body">Machine Learning</text>
+    <text x="90" y="150" class="body">Deep Learning</text>
+    <text x="90" y="175" class="body" font-size="12px">(U-Net, ViT)</text>
+  </g>
+
+  <g transform="translate(755, 50)">
+    <rect width="180" height="200" class="box" />
+    <rect width="180" height="40" class="header-box" rx="8" />
+    <rect width="180" height="20" y="20" fill="#2c3e50" />
+    <text x="90" y="26" class="title">Evaluation</text>
+    <text x="90" y="80" class="body">Dice Coefficient</text>
+    <text x="90" y="115" class="body">Jaccard Index</text>
+    <text x="90" y="150" class="body">Accuracy / Precision</text>
+    <text x="90" y="185" class="body">Object Metrics</text>
+  </g>
+
+  <g transform="translate(1000, 50)">
+    <rect width="180" height="200" class="box" />
+    <rect width="180" height="40" class="header-box" rx="8" />
+    <rect width="180" height="20" y="20" fill="#2c3e50" />
+    <text x="90" y="26" class="title">Future Directions</text>
+    <text x="90" y="80" class="body">Generative AI</text>
+    <text x="90" y="115" class="body">Self-Supervised</text>
+    <text x="90" y="150" class="body">Multimodal</text>
+    <text x="90" y="185" class="body">Cloud Scaling</text>
+  </g>
+</svg>
