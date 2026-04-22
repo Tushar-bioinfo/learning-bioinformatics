@@ -3,16 +3,14 @@ layout: post
 title: "Nuclei Segmentation in H&E Histopathology: Methods, Challenges, and Future Directions"
 date: 2026-04-21 12:00:00 -0400
 categories: [Computational Pathology, Review]
-tags: [histopathology, h-e, nuclei-segmentation, cell-segmentation, digital-pathology, deep-learning]
-description: "A synthesis-first review of nuclei and cell segmentation in H&E histopathology, covering task definitions, methods, datasets, metrics, limitations, and future directions."
+tags: [histopathology, nuclei-segmentation, cell-segmentation, digital-pathology, deep-learning]
+description: "A review of nuclei segmentation in H&E histopathology"
 image:
-  path: /assets/img/review-he-segmentation/figure-02-labeled-he-patch.png
-  alt: "Annotated H&E tissue patch highlighting nuclei, tissue background, and boundary ambiguity"
+  path: /assets/img/review-he-segmentation/cover-he-nuclei-segmentation-review.png
+  alt: "H&E tissue patch with nuclei overlays and computational contour motifs"
 ---
 
 Hematoxylin and eosin (H&E) slides are central to diagnostic pathology, but turning them into reliable quantitative data remains technically difficult. Among the many tasks in computational pathology, nuclei segmentation stands out because it is both biologically meaningful and visually tractable: nuclei are often easier to identify than full-cell boundaries, yet they remain difficult to segment robustly across crowded, noisy, and heterogeneous tissue regions.
-
-This post reviews nuclei segmentation in H&E histopathology within the broader context of cell segmentation. Instead of summarizing papers one by one, it explains the task from first principles, distinguishes nuclei segmentation from whole-cell segmentation, traces the evolution of major method families, and highlights the practical limits that still matter for real pathology workflows. The discussion currently uses one verified local review source, cited below as `[CIT-REV1]`.
 
 > **Abstract:** In H&E histopathology, segmentation is not a single problem but a family of related tasks. Nuclei segmentation is the most mature and best-supported target in routine H&E, while whole-cell segmentation remains harder because cytoplasmic and membrane boundaries are often ambiguous. Deep learning has substantially improved performance over traditional methods, but the decisive issues are no longer only average accuracy. Boundary quality, robustness across heterogeneous datasets, and computational practicality now define the real frontier. [CIT-REV1]
 {: .prompt-tip }
