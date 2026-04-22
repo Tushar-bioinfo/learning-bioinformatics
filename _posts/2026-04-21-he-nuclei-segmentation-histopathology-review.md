@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Nuclei Segmentation in H&E Histopathology: Methods, Challenges, and Future Directions"
+title: "H&E Nuclei Segmentation — A Practical Review"
 date: 2026-04-21 12:00:00 -0400
 categories: [Computational Pathology, Review]
 tags: [histopathology, nuclei-segmentation, cell-segmentation, digital-pathology, deep-learning]
-description: "A practical H&E-first guide to nuclei segmentation, its main failure modes, and how to judge segmentation papers more critically."
+description: "A simple guide to H&E nuclei segmentation, what makes it hard, and what works."
 media_subpath: /assets/img/review-he-segmentation/
 image:
   path: cover-he-nuclei-segmentation-review.png
@@ -28,7 +28,7 @@ Hematoxylin and eosin (H&E) slides are central to diagnostic pathology, but turn
 > **Reading tip:** If you mainly care about model choice, jump to [Comparing Model Families](#comparing-model-families) and [How to Read a Segmentation Paper Critically](#how-to-read-a-segmentation-paper-critically).
 {: .prompt-info }
 
-![Conceptual roadmap for the review, linking H&E image characteristics to task definitions, model families, evaluation criteria, and future directions.](figure-01-review-roadmap.svg){: w="1200" h="300" }
+![Conceptual roadmap for the review, linking H&E image characteristics to task definitions, model families, evaluation criteria, and future directions.](figure-01-review-roadmap.svg){: w="1800" h="450" }
 
 *Figure 1. Conceptual roadmap for the review, linking H&E image characteristics to task definitions, model families, evaluation criteria, and future directions.*
 
